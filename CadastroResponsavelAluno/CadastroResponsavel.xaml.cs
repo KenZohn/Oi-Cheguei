@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data.SQLite;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -64,14 +65,17 @@ namespace CadastroResponsavelAluno
 
         private void botaoCadastrar_Click(object sender, RoutedEventArgs e)
         {
-            using (SQLiteConnection conn = new SQLiteConnection("Data Source=\"C:\\Users\\NettN\\source\\repos\\CadastroResponsavelAluno\\ChegouBD.db\""))
+            string projectPath = Directory.GetParent(AppDomain.CurrentDomain.BaseDirectory).Parent.Parent.FullName;
+            projectPath = projectPath.Remove(projectPath.Length - 25);
+
+            using (SQLiteConnection conn = new SQLiteConnection("Data Source=" + projectPath + "\\ChegouBD.db"))
             {
                 using (SQLiteCommand cmd = new SQLiteCommand())
                 {
                     string strSql = "INSERT INTO [Responsavel] ([Nome], [CPF], [Telefone]) VALUES ('"+
                         campoNome.Text + "', '" + 
-                        campoCPF.Text + "' '" +
-                        campoTelefone + ")";
+                        campoCPF.Text + "', '" +
+                        campoTelefone + "')";
                     cmd.CommandText = strSql;
                     cmd.Connection = conn;
                     conn.Open();

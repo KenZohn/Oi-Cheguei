@@ -14,13 +14,12 @@
                 <RowDefinition Height="*"/>
                 <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
-            <Label x:Name="labelRelacionamento" Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center" Content="Relacionamento de Responsável e Aluno" FontSize="25"/>
-            <StackPanel Grid.Row="1">
+            <Label x:Name="labelRelacionamento" Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center" Content="Vínculo de Responsável e Aluno" FontSize="25"/>
+            <StackPanel Grid.Row="1" VerticalAlignment="Center">
                 <ComboBox x:Name="campoAluno" Width="250" Height="25" Margin="10"/>
                 <ComboBox x:Name="campoResponsavel" Width="250" Height="25" Margin="10"/>
-                <ComboBox x:Name="campoRelacao" Width="250" Height="25" Margin="10"/>
             </StackPanel>
-            <Button x:Name="botaoCadastrar" Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0,0,0" Width="250" Height="25" Background="Azure" Content="Cadastrar"/>
+            <Button x:Name="botaoVincular" Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0,0,0" Width="250" Height="25" Background="Azure" Content="Vincular" Click="botaoVincular_Click"/>
         </Grid>
     </Grid>
 </Page>

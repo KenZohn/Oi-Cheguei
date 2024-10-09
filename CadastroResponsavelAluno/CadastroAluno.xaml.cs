@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data.SQLite;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -24,6 +25,15 @@ namespace CadastroResponsavelAluno
         public CadastroAluno()
         {
             InitializeComponent();
+            campoAno.Items.Add("1");
+            campoAno.Items.Add("2");
+            campoAno.Items.Add("3");
+            campoAno.Items.Add("4");
+            campoAno.Items.Add("5");
+            campoAno.Items.Add("6");
+            campoTurma.Items.Add("A");
+            campoTurma.Items.Add("B");
+            campoTurma.Items.Add("C");
         }
 
         private void campoNome_TextChanged(object sender, TextChangedEventArgs e)
@@ -38,40 +48,19 @@ namespace CadastroResponsavelAluno
             }
         }
 
-        private void campoCPF_TextChanged(object sender, TextChangedEventArgs e)
-        {
-            if (String.IsNullOrEmpty(campoAno.Text))
-            {
-                labelAno.Visibility = Visibility.Visible;
-            }
-            else
-            {
-                labelAno.Visibility = Visibility.Hidden;
-            }
-        }
-
-        private void campoTelefone_TextChanged(object sender, TextChangedEventArgs e)
-        {
-            if (String.IsNullOrEmpty(campoTurma.Text))
-            {
-                labelTurma.Visibility = Visibility.Visible;
-            }
-            else
-            {
-                labelTurma.Visibility = Visibility.Hidden;
-            }
-        }
-
         private void botaoCadastrar_Click(object sender, RoutedEventArgs e)
         {
-            using (SQLiteConnection conn = new SQLiteConnection("Data Source=\"C:\\Users\\NettN\\source\\repos\\CadastroResponsavelAluno\\ChegouBD.db\""))
+            string projectPath = Directory.GetParent(AppDomain.CurrentDomain.BaseDirectory).Parent.Parent.FullName;
+            projectPath = projectPath.Remove(projectPath.Length - 25);
+
+            using (SQLiteConnection conn = new SQLiteConnection("Data Source=" + projectPath + "\\ChegouBD.db"))
             {
                 using (SQLiteCommand cmd = new SQLiteCommand())
                 {
                     string strSql = "INSERT INTO [Aluno] ([Nome], [Ano], [Turma]) VALUES ('" +
                         campoNome.Text + "', '" +
-                        campoAno.Text + "' '" +
-                        campoTurma + ")";
+                        campoAno.Text + "', '" +
+                        campoTurma.Text + "')";
                     cmd.CommandText = strSql;
                     cmd.Connection = conn;
                     conn.Open();
@@ -80,10 +69,10 @@ namespace CadastroResponsavelAluno
                 }
             }
 
-            MessageBox.Show("Responsável cadastrado com sucesso.");
+            MessageBox.Show("Aluno cadastrado com sucesso.");
             campoNome.Clear();
-            campoAno.Clear();
-            campoTurma.Clear();
+            campoAno.SelectedIndex = -1;
+            campoTurma.SelectedIndex = -1;
         }
     }
 }

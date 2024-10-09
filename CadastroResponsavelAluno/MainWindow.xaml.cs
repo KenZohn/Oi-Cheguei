@@ -49,7 +49,7 @@ namespace CadastroResponsavelAluno
 
         private void botaoRelacionar_Click(object sender, RoutedEventArgs e)
         {
-            framePrincipal.Navigate(relacionamento);
+            framePrincipal.Navigate(new Relacionamento());
         }
     }
 }
