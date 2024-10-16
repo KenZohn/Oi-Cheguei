@@ -3,24 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\NettN\\OneDrive\\Documentos\\POO Chegou!\\POO-Johnny\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1A3D95F4-F781-45D3-9F32-95C1C9549857}|CadastroResponsavelAluno\\CadastroResponsavelAluno.csproj|c:\\users\\nettn\\onedrive\\documentos\\poo chegou!\\poo-johnny\\cadastroresponsavelaluno\\relacionamento.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|",
-      "RelativeMoniker": "D:0:0:{1A3D95F4-F781-45D3-9F32-95C1C9549857}|CadastroResponsavelAluno\\CadastroResponsavelAluno.csproj|solutionrelative:cadastroresponsavelaluno\\relacionamento.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1A3D95F4-F781-45D3-9F32-95C1C9549857}|CadastroResponsavelAluno\\CadastroResponsavelAluno.csproj|c:\\users\\nettn\\onedrive\\documentos\\poo chegou!\\poo-johnny\\cadastroresponsavelaluno\\relacionamento.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{1A3D95F4-F781-45D3-9F32-95C1C9549857}|CadastroResponsavelAluno\\CadastroResponsavelAluno.csproj|solutionrelative:cadastroresponsavelaluno\\relacionamento.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1A3D95F4-F781-45D3-9F32-95C1C9549857}|CadastroResponsavelAluno\\CadastroResponsavelAluno.csproj|c:\\users\\nettn\\onedrive\\documentos\\poo chegou!\\poo-johnny\\cadastroresponsavelaluno\\cadastroresponsavel.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|",
-      "RelativeMoniker": "D:0:0:{1A3D95F4-F781-45D3-9F32-95C1C9549857}|CadastroResponsavelAluno\\CadastroResponsavelAluno.csproj|solutionrelative:cadastroresponsavelaluno\\cadastroresponsavel.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1A3D95F4-F781-45D3-9F32-95C1C9549857}|CadastroResponsavelAluno\\CadastroResponsavelAluno.csproj|c:\\users\\nettn\\onedrive\\documentos\\poo chegou!\\poo-johnny\\cadastroresponsavelaluno\\cadastroaluno.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|",
-      "RelativeMoniker": "D:0:0:{1A3D95F4-F781-45D3-9F32-95C1C9549857}|CadastroResponsavelAluno\\CadastroResponsavelAluno.csproj|solutionrelative:cadastroresponsavelaluno\\cadastroaluno.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|"
+      "AbsoluteMoniker": "D:0:0:{1A3D95F4-F781-45D3-9F32-95C1C9549857}|CadastroResponsavelAluno\\CadastroResponsavelAluno.csproj|c:\\users\\nettn\\onedrive\\documentos\\poo chegou!\\poo-johnny\\cadastroresponsavelaluno\\pageinformacoesaluno.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{1A3D95F4-F781-45D3-9F32-95C1C9549857}|CadastroResponsavelAluno\\CadastroResponsavelAluno.csproj|solutionrelative:cadastroresponsavelaluno\\pageinformacoesaluno.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1A3D95F4-F781-45D3-9F32-95C1C9549857}|CadastroResponsavelAluno\\CadastroResponsavelAluno.csproj|c:\\users\\nettn\\onedrive\\documentos\\poo chegou!\\poo-johnny\\cadastroresponsavelaluno\\cadastroaluno.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{1A3D95F4-F781-45D3-9F32-95C1C9549857}|CadastroResponsavelAluno\\CadastroResponsavelAluno.csproj|solutionrelative:cadastroresponsavelaluno\\cadastroaluno.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1A3D95F4-F781-45D3-9F32-95C1C9549857}|CadastroResponsavelAluno\\CadastroResponsavelAluno.csproj|c:\\users\\nettn\\onedrive\\documentos\\poo chegou!\\poo-johnny\\cadastroresponsavelaluno\\cadastroresponsavel.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{1A3D95F4-F781-45D3-9F32-95C1C9549857}|CadastroResponsavelAluno\\CadastroResponsavelAluno.csproj|solutionrelative:cadastroresponsavelaluno\\cadastroresponsavel.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1A3D95F4-F781-45D3-9F32-95C1C9549857}|CadastroResponsavelAluno\\CadastroResponsavelAluno.csproj|c:\\users\\nettn\\onedrive\\documentos\\poo chegou!\\poo-johnny\\cadastroresponsavelaluno\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{1A3D95F4-F781-45D3-9F32-95C1C9549857}|CadastroResponsavelAluno\\CadastroResponsavelAluno.csproj|solutionrelative:cadastroresponsavelaluno\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1A3D95F4-F781-45D3-9F32-95C1C9549857}|CadastroResponsavelAluno\\CadastroResponsavelAluno.csproj|C:\\Users\\NettN\\OneDrive\\Documentos\\POO Chegou!\\POO-Johnny\\cadastroresponsavelaluno\\relacionamento.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|",
+      "RelativeMoniker": "D:0:0:{1A3D95F4-F781-45D3-9F32-95C1C9549857}|CadastroResponsavelAluno\\CadastroResponsavelAluno.csproj|solutionrelative:cadastroresponsavelaluno\\relacionamento.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|"
     }
   ],
   "DocumentGroupContainers": [
@@ -32,10 +32,6 @@
           "DockedWidth": 200,
           "SelectedChildIndex": 6,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:1:0:{fabf9319-47eb-497e-b8f6-d9f73fba5f55}"
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:2:0:{fabf9319-47eb-497e-b8f6-d9f73fba5f55}"
@@ -55,65 +51,62 @@
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "CadastroResponsavel.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\NettN\\OneDrive\\Documentos\\POO Chegou!\\POO-Johnny\\CadastroResponsavelAluno\\CadastroResponsavel.xaml.cs",
-              "RelativeDocumentMoniker": "CadastroResponsavelAluno\\CadastroResponsavel.xaml.cs",
-              "ToolTip": "C:\\Users\\NettN\\OneDrive\\Documentos\\POO Chegou!\\POO-Johnny\\CadastroResponsavelAluno\\CadastroResponsavel.xaml.cs",
-              "RelativeToolTip": "CadastroResponsavelAluno\\CadastroResponsavel.xaml.cs",
-              "ViewState": "AgIAAEYAAAAAAAAAAAAowE0AAAAqAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-09T13:56:42.899Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Relacionamento.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\NettN\\OneDrive\\Documentos\\POO Chegou!\\POO-Johnny\\CadastroResponsavelAluno\\Relacionamento.xaml.cs",
-              "RelativeDocumentMoniker": "CadastroResponsavelAluno\\Relacionamento.xaml.cs",
-              "ToolTip": "C:\\Users\\NettN\\OneDrive\\Documentos\\POO Chegou!\\POO-Johnny\\CadastroResponsavelAluno\\Relacionamento.xaml.cs",
-              "RelativeToolTip": "CadastroResponsavelAluno\\Relacionamento.xaml.cs",
-              "ViewState": "AgIAAGgAAAAAAAAAAADwv3cAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-09T13:42:33.587Z",
+              "Title": "CadastroResponsavel.xaml",
+              "DocumentMoniker": "C:\\Users\\NettN\\OneDrive\\Documentos\\POO Chegou!\\POO-Johnny\\CadastroResponsavelAluno\\CadastroResponsavel.xaml",
+              "RelativeDocumentMoniker": "CadastroResponsavelAluno\\CadastroResponsavel.xaml",
+              "ToolTip": "C:\\Users\\NettN\\OneDrive\\Documentos\\POO Chegou!\\POO-Johnny\\CadastroResponsavelAluno\\CadastroResponsavel.xaml",
+              "RelativeToolTip": "CadastroResponsavelAluno\\CadastroResponsavel.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-10-16T14:02:14.66Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Relacionamento.xaml",
-              "DocumentMoniker": "C:\\Users\\NettN\\OneDrive\\Documentos\\POO Chegou!\\POO-Johnny\\CadastroResponsavelAluno\\Relacionamento.xaml",
-              "RelativeDocumentMoniker": "CadastroResponsavelAluno\\Relacionamento.xaml",
-              "ToolTip": "C:\\Users\\NettN\\OneDrive\\Documentos\\POO Chegou!\\POO-Johnny\\CadastroResponsavelAluno\\Relacionamento.xaml",
-              "RelativeToolTip": "CadastroResponsavelAluno\\Relacionamento.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-10-09T13:41:21.704Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "CadastroAluno.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\NettN\\OneDrive\\Documentos\\POO Chegou!\\POO-Johnny\\CadastroResponsavelAluno\\CadastroAluno.xaml.cs",
-              "RelativeDocumentMoniker": "CadastroResponsavelAluno\\CadastroAluno.xaml.cs",
-              "ToolTip": "C:\\Users\\NettN\\OneDrive\\Documentos\\POO Chegou!\\POO-Johnny\\CadastroResponsavelAluno\\CadastroAluno.xaml.cs",
-              "RelativeToolTip": "CadastroResponsavelAluno\\CadastroAluno.xaml.cs",
-              "ViewState": "AgIAAC8AAAAAAAAAAAAwwDcAAAA/AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-09T13:23:01.191Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
               "Title": "CadastroAluno.xaml",
               "DocumentMoniker": "C:\\Users\\NettN\\OneDrive\\Documentos\\POO Chegou!\\POO-Johnny\\CadastroResponsavelAluno\\CadastroAluno.xaml",
               "RelativeDocumentMoniker": "CadastroResponsavelAluno\\CadastroAluno.xaml",
               "ToolTip": "C:\\Users\\NettN\\OneDrive\\Documentos\\POO Chegou!\\POO-Johnny\\CadastroResponsavelAluno\\CadastroAluno.xaml",
               "RelativeToolTip": "CadastroResponsavelAluno\\CadastroAluno.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-10-09T13:02:31.474Z",
+              "WhenOpened": "2024-10-16T14:01:20.669Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PageInformacoesAluno.xaml",
+              "DocumentMoniker": "C:\\Users\\NettN\\OneDrive\\Documentos\\POO Chegou!\\POO-Johnny\\CadastroResponsavelAluno\\PageInformacoesAluno.xaml",
+              "RelativeDocumentMoniker": "CadastroResponsavelAluno\\PageInformacoesAluno.xaml",
+              "ToolTip": "C:\\Users\\NettN\\OneDrive\\Documentos\\POO Chegou!\\POO-Johnny\\CadastroResponsavelAluno\\PageInformacoesAluno.xaml",
+              "RelativeToolTip": "CadastroResponsavelAluno\\PageInformacoesAluno.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-10-16T14:01:15.712Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\NettN\\OneDrive\\Documentos\\POO Chegou!\\POO-Johnny\\CadastroResponsavelAluno\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "CadastroResponsavelAluno\\MainWindow.xaml",
+              "ToolTip": "C:\\Users\\NettN\\OneDrive\\Documentos\\POO Chegou!\\POO-Johnny\\CadastroResponsavelAluno\\MainWindow.xaml",
+              "RelativeToolTip": "CadastroResponsavelAluno\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-10-16T13:42:02.797Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Relacionamento.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\NettN\\OneDrive\\Documentos\\POO Chegou!\\POO-Johnny\\CadastroResponsavelAluno\\Relacionamento.xaml.cs",
+              "RelativeDocumentMoniker": "CadastroResponsavelAluno\\Relacionamento.xaml.cs",
+              "ToolTip": "C:\\Users\\NettN\\OneDrive\\Documentos\\POO Chegou!\\POO-Johnny\\CadastroResponsavelAluno\\Relacionamento.xaml.cs",
+              "RelativeToolTip": "CadastroResponsavelAluno\\Relacionamento.xaml.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAADwv7MAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-09T13:42:33.587Z"
             }
           ]
         }

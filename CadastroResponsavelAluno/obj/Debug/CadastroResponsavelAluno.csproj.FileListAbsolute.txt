@@ -97,3 +97,5 @@ C:\Users\NettN\OneDrive\Documentos\POO Chegou!\POO-Johnny\CadastroResponsavelAlu
 C:\Users\NettN\OneDrive\Documentos\POO Chegou!\POO-Johnny\CadastroResponsavelAluno\obj\Debug\Cadastro.690D71A9.Up2Date
 C:\Users\NettN\OneDrive\Documentos\POO Chegou!\POO-Johnny\CadastroResponsavelAluno\obj\Debug\CadastroResponsavelAluno.exe
 C:\Users\NettN\OneDrive\Documentos\POO Chegou!\POO-Johnny\CadastroResponsavelAluno\obj\Debug\CadastroResponsavelAluno.pdb
+C:\Users\NettN\OneDrive\Documentos\POO Chegou!\POO-Johnny\CadastroResponsavelAluno\obj\Debug\PageInformacoesAluno.g.cs
+C:\Users\NettN\OneDrive\Documentos\POO Chegou!\POO-Johnny\CadastroResponsavelAluno\obj\Debug\PageInformacoesAluno.baml

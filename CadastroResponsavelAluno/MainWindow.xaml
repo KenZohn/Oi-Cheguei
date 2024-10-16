@@ -5,8 +5,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CadastroResponsavelAluno"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800"
-        WindowStartupLocation="CenterScreen">
+        Title="MainWindow" Height="720" Width="1280"
+        WindowStartupLocation="CenterScreen"
+        WindowState="Maximized">
     <Grid Background="Black">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"/>
@@ -25,9 +26,10 @@
             <Button x:Name="botaoCadastrarAluno" Grid.Row="2" Background="#FFEFEFEF" Content="Cadastrar aluno" FontSize="20" Click="botaoCadastrarAluno_Click"/>
             <Button x:Name="botaoRelacionar" Grid.Row="3" Background="#FFEFEFEF" FontSize="20" Click="botaoRelacionar_Click">
                 <TextBlock TextAlignment="Center" TextWrapping="Wrap">
-                    Relacionar responsável e aluno
+                    Vincular responsável e aluno
                 </TextBlock>
             </Button>
+            <Button x:Name="botaoAlterarAluno" Grid.Row="4" Background="#FFEFEFEF" Content="Informações dos alunos" FontSize="20"/>
         </Grid>
         <Frame x:Name="framePrincipal" Grid.Column="1" NavigationUIVisibility="Hidden">
         </Frame>
