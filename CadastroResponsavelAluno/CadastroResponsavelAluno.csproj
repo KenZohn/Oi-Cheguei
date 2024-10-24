@@ -75,18 +75,8 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="Aluno.cs" />
-    <Compile Include="PageInformacoesAluno.xaml.cs">
-      <DependentUpon>PageInformacoesAluno.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Relacionamento.xaml.cs">
-      <DependentUpon>Relacionamento.xaml</DependentUpon>
-    </Compile>
+    <Compile Include="Models\Aluno.cs" />
     <Page Include="CadastroAluno.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="CadastroResponsavel.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -101,23 +91,19 @@
     <Compile Include="CadastroAluno.xaml.cs">
       <DependentUpon>CadastroAluno.xaml</DependentUpon>
     </Compile>
-    <Compile Include="CadastroResponsavel.xaml.cs">
-      <DependentUpon>CadastroResponsavel.xaml</DependentUpon>
-    </Compile>
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="PageInformacoesAluno.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Relacionamento.xaml">
+    <Page Include="PageGestor.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="PageGestor.xaml.cs">
+      <DependentUpon>PageGestor.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -143,6 +129,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Icons\AdicionarApagado.png" />
+    <Resource Include="Icons\ListarApagado.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Icons\Adicionar.png" />
+    <Resource Include="Icons\Gestor.png" />
+    <Resource Include="Icons\Listar.png" />
+    <Resource Include="Icons\Porteiro.png" />
+    <Resource Include="Icons\Professor.png" />
+    <Resource Include="Icons\Sair.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

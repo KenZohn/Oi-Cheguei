@@ -16,11 +16,11 @@ using System.Windows.Shapes;
 namespace CadastroResponsavelAluno
 {
     /// <summary>
-    /// Interação lógica para PageInformacoesAluno.xam
+    /// Interação lógica para PageGestor.xam
     /// </summary>
-    public partial class PageInformacoesAluno : Page
+    public partial class PageGestor : Page
     {
-        public PageInformacoesAluno()
+        public PageGestor()
         {
             InitializeComponent();
         }

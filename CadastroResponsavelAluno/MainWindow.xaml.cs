@@ -18,38 +18,18 @@ namespace CadastroResponsavelAluno
     /// <summary>
     /// Interação lógica para MainWindow.xam
     /// </summary>
-
-    /* Dados do responsável:
-         * Nome:
-         * CPF:
-         * Telefone:
-         * Endereço:
-         * Alunos por quem é responspavel:
-         */
-    //Fazer o CRUD
+    
+    //Alterar o ícone da janela
     public partial class MainWindow : Window
     {
-        CadastroResponsavel cadastroResponsavel = new CadastroResponsavel();
-        CadastroAluno cadastroAluno = new CadastroAluno();
-        Relacionamento relacionamento = new Relacionamento();
         public MainWindow()
         {
             InitializeComponent();
         }
 
-        private void botaoCadastrarResponsavel_Click(object sender, RoutedEventArgs e)
+        private void BotaoGestor_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
         {
-            framePrincipal.Navigate(cadastroResponsavel);
-        }
-
-        private void botaoCadastrarAluno_Click(object sender, RoutedEventArgs e)
-        {
-            framePrincipal.Navigate(cadastroAluno);
-        }
-
-        private void botaoRelacionar_Click(object sender, RoutedEventArgs e)
-        {
-            framePrincipal.Navigate(new Relacionamento());
+            FramePrincipal.Navigate(new PageGestor());
         }
     }
 }
