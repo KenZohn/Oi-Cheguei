@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="Chegoo"
         Height="720" MinHeight="400"
-        Width="1280"
+        Width="1280" MinWidth="600"
         WindowStartupLocation="CenterScreen"
         WindowState="Maximized"
         Background="#FFFFFF">
@@ -26,28 +26,28 @@
                     <RowDefinition Height="*"/>
                     <RowDefinition Height="Auto"/>
                 </Grid.RowDefinitions>
-                <Border x:Name="BotaoGestor" Grid.Row="1" Style="{StaticResource BorderBotaoMenuLateral}" MouseLeftButtonUp="BotaoGestor_MouseLeftButtonUp">
+                <Border x:Name="BotaoGestor" Grid.Row="1" Style="{StaticResource BorderBotaoMenuPrincipal}" MouseLeftButtonUp="BotaoGestor_MouseLeftButtonUp">
                     <StackPanel>
-                        <Image Style="{StaticResource ImageBotaoMenuLaretal}" Source="\Icons\Gestor.png"/>
-                        <Label Content="Gestor" Style="{StaticResource LabelBotaoMenuLaretal}"/>
+                        <Image Style="{StaticResource ImageBotaoMenuPrincipal}" Source="\Icons\Gestor.png"/>
+                        <Label Content="Gestor" Style="{StaticResource LabelBotaoMenuPrincipal}"/>
                     </StackPanel>
                 </Border>
-                <Border x:Name="BotaoProfessor" Grid.Row="2" Style="{StaticResource BorderBotaoMenuLateral}">
+                <Border x:Name="BotaoProfessor" Grid.Row="2" Style="{StaticResource BorderBotaoMenuPrincipal}">
                     <StackPanel>
-                        <Image Style="{StaticResource ImageBotaoMenuLaretal}" Source="\Icons\Professor.png"/>
-                        <Label Content="Professor" Style="{StaticResource LabelBotaoMenuLaretal}"/>
+                        <Image Style="{StaticResource ImageBotaoMenuPrincipal}" Source="\Icons\Professor.png"/>
+                        <Label Content="Professor" Style="{StaticResource LabelBotaoMenuPrincipal}"/>
                     </StackPanel>
                 </Border>
-                <Border x:Name="BotaoPorteiro" Grid.Row="3" Style="{StaticResource BorderBotaoMenuLateral}">
+                <Border x:Name="BotaoPorteiro" Grid.Row="3" Style="{StaticResource BorderBotaoMenuPrincipal}">
                     <StackPanel>
-                        <Image Style="{StaticResource ImageBotaoMenuLaretal}" Source="\Icons\Porteiro.png"/>
-                        <Label Content="Porteiro" Style="{StaticResource LabelBotaoMenuLaretal}"/>
+                        <Image Style="{StaticResource ImageBotaoMenuPrincipal}" Source="\Icons\Porteiro.png"/>
+                        <Label Content="Porteiro" Style="{StaticResource LabelBotaoMenuPrincipal}"/>
                     </StackPanel>
                 </Border>
-                <Border x:Name="BotaoSair" Grid.Row="5" Style="{StaticResource BorderBotaoMenuLateral}">
+                <Border x:Name="BotaoSair" Grid.Row="5" Style="{StaticResource BorderBotaoMenuPrincipal}">
                     <StackPanel>
-                        <Image Style="{StaticResource ImageBotaoMenuLaretal}" Source="\Icons\Sair.png"/>
-                        <Label Content="Sair" Style="{StaticResource LabelBotaoMenuLaretal}"/>
+                        <Image Style="{StaticResource ImageBotaoMenuPrincipal}" Source="\Icons\Sair.png"/>
+                        <Label Content="Sair" Style="{StaticResource LabelBotaoMenuPrincipal}"/>
                     </StackPanel>
                 </Border>
             </Grid>

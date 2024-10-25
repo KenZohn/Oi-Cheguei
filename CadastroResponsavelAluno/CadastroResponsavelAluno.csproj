@@ -76,7 +76,7 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="Models\Aluno.cs" />
-    <Page Include="CadastroAluno.xaml">
+    <Page Include="PageCadastroAluno.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -88,8 +88,8 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="CadastroAluno.xaml.cs">
-      <DependentUpon>CadastroAluno.xaml</DependentUpon>
+    <Compile Include="PageCadastroAluno.xaml.cs">
+      <DependentUpon>PageCadastroAluno.xaml</DependentUpon>
     </Compile>
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>

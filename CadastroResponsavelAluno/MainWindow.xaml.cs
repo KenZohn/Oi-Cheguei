@@ -22,14 +22,16 @@ namespace CadastroResponsavelAluno
     //Alterar o ícone da janela
     public partial class MainWindow : Window
     {
+        PageGestor pageGestor;
         public MainWindow()
         {
             InitializeComponent();
+            pageGestor = new PageGestor();
         }
 
         private void BotaoGestor_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
         {
-            FramePrincipal.Navigate(new PageGestor());
+            FramePrincipal.Navigate(pageGestor);
         }
     }
 }

@@ -5,42 +5,91 @@
              StartupUri="MainWindow.xaml">
     <Application.Resources>
 
-        <!-- Tela Principal -->
-        <Style x:Key="BorderBotaoMenuLateral" TargetType="Border">
+        <!-- Principal -->
+        <Style x:Key="BorderBotaoMenuPrincipal" TargetType="Border">
             <Setter Property="Height" Value="70"/>
             <Setter Property="Width" Value="70"/>
             <Setter Property="Margin" Value="0, 10, 0, 10"/>
             <Setter Property="CornerRadius" Value="8"/>
         </Style>
 
-        <Style x:Key="ImageBotaoMenuLaretal" TargetType="Image">
+        <Style x:Key="ImageBotaoMenuPrincipal" TargetType="Image">
             <Setter Property="Height" Value="33"/>
             <Setter Property="Width" Value="33"/>
             <Setter Property="Margin" Value="0, 5, 0, 5"/>
         </Style>
 
-        <Style x:Key="LabelBotaoMenuLaretal" TargetType="Label">
+        <Style x:Key="LabelBotaoMenuPrincipal" TargetType="Label">
             <Setter Property="FontWeight" Value="Bold"/>
             <Setter Property="HorizontalAlignment" Value="Center"/>
         </Style>
 
-        <!-- Tela Gestor -->
-        <Style x:Key="BorderBotaoMenuGestor" TargetType="Border">
+        <!-- Secundário -->
+        <Style x:Key="BorderMenuSecundario" TargetType="Border">
+            <Setter Property="Height" Value="70"/>
+            <Setter Property="Margin" Value="0, 50, 0, 0"/>
+            <Setter Property="BorderBrush" Value="#606060"/>
+            <Setter Property="BorderThickness" Value="0, 0, 0, 1"/>
+        </Style>
+
+        <Style x:Key="BorderBotaoMenuSecundario" TargetType="Border">
+            <Setter Property="Background" Value="#FFFFFF"/>
             <Setter Property="Width" Value="160"/>
             <Setter Property="Height" Value="70"/>
             <Setter Property="BorderBrush" Value="#0F0F0F"/>
         </Style>
 
-        <Style x:Key="ImageBotaoMenuGestor" TargetType="Image">
+        <Style x:Key="ImageBotaoMenuSecundario" TargetType="Image">
             <Setter Property="Height" Value="33"/>
             <Setter Property="Width" Value="33"/>
             <Setter Property="Margin" Value="0, 10, 0, 0"/>
         </Style>
 
-        <Style x:Key="LabelBotaoMenuGestor" TargetType="Label">
+        <Style x:Key="LabelBotaoMenuSecundario" TargetType="Label">
             <Setter Property="FontSize" Value="14"/>
+            <Setter Property="Foreground" Value="#606060"/>
             <Setter Property="HorizontalAlignment" Value="Center"/>
-            <Setter Property="Padding" Value="0,2,0,0"/>
+            <Setter Property="Padding" Value="0, 2, 0, 0"/>
+        </Style>
+
+        <!-- Cadastro de Aluno -->
+        <Style x:Key="LabelCadastroAluno" TargetType="Label">
+            <Setter Property="Width" Value="300"/>
+            <Setter Property="HorizontalAlignment" Value="Left"/>
+            <Setter Property="FontSize" Value="16"/>
+        </Style>
+
+        <Style x:Key="CampoCadastroAluno" TargetType="TextBox">
+            <Setter Property="Width" Value="300"/>
+            <Setter Property="Height" Value="30"/>
+            <Setter Property="Padding" Value="4, 0, 0, 0"/>
+            <Setter Property="FontSize" Value="16"/>
+            <Setter Property="VerticalContentAlignment" Value="Center"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="TextBox">
+                        <Border CornerRadius="5" BorderBrush="#606060" BorderThickness="1">
+                            <ScrollViewer Margin="0" x:Name="PART_ContentHost"/>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <Style x:Key="BotaoCadastroAluno" TargetType="Button">
+            <Setter Property="Width" Value="140"/>
+            <Setter Property="Height" Value="35"/>
+            <Setter Property="Margin" Value="0, 20, 0, 0"/>
+            <Setter Property="FontSize" Value="18"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border CornerRadius="5" Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
         </Style>
 
     </Application.Resources>
