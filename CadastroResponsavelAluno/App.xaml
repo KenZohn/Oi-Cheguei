@@ -7,6 +7,7 @@
 
         <!-- Principal -->
         <Style x:Key="BorderBotaoMenuPrincipal" TargetType="Border">
+            <Setter Property="Background" Value="#FFFFFF"/>
             <Setter Property="Height" Value="70"/>
             <Setter Property="Width" Value="70"/>
             <Setter Property="Margin" Value="0, 10, 0, 10"/>
@@ -16,7 +17,7 @@
         <Style x:Key="ImageBotaoMenuPrincipal" TargetType="Image">
             <Setter Property="Height" Value="33"/>
             <Setter Property="Width" Value="33"/>
-            <Setter Property="Margin" Value="0, 5, 0, 5"/>
+            <Setter Property="Margin" Value="0, 10, 0, 0"/>
         </Style>
 
         <Style x:Key="LabelBotaoMenuPrincipal" TargetType="Label">
@@ -34,9 +35,9 @@
 
         <Style x:Key="BorderBotaoMenuSecundario" TargetType="Border">
             <Setter Property="Background" Value="#FFFFFF"/>
-            <Setter Property="Width" Value="160"/>
+            <Setter Property="Width" Value="140"/>
             <Setter Property="Height" Value="70"/>
-            <Setter Property="BorderBrush" Value="#0F0F0F"/>
+            <Setter Property="Margin" Value="10, 0, 10, 0"/>
         </Style>
 
         <Style x:Key="ImageBotaoMenuSecundario" TargetType="Image">

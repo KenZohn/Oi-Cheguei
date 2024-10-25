@@ -99,10 +99,31 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="PageListaAlunos.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PagePorteiro.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PageProfessor.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="PageGestor.xaml.cs">
       <DependentUpon>PageGestor.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PageListaAlunos.xaml.cs">
+      <DependentUpon>PageListaAlunos.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PagePorteiro.xaml.cs">
+      <DependentUpon>PagePorteiro.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PageProfessor.xaml.cs">
+      <DependentUpon>PageProfessor.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>

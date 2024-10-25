@@ -8,27 +8,29 @@
       d:DesignHeight="720" d:DesignWidth="1280"
       Background="#FFFFFF"
       Title="PageGestor">
-    <Grid>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
-        </Grid.RowDefinitions>
-        <Border Grid.Row="0" Style="{StaticResource BorderMenuSecundario}" Width="420">
-            <WrapPanel HorizontalAlignment="Center">
-                <Border x:Name="BotaoListarAlunos" Style="{StaticResource BorderBotaoMenuSecundario}" MouseLeftButtonUp="BotaoListarAlunos_MouseLeftButtonUp">
-                    <StackPanel>
-                        <Image x:Name="ImageListarAlunos" Style="{StaticResource ImageBotaoMenuSecundario}" Source="\Icons\ListarApagado.png"/>
-                        <Label x:Name="LabelListarAlunos" Style="{StaticResource LabelBotaoMenuSecundario}" Content="Listar alunos"/>
-                    </StackPanel>
-                </Border>
-                <Border x:Name="BotaoCadastrarAluno" Style="{StaticResource BorderBotaoMenuSecundario}" MouseLeftButtonUp="BotaoCadastrarAluno_MouseLeftButtonUp">
-                    <StackPanel>
-                        <Image x:Name="ImageCadastrarAluno" Style="{StaticResource ImageBotaoMenuSecundario}" Source="\Icons\AdicionarApagado.png"/>
-                        <Label x:Name="LabelCadastrarAluno" Style="{StaticResource LabelBotaoMenuSecundario}" Content="Cadastrar aluno"/>
-                    </StackPanel>
-                </Border>
-            </WrapPanel>
-        </Border>
-        <Frame x:Name="FrameSecundario" Grid.Row="1" Padding="0, 40, 0, 0"/>
-    </Grid>
+    <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <Border Grid.Row="0" Style="{StaticResource BorderMenuSecundario}" Width="420">
+                <WrapPanel HorizontalAlignment="Center">
+                    <Border x:Name="BotaoListarAlunos" Style="{StaticResource BorderBotaoMenuSecundario}" MouseLeftButtonUp="BotaoListarAlunos_MouseLeftButtonUp" MouseEnter="BotaoListarAlunos_MouseEnter" MouseLeave="BotaoListarAlunos_MouseLeave">
+                        <StackPanel>
+                            <Image x:Name="ImageListarAlunos" Style="{StaticResource ImageBotaoMenuSecundario}" Source="\Icons\ListarApagado.png"/>
+                            <Label x:Name="LabelListarAlunos" Style="{StaticResource LabelBotaoMenuSecundario}" Content="Listar alunos"/>
+                        </StackPanel>
+                    </Border>
+                    <Border x:Name="BotaoCadastrarAluno" Style="{StaticResource BorderBotaoMenuSecundario}" MouseLeftButtonUp="BotaoCadastrarAluno_MouseLeftButtonUp" MouseEnter="BotaoCadastrarAluno_MouseEnter" MouseLeave="BotaoCadastrarAluno_MouseLeave">
+                        <StackPanel>
+                            <Image x:Name="ImageCadastrarAluno" Style="{StaticResource ImageBotaoMenuSecundario}" Source="\Icons\AdicionarApagado.png"/>
+                            <Label x:Name="LabelCadastrarAluno" Style="{StaticResource LabelBotaoMenuSecundario}" Content="Cadastrar aluno"/>
+                        </StackPanel>
+                    </Border>
+                </WrapPanel>
+            </Border>
+            <Frame x:Name="FrameSecundario" Grid.Row="1" Padding="0, 40, 0, 0"/>
+        </Grid>
+    </ScrollViewer>
 </Page>
