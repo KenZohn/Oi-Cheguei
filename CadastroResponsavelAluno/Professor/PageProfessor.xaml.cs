@@ -45,39 +45,11 @@ namespace CadastroResponsavelAluno
 
         private void AlterarCorBotaoChamada()
         {
-            ResetarCorBotoes();
             BotaoChamada.BorderBrush = (Brush)new BrushConverter().ConvertFromString("#0F0F0F");
             BotaoChamada.BorderThickness = new Thickness(0, 0, 0, 3);
             ImageChamada.Source = new BitmapImage(new Uri("pack://application:,,,/CadastroResponsavelAluno;component/Icons/Listar.png")); //Alterar caminho da imagem quando mudar para o projeto principal
             LabelChamada.Foreground = (Brush)new BrushConverter().ConvertFromString("#0F0F0F");
             LabelChamada.FontWeight = FontWeights.Bold;
-        }
-
-        private void ResetarCorBotoes()
-        {
-            BotaoChamada.BorderBrush = (Brush)new BrushConverter().ConvertFromString("#606060");
-            BotaoChamada.BorderThickness = new Thickness(0, 0, 0, 0);
-            ImageChamada.Source = new BitmapImage(new Uri("pack://application:,,,/CadastroResponsavelAluno;component/Icons/ListarApagado.png")); //Alterar caminho da imagem quando mudar para o projeto principal
-            LabelChamada.Foreground = (Brush)new BrushConverter().ConvertFromString("#606060");
-            LabelChamada.FontWeight = FontWeights.Regular;
-
-            BotaoNotificacao.BorderBrush = (Brush)new BrushConverter().ConvertFromString("#606060");
-        }
-
-        private void BotaoChamada_MouseEnter(object sender, MouseEventArgs e)
-        {
-            if (BotaoChamada.BorderBrush.ToString() != "#FF0F0F0F")
-            {
-                BotaoChamada.BorderThickness = new Thickness(0, 0, 0, 3);
-            }
-        }
-
-        private void BotaoChamada_MouseLeave(object sender, MouseEventArgs e)
-        {
-            if (BotaoChamada.BorderBrush.ToString() != "#FF0F0F0F")
-            {
-                BotaoChamada.BorderThickness = new Thickness(0, 0, 0, 0);
-            }
         }
 
         private void BotaoNotificacao_MouseEnter(object sender, MouseEventArgs e)

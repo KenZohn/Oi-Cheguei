@@ -14,7 +14,13 @@
                 <DataGrid.Columns>
                     <DataGridTextColumn Header="Id" Binding="{Binding Id}" Visibility="Collapsed"/>
                     <DataGridTextColumn Header="Nome" Binding="{Binding Nome}" Width="300"/>
-                    <DataGridTextColumn Header="Turma" Binding="{Binding Turma}" Width="80" HeaderStyle="{StaticResource CentralizarCabecalho}"/>
+                    <DataGridTemplateColumn Header="Turma" Width="80" HeaderStyle="{StaticResource CentralizarCabecalho}">
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <TextBlock Text="{Binding Turma}" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
                     <DataGridTextColumn Header="Responsável" Binding="{Binding Responsavel}" Width="300"/>
                 </DataGrid.Columns>
             </DataGrid>

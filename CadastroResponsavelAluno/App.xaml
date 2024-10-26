@@ -6,7 +6,7 @@
     <Application.Resources>
 
         <!-- Principal -->
-        <Style x:Key="BorderBotaoMenuPrincipal" TargetType="Border">
+        <Style TargetType="Border" x:Key="BorderBotaoMenuPrincipal">
             <Setter Property="Background" Value="#FFFFFF"/>
             <Setter Property="Height" Value="70"/>
             <Setter Property="Width" Value="70"/>
@@ -14,39 +14,42 @@
             <Setter Property="CornerRadius" Value="8"/>
         </Style>
 
-        <Style x:Key="ImageBotaoMenuPrincipal" TargetType="Image">
+        <Style TargetType="Image" x:Key="ImageBotaoMenuPrincipal">
             <Setter Property="Height" Value="33"/>
             <Setter Property="Width" Value="33"/>
             <Setter Property="Margin" Value="0, 10, 0, 0"/>
+            <Setter Property="RenderOptions.BitmapScalingMode" Value="HighQuality"/>
         </Style>
 
-        <Style x:Key="LabelBotaoMenuPrincipal" TargetType="Label">
+        <Style TargetType="Label" x:Key="LabelBotaoMenuPrincipal">
             <Setter Property="FontWeight" Value="Bold"/>
             <Setter Property="HorizontalAlignment" Value="Center"/>
         </Style>
 
         <!-- Secundário -->
-        <Style x:Key="BorderMenuSecundario" TargetType="Border">
+        <Style TargetType="Border" x:Key="BorderMenuSecundario">
             <Setter Property="Height" Value="70"/>
             <Setter Property="Margin" Value="0, 50, 0, 0"/>
             <Setter Property="BorderBrush" Value="#606060"/>
             <Setter Property="BorderThickness" Value="0, 0, 0, 1"/>
         </Style>
 
-        <Style x:Key="BorderBotaoMenuSecundario" TargetType="Border">
+        <Style TargetType="Border" x:Key="BorderBotaoMenuSecundario">
             <Setter Property="Background" Value="#FFFFFF"/>
             <Setter Property="Width" Value="140"/>
             <Setter Property="Height" Value="70"/>
             <Setter Property="Margin" Value="10, 0, 10, 0"/>
+            <Setter Property="BorderBrush" Value="#606060"/>
         </Style>
 
-        <Style x:Key="ImageBotaoMenuSecundario" TargetType="Image">
+        <Style TargetType="Image" x:Key="ImageBotaoMenuSecundario">
             <Setter Property="Height" Value="33"/>
             <Setter Property="Width" Value="33"/>
             <Setter Property="Margin" Value="0, 10, 0, 0"/>
+            <Setter Property="RenderOptions.BitmapScalingMode" Value="HighQuality"/>
         </Style>
 
-        <Style x:Key="LabelBotaoMenuSecundario" TargetType="Label">
+        <Style TargetType="Label" x:Key="LabelBotaoMenuSecundario">
             <Setter Property="FontSize" Value="14"/>
             <Setter Property="Foreground" Value="#606060"/>
             <Setter Property="HorizontalAlignment" Value="Center"/>
@@ -54,13 +57,13 @@
         </Style>
 
         <!-- Cadastro de Aluno -->
-        <Style x:Key="LabelCadastroAluno" TargetType="Label">
+        <Style TargetType="Label" x:Key="LabelCadastroAluno">
             <Setter Property="Width" Value="300"/>
             <Setter Property="HorizontalAlignment" Value="Left"/>
             <Setter Property="FontSize" Value="16"/>
         </Style>
 
-        <Style x:Key="CampoCadastroAluno" TargetType="TextBox">
+        <Style TargetType="TextBox" x:Key="CampoCadastroAluno">
             <Setter Property="Width" Value="300"/>
             <Setter Property="Height" Value="30"/>
             <Setter Property="Padding" Value="4, 0, 0, 0"/>
@@ -77,7 +80,7 @@
             </Setter>
         </Style>
 
-        <Style x:Key="BotaoCadastroAluno" TargetType="Button">
+        <Style TargetType="Button" x:Key="BotaoCadastroAluno">
             <Setter Property="Width" Value="140"/>
             <Setter Property="Height" Value="35"/>
             <Setter Property="Margin" Value="0, 20, 0, 0"/>
@@ -94,7 +97,7 @@
         </Style>
         
         <!-- DataGrid -->
-        <Style  x:Key="CentralizarCabecalho" TargetType="DataGridColumnHeader">
+        <Style TargetType="DataGridColumnHeader" x:Key="CentralizarCabecalho">
             <Setter Property="HorizontalContentAlignment" Value="Center"/>
         </Style>
 

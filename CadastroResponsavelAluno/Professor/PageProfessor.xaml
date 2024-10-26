@@ -16,7 +16,7 @@
             </Grid.RowDefinitions>
             <Border Grid.Row="0" Style="{StaticResource BorderMenuSecundario}" Width="420">
                 <WrapPanel HorizontalAlignment="Center">
-                    <Border x:Name="BotaoChamada" Style="{StaticResource BorderBotaoMenuSecundario}" MouseLeftButtonUp="BotaoChamada_MouseLeftButtonUp" MouseEnter="BotaoChamada_MouseEnter" MouseLeave="BotaoChamada_MouseLeave">
+                    <Border x:Name="BotaoChamada" Style="{StaticResource BorderBotaoMenuSecundario}" MouseLeftButtonUp="BotaoChamada_MouseLeftButtonUp">
                         <StackPanel>
                             <Image x:Name="ImageChamada" Style="{StaticResource ImageBotaoMenuSecundario}" Source="\Icons\ListarApagado.png"/>
                             <Label x:Name="LabelChamada" Style="{StaticResource LabelBotaoMenuSecundario}" Content="Chamada"/>
