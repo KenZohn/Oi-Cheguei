@@ -92,6 +92,11 @@
                 </Setter.Value>
             </Setter>
         </Style>
+        
+        <!-- DataGrid -->
+        <Style  x:Key="CentralizarCabecalho" TargetType="DataGridColumnHeader">
+            <Setter Property="HorizontalContentAlignment" Value="Center"/>
+        </Style>
 
     </Application.Resources>
 </Application>

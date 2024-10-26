@@ -37,6 +37,7 @@ namespace CadastroResponsavelAluno
         private void BotaoListarAlunos_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
         {
             AlterarCorBotaoListarAlunos();
+            pageListaAlunos.CarregarDados();
             FrameSecundario.Navigate(pageListaAlunos);
         }
 
@@ -68,17 +69,17 @@ namespace CadastroResponsavelAluno
 
         private void ResetarCorBotoes()
         {
-            BotaoCadastrarAluno.BorderBrush = (Brush)new BrushConverter().ConvertFromString("#606060");
-            BotaoCadastrarAluno.BorderThickness = new Thickness(0, 0, 0, 0);
-            ImageCadastrarAluno.Source = new BitmapImage(new Uri("pack://application:,,,/CadastroResponsavelAluno;component/Icons/AdicionarApagado.png")); //Alterar caminho da imagem quando mudar para o projeto principal
-            LabelCadastrarAluno.Foreground = (Brush)new BrushConverter().ConvertFromString("#606060");
-            LabelCadastrarAluno.FontWeight = FontWeights.Regular;
-
             BotaoListarAlunos.BorderBrush = (Brush)new BrushConverter().ConvertFromString("#606060");
             BotaoListarAlunos.BorderThickness = new Thickness(0, 0, 0, 0);
             ImageListarAlunos.Source = new BitmapImage(new Uri("pack://application:,,,/CadastroResponsavelAluno;component/Icons/ListarApagado.png")); //Alterar caminho da imagem quando mudar para o projeto principal
             LabelListarAlunos.Foreground = (Brush)new BrushConverter().ConvertFromString("#606060");
             LabelListarAlunos.FontWeight = FontWeights.Regular;
+
+            BotaoCadastrarAluno.BorderBrush = (Brush)new BrushConverter().ConvertFromString("#606060");
+            BotaoCadastrarAluno.BorderThickness = new Thickness(0, 0, 0, 0);
+            ImageCadastrarAluno.Source = new BitmapImage(new Uri("pack://application:,,,/CadastroResponsavelAluno;component/Icons/AdicionarApagado.png")); //Alterar caminho da imagem quando mudar para o projeto principal
+            LabelCadastrarAluno.Foreground = (Brush)new BrushConverter().ConvertFromString("#606060");
+            LabelCadastrarAluno.FontWeight = FontWeights.Regular;
         }
 
         private void BotaoListarAlunos_MouseEnter(object sender, MouseEventArgs e)

@@ -10,19 +10,27 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace CadastroResponsavelAluno
+namespace CadastroResponsavelAluno.Professor
 {
     /// <summary>
-    /// Interação lógica para PageListarAlunos.xam
+    /// Lógica interna para WindowNotificacao.xaml
     /// </summary>
-    public partial class PageListaAlunos : Page
+    public partial class WindowNotificacao : Window
     {
-        public PageListaAlunos()
+        public WindowNotificacao()
         {
             InitializeComponent();
+            this.Topmost = true;
+        }
+
+        private void Window_PreviewKeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.Key == Key.Escape)
+            {
+                this.Close();
+            }
         }
     }
 }

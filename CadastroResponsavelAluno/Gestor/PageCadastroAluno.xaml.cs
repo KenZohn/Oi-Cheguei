@@ -51,12 +51,11 @@ namespace CadastroResponsavelAluno
         #region Funções
         private void CadastrarAluno()
         {
-            using (SQLiteConnection conn = new SQLiteConnection("Data Source=" + System.IO.Path.Combine(Directory.GetParent(AppDomain.CurrentDomain.BaseDirectory).Parent.Parent.Parent.FullName, "ChegouBD.db")))
+            using (SQLiteConnection conexao = new SQLiteConnection("Data Source=" + System.IO.Path.Combine(Directory.GetParent(AppDomain.CurrentDomain.BaseDirectory).Parent.Parent.Parent.FullName, "ChegouBD.db")))
             {
-                conn.Open();
-
+                conexao.Open();
                 string strSql = "INSERT INTO Alunos (Nome, Turma, Responsavel) VALUES (@nome, @turma, @responsavel)";
-                using (SQLiteCommand cmd = new SQLiteCommand(strSql, conn))
+                using (SQLiteCommand cmd = new SQLiteCommand(strSql, conexao))
                 {
                     cmd.Parameters.AddWithValue("@nome", CampoAluno.Text);
                     cmd.Parameters.AddWithValue("@turma", ComboBoxTurma.Text);
@@ -64,7 +63,7 @@ namespace CadastroResponsavelAluno
 
                     cmd.ExecuteNonQuery();
                 }
-                conn.Close();
+                conexao.Close();
             }
 
             MessageBox.Show("Aluno cadastrado com sucesso.");

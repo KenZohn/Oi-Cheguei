@@ -8,9 +8,9 @@ namespace CadastroResponsavelAluno
 {
     public class Aluno
     {
-        public int Codigo { get; set; }
+        public int Id { get; set; }
         public string Nome { get; set; }
-        public string Ano { get; set; }
         public string Turma { get; set; }
+        public string Responsavel { get; set; }
     }
 }

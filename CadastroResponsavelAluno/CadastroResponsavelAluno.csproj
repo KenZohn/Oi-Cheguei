@@ -76,7 +76,7 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="Models\Aluno.cs" />
-    <Page Include="PageCadastroAluno.xaml">
+    <Page Include="Gestor\PageCadastroAluno.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -88,42 +88,56 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="PageCadastroAluno.xaml.cs">
+    <Compile Include="Gestor\PageCadastroAluno.xaml.cs">
       <DependentUpon>PageCadastroAluno.xaml</DependentUpon>
     </Compile>
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="PageGestor.xaml">
+    <Page Include="Professor\PageChamada.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="PageListaAlunos.xaml">
+    <Page Include="Gestor\PageGestor.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="PagePorteiro.xaml">
+    <Page Include="Gestor\PageListaAlunos.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="PageProfessor.xaml">
+    <Page Include="Porteiro\PagePorteiro.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Professor\PageProfessor.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Professor\WindowNotificacao.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="PageGestor.xaml.cs">
+    <Compile Include="Professor\PageChamada.xaml.cs">
+      <DependentUpon>PageChamada.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Gestor\PageGestor.xaml.cs">
       <DependentUpon>PageGestor.xaml</DependentUpon>
     </Compile>
-    <Compile Include="PageListaAlunos.xaml.cs">
+    <Compile Include="Gestor\PageListaAlunos.xaml.cs">
       <DependentUpon>PageListaAlunos.xaml</DependentUpon>
     </Compile>
-    <Compile Include="PagePorteiro.xaml.cs">
+    <Compile Include="Porteiro\PagePorteiro.xaml.cs">
       <DependentUpon>PagePorteiro.xaml</DependentUpon>
     </Compile>
-    <Compile Include="PageProfessor.xaml.cs">
+    <Compile Include="Professor\PageProfessor.xaml.cs">
       <DependentUpon>PageProfessor.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Professor\WindowNotificacao.xaml.cs">
+      <DependentUpon>WindowNotificacao.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
@@ -162,6 +176,10 @@
     <Resource Include="Icons\Porteiro.png" />
     <Resource Include="Icons\Professor.png" />
     <Resource Include="Icons\Sair.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Icons\Notificacao.png" />
+    <Resource Include="Icons\NotificacaoApagado.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
