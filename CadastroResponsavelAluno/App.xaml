@@ -36,8 +36,8 @@
 
         <Style TargetType="Border" x:Key="BorderBotaoMenuSecundario">
             <Setter Property="Background" Value="#FFFFFF"/>
-            <Setter Property="Width" Value="140"/>
             <Setter Property="Height" Value="70"/>
+            <Setter Property="Width" Value="140"/>
             <Setter Property="Margin" Value="10, 0, 10, 0"/>
             <Setter Property="BorderBrush" Value="#606060"/>
         </Style>
@@ -56,6 +56,28 @@
             <Setter Property="Padding" Value="0, 2, 0, 0"/>
         </Style>
 
+        <!-- Lista de Alunos -->
+        <Style TargetType="Button" x:Key="BotaoListaAluno">
+            <Setter Property="Background" Value="LightGray"/>
+            <Setter Property="Height" Value="35"/>
+            <Setter Property="Width" Value="250"/>
+            <Setter Property="FontSize" Value="18"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border CornerRadius="5" Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Background" Value="Yellow"/>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+
         <!-- Cadastro de Aluno -->
         <Style TargetType="Label" x:Key="LabelCadastroAluno">
             <Setter Property="Width" Value="300"/>
@@ -64,8 +86,8 @@
         </Style>
 
         <Style TargetType="TextBox" x:Key="CampoCadastroAluno">
-            <Setter Property="Width" Value="300"/>
             <Setter Property="Height" Value="30"/>
+            <Setter Property="Width" Value="300"/>
             <Setter Property="Padding" Value="4, 0, 0, 0"/>
             <Setter Property="FontSize" Value="16"/>
             <Setter Property="VerticalContentAlignment" Value="Center"/>
@@ -81,8 +103,9 @@
         </Style>
 
         <Style TargetType="Button" x:Key="BotaoCadastroAluno">
-            <Setter Property="Width" Value="140"/>
+            <Setter Property="Background" Value="LightGray"/>
             <Setter Property="Height" Value="35"/>
+            <Setter Property="Width" Value="140"/>
             <Setter Property="Margin" Value="0, 20, 0, 0"/>
             <Setter Property="FontSize" Value="18"/>
             <Setter Property="Template">
@@ -94,6 +117,11 @@
                     </ControlTemplate>
                 </Setter.Value>
             </Setter>
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Background" Value="Yellow"/>
+                </Trigger>
+            </Style.Triggers>
         </Style>
         
         <!-- DataGrid -->

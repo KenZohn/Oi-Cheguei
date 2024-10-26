@@ -141,3 +141,5 @@ C:\Users\ZettZ\OneDrive\Documentos\Fatec\Projeto POO\POO-Johnny\CadastroResponsa
 C:\Users\ZettZ\OneDrive\Documentos\Fatec\Projeto POO\POO-Johnny\CadastroResponsavelAluno\obj\Debug\Porteiro\PagePorteiro.baml
 C:\Users\ZettZ\OneDrive\Documentos\Fatec\Projeto POO\POO-Johnny\CadastroResponsavelAluno\obj\Debug\Professor\WindowNotificacao.g.cs
 C:\Users\ZettZ\OneDrive\Documentos\Fatec\Projeto POO\POO-Johnny\CadastroResponsavelAluno\obj\Debug\Professor\WindowNotificacao.baml
+C:\Users\ZettZ\OneDrive\Documentos\Fatec\Projeto POO\POO-Johnny\CadastroResponsavelAluno\obj\Debug\Gestor\WindowAlterarAluno.g.cs
+C:\Users\ZettZ\OneDrive\Documentos\Fatec\Projeto POO\POO-Johnny\CadastroResponsavelAluno\obj\Debug\Gestor\WindowAlterarAluno.baml

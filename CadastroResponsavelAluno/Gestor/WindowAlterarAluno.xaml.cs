@@ -12,74 +12,49 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace CadastroResponsavelAluno
+namespace CadastroResponsavelAluno.Gestor
 {
     /// <summary>
-    /// Interação lógica para CadastroAluno.xam
+    /// Lógica interna para WindowAlterarAluno.xaml
     /// </summary>
-    public partial class PageCadastroAluno : Page
+    public partial class WindowAlterarAluno : Window
     {
-        MainWindow mainWindow;
-        public PageCadastroAluno(MainWindow _mainWindow)
+        Aluno aluno;
+        public WindowAlterarAluno(Aluno _aluno)
         {
             InitializeComponent();
 
-            mainWindow = _mainWindow;
+            aluno = _aluno;
 
             AdicionarTurmas();
+            CarregarAluno();
         }
 
-        #region Botões
-        private void BotaoCadastrarAluno_Click(object sender, RoutedEventArgs e)
+        private void BotaoAlterarAluno_Click(object sender, RoutedEventArgs e)
         {
             if (string.IsNullOrEmpty(CampoAluno.Text) || string.IsNullOrEmpty(ComboBoxTurma.Text) || string.IsNullOrEmpty(CampoResponsavel.Text))
             {
-                mainWindow.Overlay.Visibility = Visibility.Visible;
                 MessageBox.Show("Preencha todos os campos.");
-                mainWindow.Overlay.Visibility = Visibility.Collapsed;
             }
             else
             {
-                CadastrarAluno();
-                LimparCampos();
+                AlterarAluno();
+                this.Close();
             }
         }
 
-        private void BotaoLimparAluno_Click(object sender, RoutedEventArgs e)
+        private void BotaoVoltar_Click(object sender, RoutedEventArgs e)
         {
-            LimparCampos();
-        }
-        #endregion
-
-        #region Funções
-        private void CadastrarAluno()
-        {
-            using (SQLiteConnection conexao = new SQLiteConnection("Data Source=" + System.IO.Path.Combine(Directory.GetParent(AppDomain.CurrentDomain.BaseDirectory).Parent.Parent.Parent.FullName, "ChegouBD.db")))
-            {
-                conexao.Open();
-                string strSql = "INSERT INTO Alunos (Nome, Turma, Responsavel) VALUES (@nome, @turma, @responsavel)";
-                using (SQLiteCommand cmd = new SQLiteCommand(strSql, conexao))
-                {
-                    cmd.Parameters.AddWithValue("@nome", CampoAluno.Text);
-                    cmd.Parameters.AddWithValue("@turma", ComboBoxTurma.Text);
-                    cmd.Parameters.AddWithValue("@responsavel", CampoResponsavel.Text);
-
-                    cmd.ExecuteNonQuery();
-                }
-                conexao.Close();
-            }
-
-            MessageBox.Show("Aluno cadastrado com sucesso.");
+            this.Close();
         }
 
-        private void LimparCampos()
+        private void CarregarAluno()
         {
-            CampoAluno.Clear();
-            ComboBoxTurma.SelectedIndex = -1;
-            CampoResponsavel.Clear();
+            CampoAluno.Text = aluno.Nome;
+            ComboBoxTurma.Text = aluno.Turma;
+            CampoResponsavel.Text = aluno.Responsavel;
         }
 
         private void AdicionarTurmas()
@@ -91,6 +66,24 @@ namespace CadastroResponsavelAluno
             ComboBoxTurma.Items.Add("2º B");
             ComboBoxTurma.Items.Add("2º C");
         }
-        #endregion
+
+        private void AlterarAluno()
+        {
+            using (SQLiteConnection conexao = new SQLiteConnection("Data Source=" + System.IO.Path.Combine(Directory.GetParent(AppDomain.CurrentDomain.BaseDirectory).Parent.Parent.Parent.FullName, "ChegouBD.db")))
+            {
+                conexao.Open();
+                string strSql = "UPDATE Alunos SET Nome = @nome, Turma = @turma, Responsavel = @responsavel WHERE Id = @id";
+                using (SQLiteCommand cmd = new SQLiteCommand(strSql, conexao))
+                {
+                    cmd.Parameters.AddWithValue("@nome", CampoAluno.Text);
+                    cmd.Parameters.AddWithValue("@turma", ComboBoxTurma.Text);
+                    cmd.Parameters.AddWithValue("@responsavel", CampoResponsavel.Text);
+                    cmd.Parameters.AddWithValue("@id", aluno.Id);
+
+                    cmd.ExecuteNonQuery();
+                }
+                conexao.Close();
+            }
+        }
     }
 }

@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\ZettZ\OneDrive\Documentos\Fatec\Projeto POO\POO-Johnny\CadastroResponsavelAluno\App.xaml
-8-1073873831
+973088427
 2-837180070
-131555655524
+141684288362
 19-898939541
-Gestor\PageCadastroAluno.xaml;MainWindow.xaml;Professor\PageChamada.xaml;Gestor\PageGestor.xaml;Gestor\PageListaAlunos.xaml;Porteiro\PagePorteiro.xaml;Professor\PageProfessor.xaml;Professor\WindowNotificacao.xaml;
+Gestor\PageCadastroAluno.xaml;Gestor\WindowAlterarAluno.xaml;MainWindow.xaml;Professor\PageChamada.xaml;Gestor\PageGestor.xaml;Gestor\PageListaAlunos.xaml;Porteiro\PagePorteiro.xaml;Professor\PageProfessor.xaml;Professor\WindowNotificacao.xaml;
 
 False
 

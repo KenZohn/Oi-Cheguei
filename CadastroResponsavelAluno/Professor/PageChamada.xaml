@@ -15,10 +15,10 @@
                 <Label Content="Turma" FontSize="16"/>
                 <ComboBox x:Name="ComboBoxTurma" Width="100" Height="30" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="16" SelectionChanged="ComboBoxTurma_SelectionChanged"/>
             </StackPanel>
-            <DataGrid x:Name="DataGridChamada" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="16" AutoGenerateColumns="False" IsReadOnly="True" CanUserResizeColumns="False" HeadersVisibility="Column">
+            <DataGrid x:Name="DataGridChamada" Height="350" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="16" AutoGenerateColumns="False" IsReadOnly="True" CanUserResizeColumns="False" HeadersVisibility="Column" CanUserSortColumns="False" CanUserReorderColumns="False">
                 <DataGrid.Columns>
                     <DataGridTextColumn Header="Id" Binding="{Binding Id}" Visibility="Collapsed"/>
-                    <DataGridTextColumn Header="Nome" Binding="{Binding Nome}" Width="300"/>
+                    <DataGridTextColumn Header="Nome" Binding="{Binding Nome}" Width="350"/>
                     <DataGridTemplateColumn Header="Presença" Width="100" HeaderStyle="{StaticResource CentralizarCabecalho}">
                         <DataGridTemplateColumn.CellTemplate>
                             <DataTemplate>

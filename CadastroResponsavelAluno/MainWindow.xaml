@@ -53,5 +53,6 @@
             </Grid>
         </Border>
         <Frame x:Name="FramePrincipal" Grid.Column="1" NavigationUIVisibility="Hidden"/>
+        <Rectangle Name="Overlay" Grid.Column="0" Grid.ColumnSpan="2" Fill="Black" Opacity="0.3" Visibility="Collapsed" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
     </Grid>
 </Window>

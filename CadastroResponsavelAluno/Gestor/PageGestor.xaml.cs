@@ -22,14 +22,16 @@ namespace CadastroResponsavelAluno
     //Alterar caminho da imagem quando mudar para o projeto principal
     public partial class PageGestor : Page
     {
+        MainWindow mainWindow;
         PageListaAlunos pageListaAlunos;
         PageCadastroAluno pageCadastroAluno;
-        public PageGestor()
+        public PageGestor(MainWindow _mainWindow)
         {
             InitializeComponent();
 
-            pageListaAlunos = new PageListaAlunos();
-            pageCadastroAluno = new PageCadastroAluno();
+            mainWindow = _mainWindow;
+            pageListaAlunos = new PageListaAlunos(mainWindow);
+            pageCadastroAluno = new PageCadastroAluno(mainWindow);
 
             BotaoListarAlunos_MouseLeftButtonUp(BotaoListarAlunos, null);
         }

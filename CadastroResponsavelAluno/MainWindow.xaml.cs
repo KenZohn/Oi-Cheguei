@@ -29,7 +29,7 @@ namespace CadastroResponsavelAluno
         {
             InitializeComponent();
 
-            pageGestor = new PageGestor();
+            pageGestor = new PageGestor(this);
             pageProfessor = new PageProfessor();
             pagePorteiro = new PagePorteiro();
 
