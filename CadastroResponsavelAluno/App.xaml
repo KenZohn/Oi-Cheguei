@@ -5,6 +5,167 @@
              StartupUri="MainWindow.xaml">
     <Application.Resources>
 
+        <!-- region LOGIN -->
+        <!--Some o TextBlock-->
+        <BooleanToVisibilityConverter x:Key="BoolToVis"/>
+
+        <Style x:Key="TextBlockLogin" TargetType="TextBlock">
+            <Setter Property="VerticalAlignment" Value="Center"/>
+            <Setter Property="HorizontalAlignment" Value="Left"/>
+            <Setter Property="Height" Value="20"/>
+            <Setter Property="Width" Value="345"/>
+            <Setter Property="Margin" Value="27 0 0 0"/>
+            <Setter Property="Foreground" Value="#9094B6"/>
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="IsHitTestVisible" Value="False"/>
+        </Style>
+
+        <Style x:Key="TextBoxLogin" TargetType="TextBox">
+            <Setter Property="VerticalAlignment" Value="Top"/>
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+            <Setter Property="Height" Value="30"/>
+            <Setter Property="Width" Value="450"/>
+            <Setter Property="Margin" Value="10 10 10 10"/>
+            <Setter Property="Padding" Value="14 0 0 0"/>
+            <Setter Property="VerticalContentAlignment" Value="Center"/>
+            <Setter Property="Foreground" Value="#333333"/>
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="TextBox">
+                        <Border CornerRadius="5" BorderBrush="#606060" BorderThickness="1">
+                            <ScrollViewer Margin="0" x:Name="PART_ContentHost"/>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <Style x:Key="PasswordBoxLogin" TargetType="PasswordBox">
+            <Setter Property="VerticalAlignment" Value="Top"/>
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+            <Setter Property="Height" Value="30"/>
+            <Setter Property="Width" Value="450"/>
+            <Setter Property="Margin" Value="10 10 10 10"/>
+            <Setter Property="Padding" Value="14 0 0 0"/>
+            <Setter Property="VerticalContentAlignment" Value="Center"/>
+            <Setter Property="Foreground" Value="#333333"/>
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="PasswordBox">
+                        <Border CornerRadius="5" BorderBrush="#606060" BorderThickness="1">
+                            <ScrollViewer Margin="0" x:Name="PART_ContentHost"/>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <Style x:Key="EstiloBotao" TargetType="Button">
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="Background" Value="#E2E5E9"/>
+            <Setter Property="Foreground" Value="#333333"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border x:Name="borda" CornerRadius="4"  Background="{TemplateBinding Background}">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter TargetName="borda" Property="Background" Value="#D6D9DD"/>
+                            </Trigger>
+                            <Trigger Property="IsPressed" Value="True">
+                                <Setter TargetName="borda" Property="Background" Value="#DDE0E4 "/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <Style x:Key="ComboBoxToggleButton" TargetType="{x:Type ToggleButton}">
+            <Setter Property="Background" Value="White"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="ToggleButton">
+                        <Border x:Name="Fundo" Background="White" BorderBrush="#E2E5E9" BorderThickness="1" CornerRadius="0,5,5,0">
+                            <TextBlock Text="V" FontSize="14"  Foreground="#333333" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter TargetName="Fundo" Property="Background" Value="#D6D9DD"/>
+                            </Trigger>
+                            <Trigger Property="IsPressed" Value="True">
+                                <Setter TargetName="Fundo" Property="Background" Value="#DDE0E4 "/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <Style x:Key="ComboBoxLogin" TargetType="ComboBox">
+            <Setter Property="VerticalAlignment" Value="Top"/>
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+            <Setter Property="Height" Value="30"/>
+            <Setter Property="Width" Value="450"/>
+            <Setter Property="Margin" Value="10 10 10 10"/>
+            <Setter Property="Padding" Value="14 0 0 0"/>
+            <Setter Property="Foreground" Value="#333333"/>
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="ComboBox">
+                        <Grid>
+                            <Border CornerRadius="5"  BorderBrush="#606060" BorderThickness="1">
+                                <DockPanel>
+                                    <ToggleButton DockPanel.Dock="Right" Focusable="false" IsChecked="{Binding Path=IsDropDownOpen, RelativeSource={RelativeSource TemplatedParent}}" ClickMode="Press" Width="26" Style="{StaticResource ComboBoxToggleButton}" />
+                                    <ContentPresenter Content="{TemplateBinding SelectionBoxItem}" Margin="14,0,0,0" VerticalAlignment="Center" HorizontalAlignment="Left"/>
+                                </DockPanel>
+                            </Border>
+                            <Popup x:Name="Popup" IsOpen="{TemplateBinding IsDropDownOpen}" Placement="Bottom" Width="{TemplateBinding ActualWidth}" AllowsTransparency="True" Focusable="False">
+                                <Border x:Name="PopupBorder" Background="White" BorderBrush="Gray" BorderThickness="1" CornerRadius="0,0,5,5">
+                                    <ScrollViewer Margin="4">
+                                        <StackPanel IsItemsHost="True"/>
+                                    </ScrollViewer>
+                                </Border>
+                            </Popup>
+                        </Grid>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <Style x:Key="EstiloInvisível" TargetType="Button">
+            <Setter Property="FontSize" Value="12"/>
+            <Setter Property="Background" Value="Transparent"/>
+            <Setter Property="Foreground" Value="#333333"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border x:Name="borda" CornerRadius="4"  Background="{TemplateBinding Background}">
+                            <Grid>
+                                <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                <TextBlock x:Name="Texto" HorizontalAlignment="Center" VerticalAlignment="Center" Text="{TemplateBinding ContentStringFormat}"/>
+                            </Grid>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="FontSize" Value="13"/>
+                                <Setter TargetName="Texto" Property="TextDecorations" Value="Underline"/>
+                            </Trigger>
+                            <Trigger Property="IsPressed" Value="True">
+                                <Setter TargetName="borda" Property="Background" Value="Transparent"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        <!-- #endregion -->
+        
         <!-- Principal -->
         <Style TargetType="Border" x:Key="BorderBotaoMenuPrincipal">
             <Setter Property="Background" Value="#FFFFFF"/>
