@@ -2,8 +2,10 @@
 using System.Collections.Generic;
 using System.Data.SQLite;
 using System.Linq;
+using System.Runtime.Remoting.Messaging;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
 
 namespace CadastroResponsavelAluno.Models
 {
@@ -27,7 +29,7 @@ namespace CadastroResponsavelAluno.Models
         public void MetodoCadastro(string usuario, string senha, string cpf, string cargo)
         {
             SQLiteConnection conn = conexao.AbrirConexao();
-            string strSql = "INSERT INTO [Funcionario] ([Usuario], [Senha], [CPF], [Cargo]) VALUES (@Usuario, @Senha, @CPF, @Cargo)";
+            string strSql = "INSERT INTO [Funcionarios] ([Usuario], [Senha], [CPF], [Cargo]) VALUES (@Usuario, @Senha, @CPF, @Cargo)";
             using (SQLiteCommand cmd = new SQLiteCommand(strSql, conn))
             {
                 cmd.Parameters.AddWithValue("@Usuario", usuario);
@@ -43,7 +45,7 @@ namespace CadastroResponsavelAluno.Models
         {
             bool entrar = false;
             SQLiteConnection conn = conexao.AbrirConexao();
-            string strSql = "SELECT * FROM [Funcionario] WHERE [Usuario] = @Usuario AND [Senha] = @Senha";
+            string strSql = "SELECT * FROM [Funcionarios] WHERE [Usuario] = @Usuario AND [Senha] = @Senha";
             using (SQLiteCommand cmd = new SQLiteCommand(strSql, conn))
             {
                 cmd.Parameters.AddWithValue("@Usuario", usuario);
@@ -55,6 +57,27 @@ namespace CadastroResponsavelAluno.Models
             }
             conexao.FecharConexao();
             return entrar;
+        }
+
+        public string BuscarCargo(string usuario, string senha)
+        {
+            string cargo = "";
+            SQLiteConnection conn = conexao.AbrirConexao();
+            string strSql = "SELECT [Cargo] FROM [Funcionarios] WHERE [Usuario] = @Usuario AND [Senha] = @Senha";
+            using (SQLiteCommand cmd = new SQLiteCommand(strSql, conn))
+            {
+                cmd.Parameters.AddWithValue("@Usuario", usuario);
+                cmd.Parameters.AddWithValue("@Senha", senha);
+                using (SQLiteDataReader reader = cmd.ExecuteReader())
+                {
+                    while (reader.Read())
+                    {
+                        cargo = reader["Cargo"].ToString();
+                    }
+                }
+            }
+            conexao.FecharConexao();
+            return cargo;
         }
     }
 }

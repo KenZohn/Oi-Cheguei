@@ -90,7 +90,7 @@
             <Setter Property="Template">
                 <Setter.Value>
                     <ControlTemplate TargetType="ToggleButton">
-                        <Border x:Name="Fundo" Background="White" BorderBrush="#E2E5E9" BorderThickness="1" CornerRadius="0,5,5,0">
+                        <Border x:Name="Fundo" Background="White" BorderBrush="#E2E5E9" BorderThickness="1" CornerRadius="0 5 5 0">
                             <TextBlock Text="V" FontSize="14"  Foreground="#333333" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                         </Border>
                         <ControlTemplate.Triggers>
@@ -171,14 +171,14 @@
             <Setter Property="Background" Value="#FFFFFF"/>
             <Setter Property="Height" Value="70"/>
             <Setter Property="Width" Value="70"/>
-            <Setter Property="Margin" Value="0, 10, 0, 10"/>
+            <Setter Property="Margin" Value="0 10 0 10"/>
             <Setter Property="CornerRadius" Value="8"/>
         </Style>
 
         <Style TargetType="Image" x:Key="ImageBotaoMenuPrincipal">
             <Setter Property="Height" Value="33"/>
             <Setter Property="Width" Value="33"/>
-            <Setter Property="Margin" Value="0, 10, 0, 0"/>
+            <Setter Property="Margin" Value="0 10 0 0"/>
             <Setter Property="RenderOptions.BitmapScalingMode" Value="HighQuality"/>
         </Style>
 
@@ -190,23 +190,23 @@
         <!-- Secundário -->
         <Style TargetType="Border" x:Key="BorderMenuSecundario">
             <Setter Property="Height" Value="70"/>
-            <Setter Property="Margin" Value="0, 50, 0, 0"/>
+            <Setter Property="Margin" Value="0 50 0 0"/>
             <Setter Property="BorderBrush" Value="#606060"/>
-            <Setter Property="BorderThickness" Value="0, 0, 0, 1"/>
+            <Setter Property="BorderThickness" Value="0 0 0 1"/>
         </Style>
 
         <Style TargetType="Border" x:Key="BorderBotaoMenuSecundario">
             <Setter Property="Background" Value="#FFFFFF"/>
             <Setter Property="Height" Value="70"/>
             <Setter Property="Width" Value="140"/>
-            <Setter Property="Margin" Value="10, 0, 10, 0"/>
+            <Setter Property="Margin" Value="10 0 10 0"/>
             <Setter Property="BorderBrush" Value="#606060"/>
         </Style>
 
         <Style TargetType="Image" x:Key="ImageBotaoMenuSecundario">
             <Setter Property="Height" Value="33"/>
             <Setter Property="Width" Value="33"/>
-            <Setter Property="Margin" Value="0, 10, 0, 0"/>
+            <Setter Property="Margin" Value="0 10 0 0"/>
             <Setter Property="RenderOptions.BitmapScalingMode" Value="HighQuality"/>
         </Style>
 
@@ -214,7 +214,7 @@
             <Setter Property="FontSize" Value="14"/>
             <Setter Property="Foreground" Value="#606060"/>
             <Setter Property="HorizontalAlignment" Value="Center"/>
-            <Setter Property="Padding" Value="0, 2, 0, 0"/>
+            <Setter Property="Padding" Value="0 2 0 0"/>
         </Style>
 
         <!-- Lista de Alunos -->
@@ -242,6 +242,7 @@
         <!-- Cadastro de Aluno -->
         <Style TargetType="Label" x:Key="LabelCadastroAluno">
             <Setter Property="Width" Value="300"/>
+            <Setter Property="Margin" Value="0 10 0 0"/>
             <Setter Property="HorizontalAlignment" Value="Left"/>
             <Setter Property="FontSize" Value="16"/>
         </Style>
@@ -249,7 +250,7 @@
         <Style TargetType="TextBox" x:Key="CampoCadastroAluno">
             <Setter Property="Height" Value="30"/>
             <Setter Property="Width" Value="300"/>
-            <Setter Property="Padding" Value="4, 0, 0, 0"/>
+            <Setter Property="Padding" Value="4 0 0 0"/>
             <Setter Property="FontSize" Value="16"/>
             <Setter Property="VerticalContentAlignment" Value="Center"/>
             <Setter Property="Template">
@@ -267,7 +268,7 @@
             <Setter Property="Background" Value="LightGray"/>
             <Setter Property="Height" Value="35"/>
             <Setter Property="Width" Value="140"/>
-            <Setter Property="Margin" Value="0, 20, 0, 0"/>
+            <Setter Property="Margin" Value="0 20 0 0"/>
             <Setter Property="FontSize" Value="18"/>
             <Setter Property="Template">
                 <Setter.Value>

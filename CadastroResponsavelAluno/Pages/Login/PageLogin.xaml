@@ -1,0 +1,37 @@
+﻿<Page x:Class="CadastroResponsavelAluno.PageLogin"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:CadastroResponsavelAluno"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="PageLogin">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Border Grid.Column="1" Background="White" Height="300" CornerRadius="10">
+            <Grid >
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <Label Grid.Row="0" Content="Seja Bem-Vindo!" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" FontWeight="Bold"/>
+                <TextBlock Grid.Row="1" Panel.ZIndex="1" Text="Login" VerticalAlignment="Top" Margin="27,25,0,0" Visibility="{Binding ElementName=CampoLogin, Path=Text.IsEmpty, Converter={StaticResource BoolToVis} }" Style="{StaticResource TextBlockLogin}"/>
+                <TextBox Grid.Row="1" Panel.ZIndex="0" x:Name="CampoLogin" Margin="10,20,10,10" Style="{StaticResource TextBoxLogin}" KeyDown="CampoLogin_KeyDown"/>
+                <TextBlock x:Name="LabelSenha" Grid.Row="2" Panel.ZIndex="1" VerticalAlignment="Top" Text="Senha" Margin="27,25,0,0" Style="{StaticResource TextBlockLogin}"/>
+                <PasswordBox Grid.Row="2" Panel.ZIndex="0" x:Name="CampoSenha" Margin="10,20,10,10" Style="{StaticResource PasswordBoxLogin}" PasswordChanged="CampoSenha_PasswordChanged" KeyDown="CampoSenha_KeyDown"/>
+
+                <Button x:Name="BotaoLogin" Grid.Row="3" Content="Login" HorizontalAlignment="Center" Height="35" Width="180" Style="{StaticResource EstiloBotao}" Margin="10,10,10,10" Click="BotaoLogin_Click"/>
+                <!-- <Button x:Name="BotaoCadastrar" Grid.Row="4" Content="Novo Funcionário?" HorizontalAlignment="Center" Height="35" Width="180" Style="{StaticResource EstiloInvisível}" Background="Transparent" Margin="10,10,10,15" Click="BotaoCadastrar_Click"/> -->
+            </Grid>
+        </Border>
+    </Grid>
+</Page>

@@ -1,104 +1,3 @@
-C:\Users\NettN\source\repos\CadastroResponsavelAluno\CadastroResponsavelAluno\obj\Debug\CadastroResponsavelAluno.csproj.AssemblyReference.cache
-C:\Users\NettN\source\repos\CadastroResponsavelAluno\CadastroResponsavelAluno\obj\Debug\MainWindow.g.cs
-C:\Users\NettN\source\repos\CadastroResponsavelAluno\CadastroResponsavelAluno\obj\Debug\App.g.cs
-C:\Users\NettN\source\repos\CadastroResponsavelAluno\CadastroResponsavelAluno\obj\Debug\CadastroResponsavelAluno_MarkupCompile.cache
-C:\Users\NettN\source\repos\CadastroResponsavelAluno\CadastroResponsavelAluno\obj\Debug\CadastroResponsavelAluno_MarkupCompile.lref
-C:\Users\NettN\source\repos\CadastroResponsavelAluno\CadastroResponsavelAluno\bin\Debug\CadastroResponsavelAluno.exe.config
-C:\Users\NettN\source\repos\CadastroResponsavelAluno\CadastroResponsavelAluno\bin\Debug\CadastroResponsavelAluno.exe
-C:\Users\NettN\source\repos\CadastroResponsavelAluno\CadastroResponsavelAluno\bin\Debug\CadastroResponsavelAluno.pdb
-C:\Users\NettN\source\repos\CadastroResponsavelAluno\CadastroResponsavelAluno\obj\Debug\MainWindow.baml
-C:\Users\NettN\source\repos\CadastroResponsavelAluno\CadastroResponsavelAluno\obj\Debug\CadastroResponsavelAluno.g.resources
-C:\Users\NettN\source\repos\CadastroResponsavelAluno\CadastroResponsavelAluno\obj\Debug\CadastroResponsavelAluno.Properties.Resources.resources
-C:\Users\NettN\source\repos\CadastroResponsavelAluno\CadastroResponsavelAluno\obj\Debug\CadastroResponsavelAluno.csproj.GenerateResource.cache
-C:\Users\NettN\source\repos\CadastroResponsavelAluno\CadastroResponsavelAluno\obj\Debug\CadastroResponsavelAluno.csproj.CoreCompileInputs.cache
-C:\Users\NettN\source\repos\CadastroResponsavelAluno\CadastroResponsavelAluno\obj\Debug\CadastroResponsavelAluno.exe
-C:\Users\NettN\source\repos\CadastroResponsavelAluno\CadastroResponsavelAluno\obj\Debug\CadastroResponsavelAluno.pdb
-C:\Users\NettN\source\repos\CadastroResponsavelAluno\CadastroResponsavelAluno\obj\Debug\CadastroResponsavel.g.cs
-C:\Users\NettN\source\repos\CadastroResponsavelAluno\CadastroResponsavelAluno\obj\Debug\CadastroResponsavel.baml
-C:\Users\NettN\source\repos\CadastroResponsavelAluno\CadastroResponsavelAluno\obj\Debug\CadastroAluno.g.cs
-C:\Users\NettN\source\repos\CadastroResponsavelAluno\CadastroResponsavelAluno\obj\Debug\CadastroAluno.baml
-C:\Users\NettN\source\repos\CadastroResponsavelAluno\CadastroResponsavelAluno\bin\Debug\x86\sqlite3.dll
-C:\Users\NettN\source\repos\CadastroResponsavelAluno\CadastroResponsavelAluno\bin\Debug\x64\sqlite3.dll
-C:\Users\NettN\source\repos\CadastroResponsavelAluno\CadastroResponsavelAluno\bin\Debug\EntityFramework.dll
-C:\Users\NettN\source\repos\CadastroResponsavelAluno\CadastroResponsavelAluno\bin\Debug\EntityFramework.SqlServer.dll
-C:\Users\NettN\source\repos\CadastroResponsavelAluno\CadastroResponsavelAluno\bin\Debug\System.Data.SQLite.dll
-C:\Users\NettN\source\repos\CadastroResponsavelAluno\CadastroResponsavelAluno\bin\Debug\System.Data.SQLite.EF6.dll
-C:\Users\NettN\source\repos\CadastroResponsavelAluno\CadastroResponsavelAluno\bin\Debug\System.Data.SQLite.Linq.dll
-C:\Users\NettN\source\repos\CadastroResponsavelAluno\CadastroResponsavelAluno\bin\Debug\EntityFramework.xml
-C:\Users\NettN\source\repos\CadastroResponsavelAluno\CadastroResponsavelAluno\bin\Debug\EntityFramework.SqlServer.xml
-C:\Users\NettN\source\repos\CadastroResponsavelAluno\CadastroResponsavelAluno\bin\Debug\System.Data.SQLite.xml
-C:\Users\NettN\source\repos\CadastroResponsavelAluno\CadastroResponsavelAluno\obj\Debug\CadastroResponsavelAluno_Content.g.cs
-C:\Users\NettN\source\repos\CadastroResponsavelAluno\CadastroResponsavelAluno\obj\Debug\Cadastro.690D71A9.Up2Date
-C:\Users\NettN\source\repos\CadastroResponsavelAluno\CadastroResponsavelAluno\obj\Debug\Relacionamento.g.cs
-C:\Users\NettN\source\repos\CadastroResponsavelAluno\CadastroResponsavelAluno\obj\Debug\Relacionamento.baml
-C:\Users\NettN\OneDrive\Documentos\Projeto POO\CadastroResponsavelAluno\CadastroResponsavelAluno\obj\Debug\CadastroResponsavelAluno.csproj.AssemblyReference.cache
-C:\Users\NettN\OneDrive\Documentos\Projeto POO\CadastroResponsavelAluno\CadastroResponsavelAluno\obj\Debug\CadastroAluno.g.cs
-C:\Users\NettN\OneDrive\Documentos\Projeto POO\CadastroResponsavelAluno\CadastroResponsavelAluno\obj\Debug\CadastroResponsavel.g.cs
-C:\Users\NettN\OneDrive\Documentos\Projeto POO\CadastroResponsavelAluno\CadastroResponsavelAluno\obj\Debug\MainWindow.g.cs
-C:\Users\NettN\OneDrive\Documentos\Projeto POO\CadastroResponsavelAluno\CadastroResponsavelAluno\obj\Debug\Relacionamento.g.cs
-C:\Users\NettN\OneDrive\Documentos\Projeto POO\CadastroResponsavelAluno\CadastroResponsavelAluno\obj\Debug\App.g.cs
-C:\Users\NettN\OneDrive\Documentos\Projeto POO\CadastroResponsavelAluno\CadastroResponsavelAluno\obj\Debug\CadastroResponsavelAluno_Content.g.cs
-C:\Users\NettN\OneDrive\Documentos\Projeto POO\CadastroResponsavelAluno\CadastroResponsavelAluno\obj\Debug\CadastroResponsavelAluno_MarkupCompile.cache
-C:\Users\NettN\OneDrive\Documentos\Projeto POO\CadastroResponsavelAluno\CadastroResponsavelAluno\obj\Debug\CadastroResponsavelAluno_MarkupCompile.lref
-C:\Users\NettN\OneDrive\Documentos\Projeto POO\CadastroResponsavelAluno\CadastroResponsavelAluno\obj\Debug\CadastroResponsavelAluno.exe
-C:\Users\NettN\OneDrive\Documentos\Projeto POO\CadastroResponsavelAluno\CadastroResponsavelAluno\obj\Debug\CadastroResponsavelAluno.pdb
-C:\Users\NettN\OneDrive\Documentos\Projeto POO\CadastroResponsavelAluno\CadastroResponsavelAluno\bin\Debug\x86\sqlite3.dll
-C:\Users\NettN\OneDrive\Documentos\Projeto POO\CadastroResponsavelAluno\CadastroResponsavelAluno\bin\Debug\x64\sqlite3.dll
-C:\Users\NettN\OneDrive\Documentos\Projeto POO\CadastroResponsavelAluno\CadastroResponsavelAluno\bin\Debug\CadastroResponsavelAluno.exe.config
-C:\Users\NettN\OneDrive\Documentos\Projeto POO\CadastroResponsavelAluno\CadastroResponsavelAluno\bin\Debug\CadastroResponsavelAluno.exe
-C:\Users\NettN\OneDrive\Documentos\Projeto POO\CadastroResponsavelAluno\CadastroResponsavelAluno\bin\Debug\CadastroResponsavelAluno.pdb
-C:\Users\NettN\OneDrive\Documentos\Projeto POO\CadastroResponsavelAluno\CadastroResponsavelAluno\bin\Debug\EntityFramework.dll
-C:\Users\NettN\OneDrive\Documentos\Projeto POO\CadastroResponsavelAluno\CadastroResponsavelAluno\bin\Debug\EntityFramework.SqlServer.dll
-C:\Users\NettN\OneDrive\Documentos\Projeto POO\CadastroResponsavelAluno\CadastroResponsavelAluno\bin\Debug\System.Data.SQLite.dll
-C:\Users\NettN\OneDrive\Documentos\Projeto POO\CadastroResponsavelAluno\CadastroResponsavelAluno\bin\Debug\System.Data.SQLite.EF6.dll
-C:\Users\NettN\OneDrive\Documentos\Projeto POO\CadastroResponsavelAluno\CadastroResponsavelAluno\bin\Debug\System.Data.SQLite.Linq.dll
-C:\Users\NettN\OneDrive\Documentos\Projeto POO\CadastroResponsavelAluno\CadastroResponsavelAluno\bin\Debug\EntityFramework.xml
-C:\Users\NettN\OneDrive\Documentos\Projeto POO\CadastroResponsavelAluno\CadastroResponsavelAluno\bin\Debug\EntityFramework.SqlServer.xml
-C:\Users\NettN\OneDrive\Documentos\Projeto POO\CadastroResponsavelAluno\CadastroResponsavelAluno\bin\Debug\System.Data.SQLite.xml
-C:\Users\NettN\OneDrive\Documentos\Projeto POO\CadastroResponsavelAluno\CadastroResponsavelAluno\obj\Debug\CadastroAluno.baml
-C:\Users\NettN\OneDrive\Documentos\Projeto POO\CadastroResponsavelAluno\CadastroResponsavelAluno\obj\Debug\CadastroResponsavel.baml
-C:\Users\NettN\OneDrive\Documentos\Projeto POO\CadastroResponsavelAluno\CadastroResponsavelAluno\obj\Debug\MainWindow.baml
-C:\Users\NettN\OneDrive\Documentos\Projeto POO\CadastroResponsavelAluno\CadastroResponsavelAluno\obj\Debug\Relacionamento.baml
-C:\Users\NettN\OneDrive\Documentos\Projeto POO\CadastroResponsavelAluno\CadastroResponsavelAluno\obj\Debug\CadastroResponsavelAluno.g.resources
-C:\Users\NettN\OneDrive\Documentos\Projeto POO\CadastroResponsavelAluno\CadastroResponsavelAluno\obj\Debug\CadastroResponsavelAluno.Properties.Resources.resources
-C:\Users\NettN\OneDrive\Documentos\Projeto POO\CadastroResponsavelAluno\CadastroResponsavelAluno\obj\Debug\CadastroResponsavelAluno.csproj.GenerateResource.cache
-C:\Users\NettN\OneDrive\Documentos\Projeto POO\CadastroResponsavelAluno\CadastroResponsavelAluno\obj\Debug\CadastroResponsavelAluno.csproj.CoreCompileInputs.cache
-C:\Users\NettN\OneDrive\Documentos\Projeto POO\CadastroResponsavelAluno\CadastroResponsavelAluno\obj\Debug\Cadastro.690D71A9.Up2Date
-C:\Users\NettN\OneDrive\Documentos\POO Chegou!\POO-Johnny\CadastroResponsavelAluno\bin\Debug\x86\sqlite3.dll
-C:\Users\NettN\OneDrive\Documentos\POO Chegou!\POO-Johnny\CadastroResponsavelAluno\bin\Debug\x64\sqlite3.dll
-C:\Users\NettN\OneDrive\Documentos\POO Chegou!\POO-Johnny\CadastroResponsavelAluno\bin\Debug\CadastroResponsavelAluno.exe.config
-C:\Users\NettN\OneDrive\Documentos\POO Chegou!\POO-Johnny\CadastroResponsavelAluno\bin\Debug\CadastroResponsavelAluno.exe
-C:\Users\NettN\OneDrive\Documentos\POO Chegou!\POO-Johnny\CadastroResponsavelAluno\bin\Debug\CadastroResponsavelAluno.pdb
-C:\Users\NettN\OneDrive\Documentos\POO Chegou!\POO-Johnny\CadastroResponsavelAluno\bin\Debug\EntityFramework.dll
-C:\Users\NettN\OneDrive\Documentos\POO Chegou!\POO-Johnny\CadastroResponsavelAluno\bin\Debug\EntityFramework.SqlServer.dll
-C:\Users\NettN\OneDrive\Documentos\POO Chegou!\POO-Johnny\CadastroResponsavelAluno\bin\Debug\System.Data.SQLite.dll
-C:\Users\NettN\OneDrive\Documentos\POO Chegou!\POO-Johnny\CadastroResponsavelAluno\bin\Debug\System.Data.SQLite.EF6.dll
-C:\Users\NettN\OneDrive\Documentos\POO Chegou!\POO-Johnny\CadastroResponsavelAluno\bin\Debug\System.Data.SQLite.Linq.dll
-C:\Users\NettN\OneDrive\Documentos\POO Chegou!\POO-Johnny\CadastroResponsavelAluno\bin\Debug\EntityFramework.xml
-C:\Users\NettN\OneDrive\Documentos\POO Chegou!\POO-Johnny\CadastroResponsavelAluno\bin\Debug\EntityFramework.SqlServer.xml
-C:\Users\NettN\OneDrive\Documentos\POO Chegou!\POO-Johnny\CadastroResponsavelAluno\bin\Debug\System.Data.SQLite.xml
-C:\Users\NettN\OneDrive\Documentos\POO Chegou!\POO-Johnny\CadastroResponsavelAluno\obj\Debug\CadastroResponsavelAluno.csproj.AssemblyReference.cache
-C:\Users\NettN\OneDrive\Documentos\POO Chegou!\POO-Johnny\CadastroResponsavelAluno\obj\Debug\CadastroAluno.g.cs
-C:\Users\NettN\OneDrive\Documentos\POO Chegou!\POO-Johnny\CadastroResponsavelAluno\obj\Debug\CadastroResponsavel.g.cs
-C:\Users\NettN\OneDrive\Documentos\POO Chegou!\POO-Johnny\CadastroResponsavelAluno\obj\Debug\MainWindow.g.cs
-C:\Users\NettN\OneDrive\Documentos\POO Chegou!\POO-Johnny\CadastroResponsavelAluno\obj\Debug\Relacionamento.g.cs
-C:\Users\NettN\OneDrive\Documentos\POO Chegou!\POO-Johnny\CadastroResponsavelAluno\obj\Debug\App.g.cs
-C:\Users\NettN\OneDrive\Documentos\POO Chegou!\POO-Johnny\CadastroResponsavelAluno\obj\Debug\CadastroResponsavelAluno_Content.g.cs
-C:\Users\NettN\OneDrive\Documentos\POO Chegou!\POO-Johnny\CadastroResponsavelAluno\obj\Debug\CadastroResponsavelAluno_MarkupCompile.cache
-C:\Users\NettN\OneDrive\Documentos\POO Chegou!\POO-Johnny\CadastroResponsavelAluno\obj\Debug\CadastroResponsavelAluno_MarkupCompile.lref
-C:\Users\NettN\OneDrive\Documentos\POO Chegou!\POO-Johnny\CadastroResponsavelAluno\obj\Debug\CadastroAluno.baml
-C:\Users\NettN\OneDrive\Documentos\POO Chegou!\POO-Johnny\CadastroResponsavelAluno\obj\Debug\CadastroResponsavel.baml
-C:\Users\NettN\OneDrive\Documentos\POO Chegou!\POO-Johnny\CadastroResponsavelAluno\obj\Debug\MainWindow.baml
-C:\Users\NettN\OneDrive\Documentos\POO Chegou!\POO-Johnny\CadastroResponsavelAluno\obj\Debug\Relacionamento.baml
-C:\Users\NettN\OneDrive\Documentos\POO Chegou!\POO-Johnny\CadastroResponsavelAluno\obj\Debug\CadastroResponsavelAluno.g.resources
-C:\Users\NettN\OneDrive\Documentos\POO Chegou!\POO-Johnny\CadastroResponsavelAluno\obj\Debug\CadastroResponsavelAluno.Properties.Resources.resources
-C:\Users\NettN\OneDrive\Documentos\POO Chegou!\POO-Johnny\CadastroResponsavelAluno\obj\Debug\CadastroResponsavelAluno.csproj.GenerateResource.cache
-C:\Users\NettN\OneDrive\Documentos\POO Chegou!\POO-Johnny\CadastroResponsavelAluno\obj\Debug\CadastroResponsavelAluno.csproj.CoreCompileInputs.cache
-C:\Users\NettN\OneDrive\Documentos\POO Chegou!\POO-Johnny\CadastroResponsavelAluno\obj\Debug\Cadastro.690D71A9.Up2Date
-C:\Users\NettN\OneDrive\Documentos\POO Chegou!\POO-Johnny\CadastroResponsavelAluno\obj\Debug\CadastroResponsavelAluno.exe
-C:\Users\NettN\OneDrive\Documentos\POO Chegou!\POO-Johnny\CadastroResponsavelAluno\obj\Debug\CadastroResponsavelAluno.pdb
-C:\Users\NettN\OneDrive\Documentos\POO Chegou!\POO-Johnny\CadastroResponsavelAluno\obj\Debug\PageInformacoesAluno.g.cs
-C:\Users\NettN\OneDrive\Documentos\POO Chegou!\POO-Johnny\CadastroResponsavelAluno\obj\Debug\PageInformacoesAluno.baml
 C:\Users\ZettZ\OneDrive\Documentos\Fatec\Projeto POO\POO-Johnny\CadastroResponsavelAluno\bin\Debug\x86\sqlite3.dll
 C:\Users\ZettZ\OneDrive\Documentos\Fatec\Projeto POO\POO-Johnny\CadastroResponsavelAluno\bin\Debug\x64\sqlite3.dll
 C:\Users\ZettZ\OneDrive\Documentos\Fatec\Projeto POO\POO-Johnny\CadastroResponsavelAluno\bin\Debug\CadastroResponsavelAluno.exe.config
@@ -113,12 +12,35 @@ C:\Users\ZettZ\OneDrive\Documentos\Fatec\Projeto POO\POO-Johnny\CadastroResponsa
 C:\Users\ZettZ\OneDrive\Documentos\Fatec\Projeto POO\POO-Johnny\CadastroResponsavelAluno\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\ZettZ\OneDrive\Documentos\Fatec\Projeto POO\POO-Johnny\CadastroResponsavelAluno\bin\Debug\System.Data.SQLite.xml
 C:\Users\ZettZ\OneDrive\Documentos\Fatec\Projeto POO\POO-Johnny\CadastroResponsavelAluno\obj\Debug\CadastroResponsavelAluno.csproj.AssemblyReference.cache
+C:\Users\ZettZ\OneDrive\Documentos\Fatec\Projeto POO\POO-Johnny\CadastroResponsavelAluno\obj\Debug\Pages\Gestor\PageCadastroAluno.g.cs
+C:\Users\ZettZ\OneDrive\Documentos\Fatec\Projeto POO\POO-Johnny\CadastroResponsavelAluno\obj\Debug\Pages\Gestor\WindowAlterarAluno.g.cs
 C:\Users\ZettZ\OneDrive\Documentos\Fatec\Projeto POO\POO-Johnny\CadastroResponsavelAluno\obj\Debug\MainWindow.g.cs
+C:\Users\ZettZ\OneDrive\Documentos\Fatec\Projeto POO\POO-Johnny\CadastroResponsavelAluno\obj\Debug\Pages\Login\PageCadastro.g.cs
+C:\Users\ZettZ\OneDrive\Documentos\Fatec\Projeto POO\POO-Johnny\CadastroResponsavelAluno\obj\Debug\Pages\Login\PageLogin.g.cs
+C:\Users\ZettZ\OneDrive\Documentos\Fatec\Projeto POO\POO-Johnny\CadastroResponsavelAluno\obj\Debug\Pages\PagePrincipal.g.cs
+C:\Users\ZettZ\OneDrive\Documentos\Fatec\Projeto POO\POO-Johnny\CadastroResponsavelAluno\obj\Debug\Pages\Professor\PageChamada.g.cs
+C:\Users\ZettZ\OneDrive\Documentos\Fatec\Projeto POO\POO-Johnny\CadastroResponsavelAluno\obj\Debug\Pages\Gestor\PageGestor.g.cs
+C:\Users\ZettZ\OneDrive\Documentos\Fatec\Projeto POO\POO-Johnny\CadastroResponsavelAluno\obj\Debug\Pages\Gestor\PageListaAlunos.g.cs
+C:\Users\ZettZ\OneDrive\Documentos\Fatec\Projeto POO\POO-Johnny\CadastroResponsavelAluno\obj\Debug\Pages\Porteiro\PagePorteiro.g.cs
+C:\Users\ZettZ\OneDrive\Documentos\Fatec\Projeto POO\POO-Johnny\CadastroResponsavelAluno\obj\Debug\Pages\Professor\PageProfessor.g.cs
+C:\Users\ZettZ\OneDrive\Documentos\Fatec\Projeto POO\POO-Johnny\CadastroResponsavelAluno\obj\Debug\Pages\Professor\WindowNotificacao.g.cs
 C:\Users\ZettZ\OneDrive\Documentos\Fatec\Projeto POO\POO-Johnny\CadastroResponsavelAluno\obj\Debug\App.g.cs
 C:\Users\ZettZ\OneDrive\Documentos\Fatec\Projeto POO\POO-Johnny\CadastroResponsavelAluno\obj\Debug\CadastroResponsavelAluno_Content.g.cs
 C:\Users\ZettZ\OneDrive\Documentos\Fatec\Projeto POO\POO-Johnny\CadastroResponsavelAluno\obj\Debug\CadastroResponsavelAluno_MarkupCompile.cache
 C:\Users\ZettZ\OneDrive\Documentos\Fatec\Projeto POO\POO-Johnny\CadastroResponsavelAluno\obj\Debug\CadastroResponsavelAluno_MarkupCompile.lref
+C:\Users\ZettZ\OneDrive\Documentos\Fatec\Projeto POO\POO-Johnny\CadastroResponsavelAluno\obj\Debug\App.baml
+C:\Users\ZettZ\OneDrive\Documentos\Fatec\Projeto POO\POO-Johnny\CadastroResponsavelAluno\obj\Debug\Pages\Gestor\PageCadastroAluno.baml
+C:\Users\ZettZ\OneDrive\Documentos\Fatec\Projeto POO\POO-Johnny\CadastroResponsavelAluno\obj\Debug\Pages\Gestor\WindowAlterarAluno.baml
 C:\Users\ZettZ\OneDrive\Documentos\Fatec\Projeto POO\POO-Johnny\CadastroResponsavelAluno\obj\Debug\MainWindow.baml
+C:\Users\ZettZ\OneDrive\Documentos\Fatec\Projeto POO\POO-Johnny\CadastroResponsavelAluno\obj\Debug\Pages\Login\PageCadastro.baml
+C:\Users\ZettZ\OneDrive\Documentos\Fatec\Projeto POO\POO-Johnny\CadastroResponsavelAluno\obj\Debug\Pages\Login\PageLogin.baml
+C:\Users\ZettZ\OneDrive\Documentos\Fatec\Projeto POO\POO-Johnny\CadastroResponsavelAluno\obj\Debug\Pages\PagePrincipal.baml
+C:\Users\ZettZ\OneDrive\Documentos\Fatec\Projeto POO\POO-Johnny\CadastroResponsavelAluno\obj\Debug\Pages\Professor\PageChamada.baml
+C:\Users\ZettZ\OneDrive\Documentos\Fatec\Projeto POO\POO-Johnny\CadastroResponsavelAluno\obj\Debug\Pages\Gestor\PageGestor.baml
+C:\Users\ZettZ\OneDrive\Documentos\Fatec\Projeto POO\POO-Johnny\CadastroResponsavelAluno\obj\Debug\Pages\Gestor\PageListaAlunos.baml
+C:\Users\ZettZ\OneDrive\Documentos\Fatec\Projeto POO\POO-Johnny\CadastroResponsavelAluno\obj\Debug\Pages\Porteiro\PagePorteiro.baml
+C:\Users\ZettZ\OneDrive\Documentos\Fatec\Projeto POO\POO-Johnny\CadastroResponsavelAluno\obj\Debug\Pages\Professor\PageProfessor.baml
+C:\Users\ZettZ\OneDrive\Documentos\Fatec\Projeto POO\POO-Johnny\CadastroResponsavelAluno\obj\Debug\Pages\Professor\WindowNotificacao.baml
 C:\Users\ZettZ\OneDrive\Documentos\Fatec\Projeto POO\POO-Johnny\CadastroResponsavelAluno\obj\Debug\CadastroResponsavelAluno.g.resources
 C:\Users\ZettZ\OneDrive\Documentos\Fatec\Projeto POO\POO-Johnny\CadastroResponsavelAluno\obj\Debug\CadastroResponsavelAluno.Properties.Resources.resources
 C:\Users\ZettZ\OneDrive\Documentos\Fatec\Projeto POO\POO-Johnny\CadastroResponsavelAluno\obj\Debug\CadastroResponsavelAluno.csproj.GenerateResource.cache
@@ -126,24 +48,3 @@ C:\Users\ZettZ\OneDrive\Documentos\Fatec\Projeto POO\POO-Johnny\CadastroResponsa
 C:\Users\ZettZ\OneDrive\Documentos\Fatec\Projeto POO\POO-Johnny\CadastroResponsavelAluno\obj\Debug\Cadastro.690D71A9.Up2Date
 C:\Users\ZettZ\OneDrive\Documentos\Fatec\Projeto POO\POO-Johnny\CadastroResponsavelAluno\obj\Debug\CadastroResponsavelAluno.exe
 C:\Users\ZettZ\OneDrive\Documentos\Fatec\Projeto POO\POO-Johnny\CadastroResponsavelAluno\obj\Debug\CadastroResponsavelAluno.pdb
-C:\Users\ZettZ\OneDrive\Documentos\Fatec\Projeto POO\POO-Johnny\CadastroResponsavelAluno\obj\Debug\App.baml
-C:\Users\ZettZ\OneDrive\Documentos\Fatec\Projeto POO\POO-Johnny\CadastroResponsavelAluno\obj\Debug\Gestor\PageCadastroAluno.g.cs
-C:\Users\ZettZ\OneDrive\Documentos\Fatec\Projeto POO\POO-Johnny\CadastroResponsavelAluno\obj\Debug\Professor\PageChamada.g.cs
-C:\Users\ZettZ\OneDrive\Documentos\Fatec\Projeto POO\POO-Johnny\CadastroResponsavelAluno\obj\Debug\Gestor\PageGestor.g.cs
-C:\Users\ZettZ\OneDrive\Documentos\Fatec\Projeto POO\POO-Johnny\CadastroResponsavelAluno\obj\Debug\Gestor\PageListaAlunos.g.cs
-C:\Users\ZettZ\OneDrive\Documentos\Fatec\Projeto POO\POO-Johnny\CadastroResponsavelAluno\obj\Debug\Professor\PageProfessor.g.cs
-C:\Users\ZettZ\OneDrive\Documentos\Fatec\Projeto POO\POO-Johnny\CadastroResponsavelAluno\obj\Debug\Gestor\PageCadastroAluno.baml
-C:\Users\ZettZ\OneDrive\Documentos\Fatec\Projeto POO\POO-Johnny\CadastroResponsavelAluno\obj\Debug\Professor\PageChamada.baml
-C:\Users\ZettZ\OneDrive\Documentos\Fatec\Projeto POO\POO-Johnny\CadastroResponsavelAluno\obj\Debug\Gestor\PageGestor.baml
-C:\Users\ZettZ\OneDrive\Documentos\Fatec\Projeto POO\POO-Johnny\CadastroResponsavelAluno\obj\Debug\Gestor\PageListaAlunos.baml
-C:\Users\ZettZ\OneDrive\Documentos\Fatec\Projeto POO\POO-Johnny\CadastroResponsavelAluno\obj\Debug\Professor\PageProfessor.baml
-C:\Users\ZettZ\OneDrive\Documentos\Fatec\Projeto POO\POO-Johnny\CadastroResponsavelAluno\obj\Debug\Porteiro\PagePorteiro.g.cs
-C:\Users\ZettZ\OneDrive\Documentos\Fatec\Projeto POO\POO-Johnny\CadastroResponsavelAluno\obj\Debug\Porteiro\PagePorteiro.baml
-C:\Users\ZettZ\OneDrive\Documentos\Fatec\Projeto POO\POO-Johnny\CadastroResponsavelAluno\obj\Debug\Professor\WindowNotificacao.g.cs
-C:\Users\ZettZ\OneDrive\Documentos\Fatec\Projeto POO\POO-Johnny\CadastroResponsavelAluno\obj\Debug\Professor\WindowNotificacao.baml
-C:\Users\ZettZ\OneDrive\Documentos\Fatec\Projeto POO\POO-Johnny\CadastroResponsavelAluno\obj\Debug\Gestor\WindowAlterarAluno.g.cs
-C:\Users\ZettZ\OneDrive\Documentos\Fatec\Projeto POO\POO-Johnny\CadastroResponsavelAluno\obj\Debug\Gestor\WindowAlterarAluno.baml
-C:\Users\ZettZ\OneDrive\Documentos\Fatec\Projeto POO\POO-Johnny\CadastroResponsavelAluno\obj\Debug\PageCadastro.g.cs
-C:\Users\ZettZ\OneDrive\Documentos\Fatec\Projeto POO\POO-Johnny\CadastroResponsavelAluno\obj\Debug\PageLogin.g.cs
-C:\Users\ZettZ\OneDrive\Documentos\Fatec\Projeto POO\POO-Johnny\CadastroResponsavelAluno\obj\Debug\PageCadastro.baml
-C:\Users\ZettZ\OneDrive\Documentos\Fatec\Projeto POO\POO-Johnny\CadastroResponsavelAluno\obj\Debug\PageLogin.baml

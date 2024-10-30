@@ -12,47 +12,7 @@
         WindowState="Maximized"
         Background="#FFFFFF">
     <Grid>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="Auto"/>
-            <ColumnDefinition Width="*"/>
-        </Grid.ColumnDefinitions>
-        <Border Grid.Column="0" Width="80" BorderThickness="0,0,1,0" BorderBrush="#606060">
-            <Grid>
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="*"/>
-                    <RowDefinition Height="Auto"/>
-                    <RowDefinition Height="Auto"/>
-                    <RowDefinition Height="Auto"/>
-                    <RowDefinition Height="*"/>
-                    <RowDefinition Height="Auto"/>
-                </Grid.RowDefinitions>
-                <Border x:Name="BotaoGestor" Grid.Row="1" Style="{StaticResource BorderBotaoMenuPrincipal}" MouseLeftButtonUp="BotaoGestor_MouseLeftButtonUp" MouseEnter="BotaoGestor_MouseEnter" MouseLeave="BotaoGestor_MouseLeave">
-                    <StackPanel>
-                        <Image Style="{StaticResource ImageBotaoMenuPrincipal}" Source="\Icons\Gestor.png"/>
-                        <Label Content="Gestor" Style="{StaticResource LabelBotaoMenuPrincipal}"/>
-                    </StackPanel>
-                </Border>
-                <Border x:Name="BotaoProfessor" Grid.Row="2" Style="{StaticResource BorderBotaoMenuPrincipal}" MouseLeftButtonUp="BotaoProfessor_MouseLeftButtonUp" MouseEnter="BotaoProfessor_MouseEnter" MouseLeave="BotaoProfessor_MouseLeave">
-                    <StackPanel>
-                        <Image Style="{StaticResource ImageBotaoMenuPrincipal}" Source="\Icons\Professor.png"/>
-                        <Label Content="Professor" Style="{StaticResource LabelBotaoMenuPrincipal}"/>
-                    </StackPanel>
-                </Border>
-                <Border x:Name="BotaoPorteiro" Grid.Row="3" Style="{StaticResource BorderBotaoMenuPrincipal}" MouseLeftButtonUp="BotaoPorteiro_MouseLeftButtonUp" MouseEnter="BotaoPorteiro_MouseEnter" MouseLeave="BotaoPorteiro_MouseLeave">
-                    <StackPanel>
-                        <Image Style="{StaticResource ImageBotaoMenuPrincipal}" Source="\Icons\Porteiro.png"/>
-                        <Label Content="Porteiro" Style="{StaticResource LabelBotaoMenuPrincipal}"/>
-                    </StackPanel>
-                </Border>
-                <Border x:Name="BotaoSair" Grid.Row="5" Style="{StaticResource BorderBotaoMenuPrincipal}" MouseLeftButtonUp="BotaoSair_MouseLeftButtonUp" MouseEnter="BotaoSair_MouseEnter" MouseLeave="BotaoSair_MouseLeave">
-                    <StackPanel>
-                        <Image Style="{StaticResource ImageBotaoMenuPrincipal}" Source="\Icons\Sair.png"/>
-                        <Label Content="Sair" Style="{StaticResource LabelBotaoMenuPrincipal}"/>
-                    </StackPanel>
-                </Border>
-            </Grid>
-        </Border>
-        <Frame x:Name="FramePrincipal" Grid.Column="1" NavigationUIVisibility="Hidden"/>
+        <Frame x:Name="FrameMainWindow" NavigationUIVisibility="Hidden" Navigating="FrameMainWindow_Navigating"/>
         <Rectangle Name="Overlay" Grid.Column="0" Grid.ColumnSpan="2" Fill="Black" Opacity="0.3" Visibility="Collapsed" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
     </Grid>
 </Window>

@@ -75,15 +75,15 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="Gestor\WindowAlterarAluno.xaml.cs">
+    <Compile Include="Pages\Gestor\WindowAlterarAluno.xaml.cs">
       <DependentUpon>WindowAlterarAluno.xaml</DependentUpon>
     </Compile>
     <Compile Include="Models\Aluno.cs" />
-    <Page Include="Gestor\PageCadastroAluno.xaml">
+    <Page Include="Pages\Gestor\PageCadastroAluno.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Gestor\WindowAlterarAluno.xaml">
+    <Page Include="Pages\Gestor\WindowAlterarAluno.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -95,42 +95,46 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Gestor\PageCadastroAluno.xaml.cs">
+    <Compile Include="Pages\Gestor\PageCadastroAluno.xaml.cs">
       <DependentUpon>PageCadastroAluno.xaml</DependentUpon>
     </Compile>
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="PageCadastro.xaml">
+    <Page Include="Pages\Login\PageCadastro.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="PageLogin.xaml">
+    <Page Include="Pages\Login\PageLogin.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Professor\PageChamada.xaml">
+    <Page Include="Pages\PagePrincipal.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Gestor\PageGestor.xaml">
+    <Page Include="Pages\Professor\PageChamada.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Gestor\PageListaAlunos.xaml">
+    <Page Include="Pages\Gestor\PageGestor.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Porteiro\PagePorteiro.xaml">
+    <Page Include="Pages\Gestor\PageListaAlunos.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Professor\PageProfessor.xaml">
+    <Page Include="Pages\Porteiro\PagePorteiro.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Professor\WindowNotificacao.xaml">
+    <Page Include="Pages\Professor\PageProfessor.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\Professor\WindowNotificacao.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -138,28 +142,31 @@
   <ItemGroup>
     <Compile Include="Models\ConexaoBD.cs" />
     <Compile Include="Models\Usuario.cs" />
-    <Compile Include="PageCadastro.xaml.cs">
+    <Compile Include="Pages\Login\PageCadastro.xaml.cs">
       <DependentUpon>PageCadastro.xaml</DependentUpon>
     </Compile>
-    <Compile Include="PageLogin.xaml.cs">
+    <Compile Include="Pages\Login\PageLogin.xaml.cs">
       <DependentUpon>PageLogin.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Professor\PageChamada.xaml.cs">
+    <Compile Include="Pages\PagePrincipal.xaml.cs">
+      <DependentUpon>PagePrincipal.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Professor\PageChamada.xaml.cs">
       <DependentUpon>PageChamada.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Gestor\PageGestor.xaml.cs">
+    <Compile Include="Pages\Gestor\PageGestor.xaml.cs">
       <DependentUpon>PageGestor.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Gestor\PageListaAlunos.xaml.cs">
+    <Compile Include="Pages\Gestor\PageListaAlunos.xaml.cs">
       <DependentUpon>PageListaAlunos.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Porteiro\PagePorteiro.xaml.cs">
+    <Compile Include="Pages\Porteiro\PagePorteiro.xaml.cs">
       <DependentUpon>PagePorteiro.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Professor\PageProfessor.xaml.cs">
+    <Compile Include="Pages\Professor\PageProfessor.xaml.cs">
       <DependentUpon>PageProfessor.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Professor\WindowNotificacao.xaml.cs">
+    <Compile Include="Pages\Professor\WindowNotificacao.xaml.cs">
       <DependentUpon>WindowNotificacao.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs">

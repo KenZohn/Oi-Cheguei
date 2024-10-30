@@ -1,0 +1,42 @@
+﻿<Page x:Class="CadastroResponsavelAluno.PageGestor"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:CadastroResponsavelAluno"
+      mc:Ignorable="d" 
+      d:DesignHeight="720" d:DesignWidth="1280"
+      Background="#FFFFFF"
+      Title="PageGestor">
+    <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <Border Grid.Row="0" Width="560" Style="{StaticResource BorderMenuSecundario}">
+                <WrapPanel HorizontalAlignment="Center">
+                    <Border x:Name="BotaoListarAlunos" Style="{StaticResource BorderBotaoMenuSecundario}" MouseLeftButtonUp="BotaoListarAlunos_MouseLeftButtonUp" MouseEnter="BotaoListarAlunos_MouseEnter" MouseLeave="BotaoListarAlunos_MouseLeave">
+                        <StackPanel>
+                            <Image x:Name="ImageListarAlunos" Style="{StaticResource ImageBotaoMenuSecundario}" Source="\Icons\ListarApagado.png"/>
+                            <Label x:Name="LabelListarAlunos" Style="{StaticResource LabelBotaoMenuSecundario}" Content="Listar alunos"/>
+                        </StackPanel>
+                    </Border>
+                    <Border x:Name="BotaoCadastrarAluno" Style="{StaticResource BorderBotaoMenuSecundario}" MouseLeftButtonUp="BotaoCadastrarAluno_MouseLeftButtonUp" MouseEnter="BotaoCadastrarAluno_MouseEnter" MouseLeave="BotaoCadastrarAluno_MouseLeave">
+                        <StackPanel>
+                            <Image x:Name="ImageCadastrarAluno" Style="{StaticResource ImageBotaoMenuSecundario}" Source="\Icons\AdicionarApagado.png"/>
+                            <Label x:Name="LabelCadastrarAluno" Style="{StaticResource LabelBotaoMenuSecundario}" Content="Cadastrar aluno"/>
+                        </StackPanel>
+                    </Border>
+                    <Border x:Name="BotaoCadastrarUsuario" Style="{StaticResource BorderBotaoMenuSecundario}" MouseLeftButtonUp="BotaoCadastrarUsuario_MouseLeftButtonUp" MouseEnter="BotaoCadastrarUsuario_MouseEnter" MouseLeave="BotaoCadastrarUsuario_MouseLeave">
+                        <StackPanel>
+                            <Image x:Name="ImageCadastrarUsuario" Style="{StaticResource ImageBotaoMenuSecundario}" Source="\Icons\AdicionarApagado.png"/>
+                            <Label x:Name="LabelCadastrarUsuario" Style="{StaticResource LabelBotaoMenuSecundario}" Content="Cadastrar usuário"/>
+                        </StackPanel>
+                    </Border>
+                </WrapPanel>
+            </Border>
+            <Frame x:Name="FrameSecundario" Grid.Row="1" Padding="0, 40, 0, 0" Navigating="FrameSecundario_Navigating"/>
+        </Grid>
+    </ScrollViewer>
+</Page>
