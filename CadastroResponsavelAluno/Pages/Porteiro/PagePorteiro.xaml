@@ -6,9 +6,27 @@
       xmlns:local="clr-namespace:CadastroResponsavelAluno"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
+      Background="#FFFFFF"
       Title="PagePorteiro">
 
-    <Grid>
-        <Label Content="Porteiro" FontSize="30" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-    </Grid>
+    <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <Border Grid.Row="0" Width="560" Style="{StaticResource BorderMenuSecundario}">
+                <WrapPanel HorizontalAlignment="Center">
+                    <Border x:Name="BotaoListarChamada" Style="{StaticResource BorderBotaoMenuSecundario}" MouseLeftButtonUp="BotaoListarChamada_MouseLeftButtonUp" MouseEnter="BotaoListarChamada_MouseEnter" MouseLeave="BotaoListarChamada_MouseLeave">
+                        <StackPanel>
+                            <Image x:Name="ImageListarChamada" Style="{StaticResource ImageBotaoMenuSecundario}" Source="\Icons\ListarApagado.png"/>
+                            <Label x:Name="LabelListarChamada" Style="{StaticResource LabelBotaoMenuSecundario}" Content="Listar Chamada"/>
+                        </StackPanel>
+                    </Border>
+                   
+                </WrapPanel>
+            </Border>
+            <Frame x:Name="FrameSecundario" Grid.Row="1" Padding="0, 40, 0, 0" Navigating="FrameSecundario_Navigating"/>
+        </Grid>
+    </ScrollViewer>
 </Page>

@@ -92,5 +92,10 @@ namespace CadastroResponsavelAluno
             ComboBoxTurma.Items.Add("2º C");
         }
         #endregion
+
+        private void ComboBoxTurma_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
     }
 }
