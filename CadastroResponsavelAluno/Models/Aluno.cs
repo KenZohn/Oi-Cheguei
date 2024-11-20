@@ -12,8 +12,14 @@ namespace CadastroResponsavelAluno
         public string Nome { get; set; }
         public string Turma { get; set; }
         public string Responsavel { get; set; }
-        public int CPFAluno { get; set; }
-        public int CPFResponsavel { get; set; }
+        public string CPFAluno { get; set; }
+        public string CPFResponsavel { get; set; }
         public string Telefone { get; set; }
+        public string Endereco { get; set; }
+        public string TelefoneTrabalho { get; set; }
+        public string EnderecoTrabalho { get; set; }
+        public string Autorizado1 { get; set; }
+        public string Autorizado2 { get; set; }
+        public string Autorizado3 { get; set; }
     }
 }

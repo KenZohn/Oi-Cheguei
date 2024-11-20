@@ -34,12 +34,14 @@ namespace CadastroResponsavelAluno
         {
             if (string.IsNullOrEmpty(CampoAluno.Text) ||
                 string.IsNullOrEmpty(ComboBoxTurma.Text) ||
-                string.IsNullOrEmpty(CampoResponsavel.Text))
+                string.IsNullOrEmpty(CampoResponsavel.Text) ||
+                string.IsNullOrEmpty(CampoCPFAluno.Text) ||
+                string.IsNullOrEmpty(CampoCPFResponsavel.Text))
             {
                 if (Application.Current.MainWindow is MainWindow mainWindow)
                 {
                     mainWindow.Overlay.Visibility = Visibility.Visible;
-                    MessageBox.Show("Preencha todos os campos.");
+                    MessageBox.Show("Preencha todos os campos obrigatórios.");
                     mainWindow.Overlay.Visibility = Visibility.Collapsed;
                 }
             }
@@ -62,18 +64,18 @@ namespace CadastroResponsavelAluno
             using (SQLiteConnection conexao = new SQLiteConnection("Data Source=" + System.IO.Path.Combine(Directory.GetParent(AppDomain.CurrentDomain.BaseDirectory).Parent.Parent.Parent.FullName, "ChegouBD.db")))
             {
                 conexao.Open();
-                string strSql = "INSERT INTO Alunos (Nome, CPFAluno, Turma, Endereco, Responsavel, CPFResponsavel, TelefoneResponsavel, EnderecoTrabalho, TelefoneTrabalho, Autorizado1, Autorizado2, Autorizado3) VALUES (@nome, @cpf, @turma, @endereco, @responsavel, @cpfResponsavel, @telefoneResponsavel, @enderecoTrabalho, @telefoneTrabalho, @autorizado1, @autorizado2, @autorizado3)";
+                string strSql = "INSERT INTO Alunos (Nome, Turma, Responsavel, CPFAluno, CPFResponsavel, Telefone, Endereco, TelefoneTrabalho, EnderecoTrabalho, Autorizado1, Autorizado2, Autorizado3) VALUES (@nome, @turma, @responsavel, @cpfAluno, @cpfResponsavel, @telefone, @endereco, @telefoneTrabalho, @enderecoTrabalho, @autorizado1, @autorizado2, @autorizado3)";
                 using (SQLiteCommand cmd = new SQLiteCommand(strSql, conexao))
                 {
                     cmd.Parameters.AddWithValue("@nome", CampoAluno.Text);
-                    cmd.Parameters.AddWithValue("@cpf", CampoCPFAluno.Text);
                     cmd.Parameters.AddWithValue("@turma", ComboBoxTurma.Text);
-                    cmd.Parameters.AddWithValue("@endereco", CampoEndereco.Text);
                     cmd.Parameters.AddWithValue("@responsavel", CampoResponsavel.Text);
+                    cmd.Parameters.AddWithValue("@cpfAluno", CampoCPFAluno.Text);
                     cmd.Parameters.AddWithValue("@cpfResponsavel", CampoCPFResponsavel.Text);
-                    cmd.Parameters.AddWithValue("@telefoneResponsavel", CampoTelefoneResponsavel.Text);
-                    cmd.Parameters.AddWithValue("@enderecoTrabalho", CampoEnderecoTrabalho.Text);
+                    cmd.Parameters.AddWithValue("@telefone", CampoTelefone.Text);
+                    cmd.Parameters.AddWithValue("@endereco", CampoEndereco.Text);
                     cmd.Parameters.AddWithValue("@telefoneTrabalho", CampoTelefoneTrabalho.Text);
+                    cmd.Parameters.AddWithValue("@enderecoTrabalho", CampoEnderecoTrabalho.Text);
                     cmd.Parameters.AddWithValue("@autorizado1", CampoAutorizado1.Text);
                     cmd.Parameters.AddWithValue("@autorizado2", CampoAutorizado2.Text);
                     cmd.Parameters.AddWithValue("@autorizado3", CampoAutorizado3.Text);
@@ -91,6 +93,15 @@ namespace CadastroResponsavelAluno
             CampoAluno.Clear();
             ComboBoxTurma.SelectedIndex = -1;
             CampoResponsavel.Clear();
+            CampoCPFAluno.Clear();
+            CampoCPFResponsavel.Clear();
+            CampoTelefone.Clear();
+            CampoEndereco.Clear();
+            CampoTelefoneTrabalho.Clear();
+            CampoEnderecoTrabalho.Clear();
+            CampoAutorizado1.Clear();
+            CampoAutorizado2.Clear();
+            CampoAutorizado3.Clear();
         }
 
         private void AdicionarTurmas()
@@ -103,10 +114,5 @@ namespace CadastroResponsavelAluno
             ComboBoxTurma.Items.Add("2º C");
         }
         #endregion
-
-        private void ComboBoxTurma_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-
-        }
     }
 }

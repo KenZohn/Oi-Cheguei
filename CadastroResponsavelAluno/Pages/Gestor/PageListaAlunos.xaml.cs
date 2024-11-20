@@ -103,9 +103,15 @@ namespace CadastroResponsavelAluno
                                 Nome = reader["Nome"].ToString(),
                                 Turma = reader["Turma"].ToString(),
                                 Responsavel = reader["Responsavel"].ToString(),
-                                //CPFAluno = Convert.ToInt32(reader["CPFAluno"]),
-                                //CPFResponsavel = Convert.ToInt32(reader["CPFResponsavel"]),
-                                Telefone = reader["TelefoneResponsavel"].ToString(),
+                                CPFAluno = reader["CPFAluno"].ToString(),
+                                CPFResponsavel = reader["CPFResponsavel"].ToString(),
+                                Telefone = reader["Telefone"].ToString(),
+                                Endereco = reader["Endereco"].ToString(),
+                                TelefoneTrabalho = reader["TelefoneTrabalho"].ToString(),
+                                EnderecoTrabalho = reader["EnderecoTrabalho"].ToString(),
+                                Autorizado1 = reader["Autorizado1"].ToString(),
+                                Autorizado2 = reader["Autorizado2"].ToString(),
+                                Autorizado3 = reader["Autorizado3"].ToString()
                             };
                             alunos.Add(aluno);
                         }

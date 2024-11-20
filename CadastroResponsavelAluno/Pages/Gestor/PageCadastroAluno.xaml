@@ -10,26 +10,26 @@
       Title="PageCadastroAluno">
     <Grid>
         <StackPanel Height="920" Width="300" Margin="10">
-            <Label Content="Nome do aluno" Style="{StaticResource LabelCadastroAluno}"/>
+            <Label Content="Nome do aluno *" Style="{StaticResource LabelCadastroAluno}"/>
             <TextBox x:Name="CampoAluno" Style="{StaticResource CampoCadastroAluno}"/>
 
-            <Label Content="CPF do aluno" Style="{StaticResource LabelCadastroAluno}"/>
+            <Label Content="Turma *" Style="{StaticResource LabelCadastroAluno}"/>
+            <ComboBox x:Name="ComboBoxTurma" Width="100" Height="30" HorizontalAlignment="Left" VerticalContentAlignment="Center" FontSize="16"/>
+
+            <Label Content="Nome do responsável *" Style="{StaticResource LabelCadastroAluno}"/>
+            <TextBox x:Name="CampoResponsavel" Style="{StaticResource CampoCadastroAluno}"/>
+
+            <Label Content="CPF do aluno *" Style="{StaticResource LabelCadastroAluno}"/>
             <TextBox x:Name="CampoCPFAluno" Style="{StaticResource CampoCadastroAluno}"/>
+
+            <Label Content="CPF do responsável *" Style="{StaticResource LabelCadastroAluno}"/>
+            <TextBox x:Name="CampoCPFResponsavel" Style="{StaticResource CampoCadastroAluno}"/>
+
+            <Label Content="Telefone" Style="{StaticResource LabelCadastroAluno}"/>
+            <TextBox x:Name="CampoTelefone" Style="{StaticResource CampoCadastroAluno}"/>
 
             <Label Content="Endereço" Style="{StaticResource LabelCadastroAluno}"/>
             <TextBox x:Name="CampoEndereco" Style="{StaticResource CampoCadastroAluno}"/>
-
-            <Label Content="Turma" Style="{StaticResource LabelCadastroAluno}"/>
-            <ComboBox x:Name="ComboBoxTurma" Width="100" Height="30" HorizontalAlignment="Left" VerticalContentAlignment="Center" FontSize="16"/>
-
-            <Label Content="Nome do responsável" Style="{StaticResource LabelCadastroAluno}"/>
-            <TextBox x:Name="CampoResponsavel" Style="{StaticResource CampoCadastroAluno}"/>
-
-            <Label Content="CPF do responsável" Style="{StaticResource LabelCadastroAluno}"/>
-            <TextBox x:Name="CampoCPFResponsavel" Style="{StaticResource CampoCadastroAluno}"/>
-
-            <Label Content="Telefone do responsável" Style="{StaticResource LabelCadastroAluno}"/>
-            <TextBox x:Name="CampoTelefoneResponsavel" Style="{StaticResource CampoCadastroAluno}"/>
 
             <Label Content="Endereço do trabalho" Style="{StaticResource LabelCadastroAluno}"/>
             <TextBox x:Name="CampoEnderecoTrabalho" Style="{StaticResource CampoCadastroAluno}"/>
