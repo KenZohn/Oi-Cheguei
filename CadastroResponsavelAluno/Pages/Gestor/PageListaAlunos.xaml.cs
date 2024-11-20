@@ -102,7 +102,10 @@ namespace CadastroResponsavelAluno
                                 Id = Convert.ToInt32(reader["Id"]),
                                 Nome = reader["Nome"].ToString(),
                                 Turma = reader["Turma"].ToString(),
-                                Responsavel = reader["Responsavel"].ToString()
+                                Responsavel = reader["Responsavel"].ToString(),
+                                //CPFAluno = Convert.ToInt32(reader["CPFAluno"]),
+                                //CPFResponsavel = Convert.ToInt32(reader["CPFResponsavel"]),
+                                Telefone = reader["TelefoneResponsavel"].ToString(),
                             };
                             alunos.Add(aluno);
                         }

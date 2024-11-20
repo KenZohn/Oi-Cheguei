@@ -10,7 +10,7 @@
       Title="PageListaAlunos">
     <Grid>
         <StackPanel Margin="20">
-            <DataGrid x:Name="DataGridAlunos" Height="350" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0, 0, 0, 30" FontSize="16" AutoGenerateColumns="False" IsReadOnly="True" CanUserResizeColumns="False" HeadersVisibility="Column" CanUserSortColumns="False" CanUserReorderColumns="False" SelectionChanged="DataGridAlunos_SelectionChanged">
+            <DataGrid x:Name="DataGridAlunos" Height="350" MaxWidth="800" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0, 0, 0, 30" FontSize="16" AutoGenerateColumns="False" IsReadOnly="True" CanUserResizeColumns="False" HeadersVisibility="Column" CanUserSortColumns="False" CanUserReorderColumns="False" SelectionChanged="DataGridAlunos_SelectionChanged">
                 <DataGrid.Columns>
                     <DataGridTextColumn Header="Id" Binding="{Binding Id}" Visibility="Collapsed"/>
                     <DataGridTextColumn Header="Nome" Binding="{Binding Nome}" Width="350"/>
@@ -22,6 +22,15 @@
                         </DataGridTemplateColumn.CellTemplate>
                     </DataGridTemplateColumn>
                     <DataGridTextColumn Header="Responsável" Binding="{Binding Responsavel}" Width="350"/>
+                    <DataGridTextColumn Header="CPF do aluno" Binding="{Binding CPFAluno}" Width="200"/>
+                    <DataGridTextColumn Header="CPF do responsável" Binding="{Binding CPFResponsavel}" Width="200"/>
+                    <DataGridTextColumn Header="Telefone" Binding="{Binding Telefone}" Width="200"/>
+                    <DataGridTextColumn Header="Endereço" Binding="{Binding Endereco}" Width="200"/>
+                    <DataGridTextColumn Header="Telefone do trabalho" Binding="{Binding TelefoneTrabalho}" Width="200"/>
+                    <DataGridTextColumn Header="Endereço do trabalho" Binding="{Binding EnderecoTrabalho}" Width="200"/>
+                    <DataGridTextColumn Header="Autorizado 1" Binding="{Binding Autorizado1}" Width="300"/>
+                    <DataGridTextColumn Header="Autorizado 2" Binding="{Binding Autorizado2}" Width="300"/>
+                    <DataGridTextColumn Header="Autorizado 3" Binding="{Binding Autorizado3}" Width="300"/>
                 </DataGrid.Columns>
             </DataGrid>
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">

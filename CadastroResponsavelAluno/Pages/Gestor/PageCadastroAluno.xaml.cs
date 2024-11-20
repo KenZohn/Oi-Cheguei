@@ -32,7 +32,9 @@ namespace CadastroResponsavelAluno
         #region Botões
         private void BotaoCadastrarAluno_Click(object sender, RoutedEventArgs e)
         {
-            if (string.IsNullOrEmpty(CampoAluno.Text) || string.IsNullOrEmpty(ComboBoxTurma.Text) || string.IsNullOrEmpty(CampoResponsavel.Text))
+            if (string.IsNullOrEmpty(CampoAluno.Text) ||
+                string.IsNullOrEmpty(ComboBoxTurma.Text) ||
+                string.IsNullOrEmpty(CampoResponsavel.Text))
             {
                 if (Application.Current.MainWindow is MainWindow mainWindow)
                 {
@@ -60,12 +62,21 @@ namespace CadastroResponsavelAluno
             using (SQLiteConnection conexao = new SQLiteConnection("Data Source=" + System.IO.Path.Combine(Directory.GetParent(AppDomain.CurrentDomain.BaseDirectory).Parent.Parent.Parent.FullName, "ChegouBD.db")))
             {
                 conexao.Open();
-                string strSql = "INSERT INTO Alunos (Nome, Turma, Responsavel) VALUES (@nome, @turma, @responsavel)";
+                string strSql = "INSERT INTO Alunos (Nome, CPFAluno, Turma, Endereco, Responsavel, CPFResponsavel, TelefoneResponsavel, EnderecoTrabalho, TelefoneTrabalho, Autorizado1, Autorizado2, Autorizado3) VALUES (@nome, @cpf, @turma, @endereco, @responsavel, @cpfResponsavel, @telefoneResponsavel, @enderecoTrabalho, @telefoneTrabalho, @autorizado1, @autorizado2, @autorizado3)";
                 using (SQLiteCommand cmd = new SQLiteCommand(strSql, conexao))
                 {
                     cmd.Parameters.AddWithValue("@nome", CampoAluno.Text);
+                    cmd.Parameters.AddWithValue("@cpf", CampoCPFAluno.Text);
                     cmd.Parameters.AddWithValue("@turma", ComboBoxTurma.Text);
+                    cmd.Parameters.AddWithValue("@endereco", CampoEndereco.Text);
                     cmd.Parameters.AddWithValue("@responsavel", CampoResponsavel.Text);
+                    cmd.Parameters.AddWithValue("@cpfResponsavel", CampoCPFResponsavel.Text);
+                    cmd.Parameters.AddWithValue("@telefoneResponsavel", CampoTelefoneResponsavel.Text);
+                    cmd.Parameters.AddWithValue("@enderecoTrabalho", CampoEnderecoTrabalho.Text);
+                    cmd.Parameters.AddWithValue("@telefoneTrabalho", CampoTelefoneTrabalho.Text);
+                    cmd.Parameters.AddWithValue("@autorizado1", CampoAutorizado1.Text);
+                    cmd.Parameters.AddWithValue("@autorizado2", CampoAutorizado2.Text);
+                    cmd.Parameters.AddWithValue("@autorizado3", CampoAutorizado3.Text);
 
                     cmd.ExecuteNonQuery();
                 }

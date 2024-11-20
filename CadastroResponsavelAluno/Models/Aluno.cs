@@ -12,5 +12,8 @@ namespace CadastroResponsavelAluno
         public string Nome { get; set; }
         public string Turma { get; set; }
         public string Responsavel { get; set; }
+        public int CPFAluno { get; set; }
+        public int CPFResponsavel { get; set; }
+        public string Telefone { get; set; }
     }
 }
