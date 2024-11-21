@@ -165,7 +165,7 @@
             </Setter>
         </Style>
         <!-- #endregion -->
-        
+
         <!-- Principal -->
         <Style TargetType="Border" x:Key="BorderBotaoMenuPrincipal">
             <Setter Property="Background" Value="#FFFFFF"/>
@@ -239,7 +239,7 @@
             </Style.Triggers>
         </Style>
 
-        <!-- Cadastro de Aluno -->
+        <!-- region Cadastro de Aluno -->
         <Style TargetType="Label" x:Key="LabelCadastroAluno">
             <Setter Property="Width" Value="300"/>
             <Setter Property="Margin" Value="0 10 0 0"/>
@@ -285,7 +285,36 @@
                 </Trigger>
             </Style.Triggers>
         </Style>
-        
+
+        <Style x:Key="ComboBoxCadastro" TargetType="ComboBox">
+            <Setter Property="HorizontalAlignment" Value="Left"/>
+            <Setter Property="Height" Value="30"/>
+            <Setter Property="Width" Value="100"/>
+            <Setter Property="FontSize" Value="16"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="ComboBox">
+                        <Grid>
+                            <Border CornerRadius="5" BorderBrush="#606060" BorderThickness="1">
+                                <DockPanel>
+                                    <ToggleButton DockPanel.Dock="Right" Focusable="false" IsChecked="{Binding Path=IsDropDownOpen, RelativeSource={RelativeSource TemplatedParent}}" ClickMode="Press" Width="26" Style="{StaticResource ComboBoxToggleButton}"/>
+                                    <ContentPresenter Content="{TemplateBinding SelectionBoxItem}" Margin="14,0,0,0" VerticalAlignment="Center" HorizontalAlignment="Left"/>
+                                </DockPanel>
+                            </Border>
+                            <Popup x:Name="Popup" IsOpen="{TemplateBinding IsDropDownOpen}" Placement="Bottom" Width="{TemplateBinding ActualWidth}" AllowsTransparency="True" Focusable="False">
+                                <Border x:Name="PopupBorder" Background="White" BorderBrush="Gray" BorderThickness="1" CornerRadius="0,0,5,5">
+                                    <ScrollViewer Margin="4">
+                                        <StackPanel IsItemsHost="True"/>
+                                    </ScrollViewer>
+                                </Border>
+                            </Popup>
+                        </Grid>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        <!-- endregion -->
+
         <!-- DataGrid -->
         <Style TargetType="DataGridColumnHeader" x:Key="CentralizarCabecalho">
             <Setter Property="HorizontalContentAlignment" Value="Center"/>

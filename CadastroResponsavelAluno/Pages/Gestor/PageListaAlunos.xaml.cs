@@ -44,8 +44,9 @@ namespace CadastroResponsavelAluno
                     {
                         ExcluirAluno();
                         CarregarDados();
-                        aluno = null;
                     }
+                    aluno = null;
+                    DataGridAlunos.SelectedItem = null;
                 }
                 else
                 {
@@ -66,6 +67,7 @@ namespace CadastroResponsavelAluno
                     windowAlterarAluno.ShowDialog();
                     CarregarDados();
                     aluno = null;
+                    DataGridAlunos.SelectedItem = null;
                 }
                 else
                 {

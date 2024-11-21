@@ -34,9 +34,13 @@ namespace CadastroResponsavelAluno.Gestor
 
         private void BotaoAlterarAluno_Click(object sender, RoutedEventArgs e)
         {
-            if (string.IsNullOrEmpty(CampoAluno.Text) || string.IsNullOrEmpty(ComboBoxTurma.Text) || string.IsNullOrEmpty(CampoResponsavel.Text))
+            if (string.IsNullOrEmpty(CampoAluno.Text) ||
+                string.IsNullOrEmpty(ComboBoxTurma.Text) ||
+                string.IsNullOrEmpty(CampoResponsavel.Text) ||
+                string.IsNullOrEmpty(CampoCPFAluno.Text) ||
+                string.IsNullOrEmpty(CampoCPFResponsavel.Text))
             {
-                MessageBox.Show("Preencha todos os campos.");
+                MessageBox.Show("Preencha todos os campos obrigatórios.");
             }
             else
             {
@@ -55,6 +59,15 @@ namespace CadastroResponsavelAluno.Gestor
             CampoAluno.Text = aluno.Nome;
             ComboBoxTurma.Text = aluno.Turma;
             CampoResponsavel.Text = aluno.Responsavel;
+            CampoCPFAluno.Text = aluno.CPFAluno;
+            CampoCPFResponsavel.Text = aluno.CPFResponsavel;
+            CampoTelefone.Text = aluno.Telefone;
+            CampoEndereco.Text = aluno.Endereco;
+            CampoTelefoneTrabalho.Text = aluno.TelefoneTrabalho;
+            CampoEnderecoTrabalho.Text = aluno.EnderecoTrabalho;
+            CampoAutorizado1.Text = aluno.Autorizado1;
+            CampoAutorizado2.Text = aluno.Autorizado2;
+            CampoAutorizado3.Text = aluno.Autorizado3;
         }
 
         private void AdicionarTurmas()
@@ -72,12 +85,35 @@ namespace CadastroResponsavelAluno.Gestor
             using (SQLiteConnection conexao = new SQLiteConnection("Data Source=" + System.IO.Path.Combine(Directory.GetParent(AppDomain.CurrentDomain.BaseDirectory).Parent.Parent.Parent.FullName, "ChegouBD.db")))
             {
                 conexao.Open();
-                string strSql = "UPDATE Alunos SET Nome = @nome, Turma = @turma, Responsavel = @responsavel WHERE Id = @id";
+                string strSql = "UPDATE Alunos SET " +
+                    "Nome = @nome," +
+                    "Turma = @turma," +
+                    "Responsavel = @responsavel," +
+                    "CPFAluno = @cpfAluno," +
+                    "CPFResponsavel = @cpfResponsavel," +
+                    "Telefone = @telefone," +
+                    "Endereco = @endereco," +
+                    "TelefoneTrabalho = @telefoneTrabalho," +
+                    "EnderecoTrabalho = @enderecoTrabalho," +
+                    "Autorizado1 = @autorizado1," +
+                    "Autorizado2 = @autorizado2," +
+                    "Autorizado3 = @autorizado3 " +
+                    "WHERE Id = @id";
+
                 using (SQLiteCommand cmd = new SQLiteCommand(strSql, conexao))
                 {
                     cmd.Parameters.AddWithValue("@nome", CampoAluno.Text);
                     cmd.Parameters.AddWithValue("@turma", ComboBoxTurma.Text);
                     cmd.Parameters.AddWithValue("@responsavel", CampoResponsavel.Text);
+                    cmd.Parameters.AddWithValue("@cpfAluno", CampoCPFAluno.Text);
+                    cmd.Parameters.AddWithValue("@cpfResponsavel", CampoCPFResponsavel.Text);
+                    cmd.Parameters.AddWithValue("@telefone", CampoTelefone.Text);
+                    cmd.Parameters.AddWithValue("@endereco", CampoEndereco.Text);
+                    cmd.Parameters.AddWithValue("@telefoneTrabalho", CampoTelefoneTrabalho.Text);
+                    cmd.Parameters.AddWithValue("@enderecoTrabalho", CampoEnderecoTrabalho.Text);
+                    cmd.Parameters.AddWithValue("@autorizado1", CampoAutorizado1.Text);
+                    cmd.Parameters.AddWithValue("@autorizado2", CampoAutorizado2.Text);
+                    cmd.Parameters.AddWithValue("@autorizado3", CampoAutorizado3.Text);
                     cmd.Parameters.AddWithValue("@id", aluno.Id);
 
                     cmd.ExecuteNonQuery();

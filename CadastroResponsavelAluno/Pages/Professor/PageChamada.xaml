@@ -13,7 +13,7 @@
         <StackPanel Margin="20">
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0, 0, 0, 20">
                 <Label Content="Turma" FontSize="16"/>
-                <ComboBox x:Name="ComboBoxTurma" Width="100" Height="30" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="16" SelectionChanged="ComboBoxTurma_SelectionChanged"/>
+                <ComboBox x:Name="ComboBoxTurma" HorizontalContentAlignment="Center" Style="{StaticResource ComboBoxCadastro}" SelectionChanged="ComboBoxTurma_SelectionChanged"/>
             </StackPanel>
             <DataGrid x:Name="DataGridChamada" Height="350" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="16" AutoGenerateColumns="False" IsReadOnly="True" CanUserResizeColumns="False" HeadersVisibility="Column" CanUserSortColumns="False" CanUserReorderColumns="False">
                 <DataGrid.Columns>

@@ -14,7 +14,7 @@
             <TextBox x:Name="CampoAluno" Style="{StaticResource CampoCadastroAluno}"/>
 
             <Label Content="Turma *" Style="{StaticResource LabelCadastroAluno}"/>
-            <ComboBox x:Name="ComboBoxTurma" Width="100" Height="30" HorizontalAlignment="Left" VerticalContentAlignment="Center" FontSize="16"/>
+            <ComboBox x:Name="ComboBoxTurma" Style="{StaticResource ComboBoxCadastro}"/>
 
             <Label Content="Nome do responsável *" Style="{StaticResource LabelCadastroAluno}"/>
             <TextBox x:Name="CampoResponsavel" Style="{StaticResource CampoCadastroAluno}"/>
@@ -31,11 +31,11 @@
             <Label Content="Endereço" Style="{StaticResource LabelCadastroAluno}"/>
             <TextBox x:Name="CampoEndereco" Style="{StaticResource CampoCadastroAluno}"/>
 
-            <Label Content="Endereço do trabalho" Style="{StaticResource LabelCadastroAluno}"/>
-            <TextBox x:Name="CampoEnderecoTrabalho" Style="{StaticResource CampoCadastroAluno}"/>
-
             <Label Content="Telefone do trabalho" Style="{StaticResource LabelCadastroAluno}"/>
             <TextBox x:Name="CampoTelefoneTrabalho" Style="{StaticResource CampoCadastroAluno}"/>
+
+            <Label Content="Endereço do trabalho" Style="{StaticResource LabelCadastroAluno}"/>
+            <TextBox x:Name="CampoEnderecoTrabalho" Style="{StaticResource CampoCadastroAluno}"/>
 
             <Label Content="Autorizado 1" Style="{StaticResource LabelCadastroAluno}"/>
             <TextBox x:Name="CampoAutorizado1" Style="{StaticResource CampoCadastroAluno}"/>
