@@ -211,6 +211,9 @@
     <Resource Include="Icons\Notificacao.png" />
     <Resource Include="Icons\NotificacaoApagado.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Imagens\LogoChegueiHD.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
