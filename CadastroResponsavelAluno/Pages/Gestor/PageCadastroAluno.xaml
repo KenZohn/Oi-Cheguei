@@ -5,11 +5,11 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:CadastroResponsavelAluno"
       mc:Ignorable="d" 
-      d:DesignHeight="940" d:DesignWidth="320"
+      d:DesignHeight="980" d:DesignWidth="470"
       Background="#FFFFFF"
       Title="PageCadastroAluno">
     <Grid>
-        <StackPanel Height="920" Width="300" Margin="10">
+        <StackPanel Height="960" Width="450" Margin="10">
             <Label Content="Nome do aluno *" Style="{StaticResource LabelCadastroAluno}"/>
             <TextBox x:Name="CampoAluno" Style="{StaticResource CampoCadastroAluno}"/>
 
@@ -47,7 +47,7 @@
             <TextBox x:Name="CampoAutorizado3" Style="{StaticResource CampoCadastroAluno}"/>
 
             <StackPanel Orientation="Horizontal">
-                <Button x:Name="BotaoLimparAluno" Content="Limpar" VerticalAlignment="Bottom" Margin="0, 0, 20, 0" Style="{StaticResource BotaoCadastroAluno}" Click="BotaoLimparAluno_Click"/>
+                <Button x:Name="BotaoLimparAluno" Content="Limpar" VerticalAlignment="Bottom" Margin="0, 0, 30, 0" Style="{StaticResource BotaoCadastroAluno}" Click="BotaoLimparAluno_Click"/>
                 <Button x:Name="BotaoCadastrarAluno" Content="Cadastrar" Style="{StaticResource BotaoCadastroAluno}" Click="BotaoCadastrarAluno_Click"/>
             </StackPanel>
         </StackPanel>

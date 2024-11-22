@@ -8,7 +8,7 @@
       d:DesignHeight="720" d:DesignWidth="1280"
       Background="#FFFFFF"
       Title="PageGestor">
-    <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto">
+    <ScrollViewer VerticalScrollBarVisibility="Visible" HorizontalScrollBarVisibility="Auto">
         <Grid>
             <Grid.RowDefinitions>
                 <RowDefinition Height="Auto"/>

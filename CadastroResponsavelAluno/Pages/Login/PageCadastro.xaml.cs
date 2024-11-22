@@ -49,7 +49,12 @@ namespace CadastroResponsavelAluno
                     Usuario user = new Usuario(_conexao);
                     user.MetodoCadastro(CampoNome.Text, CampoSenha.Password, CampoCPF.Text, ComboBoxCargo.Text);
                     MessageBox.Show("Cadastrado com sucesso!");
-                    this.NavigationService.Navigate(new PageLogin());
+
+                    CampoNome.Clear();
+                    CampoSenha.Clear();
+                    CampoRepetirSenha.Clear();
+                    CampoCPF.Clear();
+                    ComboBoxCargo.SelectedIndex = -1;
                 }
             }
             catch (Exception ex)
