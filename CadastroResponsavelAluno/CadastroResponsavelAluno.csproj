@@ -214,6 +214,9 @@
   <ItemGroup>
     <Resource Include="Imagens\LogoChegueiHD.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Imagens\IconeCheguei.ico" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>

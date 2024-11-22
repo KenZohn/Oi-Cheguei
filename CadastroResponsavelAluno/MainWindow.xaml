@@ -5,12 +5,13 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CadastroResponsavelAluno"
         mc:Ignorable="d"
-        Title="Chegoo"
+        Title="Oi, Cheguei!"
         Height="720" MinHeight="400"
         Width="1280" MinWidth="600"
         WindowStartupLocation="CenterScreen"
         WindowState="Maximized"
-        Background="#FFFFFF">
+        Background="#FFFFFF"
+        Icon="\Imagens\IconeCheguei.ico">
     <Grid>
         <Frame x:Name="FrameMainWindow" NavigationUIVisibility="Hidden" Navigating="FrameMainWindow_Navigating"/>
         <Rectangle Name="Overlay" Grid.Column="0" Grid.ColumnSpan="2" Fill="Black" Opacity="0.3" Visibility="Collapsed" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
