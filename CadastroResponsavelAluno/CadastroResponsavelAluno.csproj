@@ -135,6 +135,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Pages\Professor\WindowCheguei.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="Pages\Professor\WindowNotificacao.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -166,6 +170,9 @@
     </Compile>
     <Compile Include="Pages\Professor\PageProfessor.xaml.cs">
       <DependentUpon>PageProfessor.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Professor\WindowCheguei.xaml.cs">
+      <DependentUpon>WindowCheguei.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pages\Professor\WindowNotificacao.xaml.cs">
       <DependentUpon>WindowNotificacao.xaml</DependentUpon>
