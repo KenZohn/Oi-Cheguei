@@ -75,6 +75,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Models\Presenca.cs" />
     <Compile Include="Pages\Gestor\WindowAlterarAluno.xaml.cs">
       <DependentUpon>WindowAlterarAluno.xaml</DependentUpon>
     </Compile>

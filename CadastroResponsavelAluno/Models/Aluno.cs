@@ -21,5 +21,6 @@ namespace CadastroResponsavelAluno
         public string Autorizado1 { get; set; }
         public string Autorizado2 { get; set; }
         public string Autorizado3 { get; set; }
+        public bool Presente { get; set; }
     }
 }

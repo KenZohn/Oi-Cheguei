@@ -17,18 +17,20 @@
             </StackPanel>
             <DataGrid x:Name="DataGridChamada" Height="350" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="16" AutoGenerateColumns="False" IsReadOnly="True" CanUserResizeColumns="False" HeadersVisibility="Column" CanUserSortColumns="False" CanUserReorderColumns="False">
                 <DataGrid.Columns>
+
                     <DataGridTextColumn Header="Id" Binding="{Binding Id}" Visibility="Collapsed"/>
                     <DataGridTextColumn Header="Nome" Binding="{Binding Nome}" Width="350"/>
                     <DataGridTemplateColumn Header="Presença" Width="100" HeaderStyle="{StaticResource CentralizarCabecalho}">
                         <DataGridTemplateColumn.CellTemplate>
                             <DataTemplate>
-                                <CheckBox IsChecked="{Binding Presenca}" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                                
+                                <CheckBox IsChecked="{Binding Presente, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Center" HorizontalAlignment="Center"/>
                             </DataTemplate>
                         </DataGridTemplateColumn.CellTemplate>
                     </DataGridTemplateColumn>
                 </DataGrid.Columns>
             </DataGrid>
-            <Button Content="Salvar" Height="30" Width="200" Margin="0 20 0 0" Style="{StaticResource BotaoCadastroAluno}"/>
+            <Button Content="Salvar" Height="30" Width="200" Margin="0 20 0 0" Style="{StaticResource BotaoCadastroAluno}" Click="Button_Click"/>
         </StackPanel>
     </Grid>
 </Page>
