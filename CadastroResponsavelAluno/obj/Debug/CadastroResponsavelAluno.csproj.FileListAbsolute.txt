@@ -298,3 +298,5 @@ C:\Users\thais\OneDrive\Área de Trabalho\POO\POO-Johnny\CadastroResponsavelAlun
 C:\Users\thais\OneDrive\Área de Trabalho\POO\POO-Johnny\CadastroResponsavelAluno\obj\Debug\Cadastro.690D71A9.Up2Date
 C:\Users\thais\OneDrive\Área de Trabalho\POO\POO-Johnny\CadastroResponsavelAluno\obj\Debug\CadastroResponsavelAluno.exe
 C:\Users\thais\OneDrive\Área de Trabalho\POO\POO-Johnny\CadastroResponsavelAluno\obj\Debug\CadastroResponsavelAluno.pdb
+C:\Users\Cliente\Source\Repos\POO-Johnny\CadastroResponsavelAluno\obj\Debug\Pages\Professor\WindowCheguei.g.cs
+C:\Users\Cliente\Source\Repos\POO-Johnny\CadastroResponsavelAluno\obj\Debug\Pages\Professor\WindowCheguei.baml

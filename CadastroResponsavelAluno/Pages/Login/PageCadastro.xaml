@@ -5,7 +5,7 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:CadastroResponsavelAluno"
       mc:Ignorable="d" 
-      d:DesignHeight="450" d:DesignWidth="800"
+      d:DesignHeight="490" d:DesignWidth="800"
       Title="PageCadastro">
 
     <Page.Resources>
@@ -19,10 +19,10 @@
             <ColumnDefinition Width="Auto"/>
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
-        <Border Grid.Column="1" Background="White" Height="400" CornerRadius="10">
+        <Border Grid.Column="1" Background="White" CornerRadius="10" Margin="0,20,0,10">
             <Grid >
                 <Grid.RowDefinitions>
-                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="20"/>
                     <RowDefinition Height="Auto"/>
                     <RowDefinition Height="Auto"/>
                     <RowDefinition Height="Auto"/>
@@ -33,26 +33,26 @@
                 <!-- <Label Content="Seja Bem-Vindo!" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" FontWeight="Bold"/>
                 <Label Grid.Row="0" Content="← Voltar" HorizontalAlignment="Left" VerticalAlignment="Bottom" FontSize="14" Margin="12,0,0,0" MouseLeftButtonDown="Label_MouseLeftButtonDown"/> -->
 
-                <TextBlock Grid.Row="1" Panel.ZIndex="1" Text="Nome" Visibility="{Binding ElementName=CampoNome, Path=Text.IsEmpty, Converter={StaticResource BoolToVis} }" Style="{StaticResource TextBlockLogin}"/>
-                <TextBox Grid.Row="1" Panel.ZIndex="0" x:Name="CampoNome" Style="{StaticResource TextBoxLogin}"/>
+                <Label Grid.Row="1" Content="Nome" Style="{StaticResource LabelLogin}"/>
+                <TextBox Grid.Row="1" x:Name="CampoNome" Style="{StaticResource TextBoxLogin}"/>
 
-                <TextBlock x:Name="LabelSenha" Grid.Row="2" Panel.ZIndex="1" Text="Senha" Style="{StaticResource TextBlockLogin}"/>
-                <PasswordBox Grid.Row="2" Panel.ZIndex="0" x:Name="CampoSenha" Style="{StaticResource PasswordBoxLogin}" PasswordChanged="CampoSenha_PasswordChanged"/>
+                <Label Grid.Row="2" Content="Senha" Style="{StaticResource LabelLogin}"/>
+                <PasswordBox Grid.Row="2" x:Name="CampoSenha" Style="{StaticResource PasswordBoxLogin}" PasswordChanged="CampoSenha_PasswordChanged"/>
 
-                <TextBlock x:Name="LabelRepetirSenha" Grid.Row="3" Panel.ZIndex="1" Text="Repetir Senha" Style="{StaticResource TextBlockLogin}"/>
-                <PasswordBox Grid.Row="3" Panel.ZIndex="0" x:Name="CampoRepetirSenha" Style="{StaticResource PasswordBoxLogin}" PasswordChanged="CampoRepetirSenha_PasswordChanged"/>
+                <Label Grid.Row="3" Content="Repetir a Senha" Style="{StaticResource LabelLogin}"/>
+                <PasswordBox Grid.Row="3" x:Name="CampoRepetirSenha" Style="{StaticResource PasswordBoxLogin}" PasswordChanged="CampoRepetirSenha_PasswordChanged"/>
 
-                <TextBlock Grid.Row="4" Panel.ZIndex="1" Text="CPF" Visibility="{Binding ElementName=CampoCPF, Path=Text.IsEmpty, Converter={StaticResource BoolToVis} }" Style="{StaticResource TextBlockLogin}"/>
-                <TextBox Grid.Row="4" Panel.ZIndex="0" x:Name="CampoCPF" Style="{StaticResource TextBoxLogin}"/>
+                <Label Grid.Row="4" Content="CPF" Style="{StaticResource LabelLogin}"/>
+                <TextBox Grid.Row="4" x:Name="CampoCPF" Style="{StaticResource TextBoxLogin}" />
 
-                <TextBlock x:Name="labelCargo" Grid.Row="5" Panel.ZIndex="1" Text="Cargo" Style="{StaticResource TextBlockLogin}"/>
-                <ComboBox x:Name="ComboBoxCargo" Grid.Row="5" Panel.ZIndex="0" Style="{StaticResource ComboBoxLogin}" SelectionChanged="ComboBoxCargo_SelectionChanged">
+                <Label Grid.Row="5" Content="Cargo" Style="{StaticResource LabelLogin}" Height="35" Margin="10,2,0,43"/>
+                <ComboBox x:Name="ComboBoxCargo" Grid.Row="5" Style="{StaticResource ComboBoxLogin}" SelectionChanged="ComboBoxCargo_SelectionChanged">
                     <ComboBoxItem Content="Coordenação/Direção"/>
                     <ComboBoxItem Content="Portaria"/>
                     <ComboBoxItem Content="Professor"/>
                 </ComboBox>
 
-                <Button Grid.Row="6" Content="Cadastrar" HorizontalAlignment="Center" Height="35" Width="180" Margin="10,10,10,10" Click="Cadastrar_Click" Style="{StaticResource EstiloBotao}"/>
+                <Button Grid.Row="6" Content="Cadastrar" HorizontalAlignment="Center" Height="35" Width="180" Margin="10,10,10,15" Click="Cadastrar_Click" Style="{StaticResource EstiloBotaoLogin}"/>
             </Grid>
         </Border>
     </Grid>

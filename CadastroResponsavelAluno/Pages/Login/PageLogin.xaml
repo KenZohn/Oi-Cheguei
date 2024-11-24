@@ -29,13 +29,15 @@
                     <RowDefinition Height="Auto"/>
                 </Grid.RowDefinitions>
                 <Label Grid.Row="0" Content="Seja Bem-Vindo(a)!" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="24" Margin="0,178,0,28"/>
-                <TextBlock Grid.Row="1" Panel.ZIndex="1"  IsHitTestVisible="False" Text="Nome" Visibility="{Binding ElementName=CampoLogin, Path=Text.IsEmpty, Converter={StaticResource BoolToVis} }"  Margin="112,31,0,0" Style="{StaticResource TextBlockLogin}" VerticalAlignment="Top"/>
+                
+                <TextBlock Grid.Row="1" Panel.ZIndex="1"  IsHitTestVisible="False" Text="Usuário" Visibility="{Binding ElementName=CampoLogin, Path=Text.IsEmpty, Converter={StaticResource BoolToVis} }"  Style="{StaticResource TextBlockLogin}" Margin="103,0,0,0"/>
                 <TextBox Grid.Row="1" Panel.ZIndex="0" x:Name="CampoLogin" Height="45" VerticalAlignment="Center" HorizontalAlignment="Center" Width="450" Style="{StaticResource EstiloTextBox}" Margin="10,20,10,22" KeyDown="CampoLogin_KeyDown"/>
-                <TextBlock x:Name="LabelSenha" Grid.Row="2" Panel.ZIndex="1" IsHitTestVisible="False" Text="Senha"   Margin="112,0,0,0" Style="{StaticResource TextBlockLogin}"/>
+
+                <TextBlock x:Name="LabelSenha" Grid.Row="2" Panel.ZIndex="1" IsHitTestVisible="False" Text="Senha"  Style="{StaticResource TextBlockLogin}" Margin="103,0,0,0"/>
                 <PasswordBox Grid.Row="2" Panel.ZIndex="0" x:Name="CampoSenha" Height="45" VerticalAlignment="Center" HorizontalAlignment="Center" Width="450" Style="{StaticResource EstiloPasswordBox}" Margin="10,22,10,22" PasswordChanged="CampoSenha_PasswordChanged" KeyDown="CampoSenha_KeyDown"/>
 
                 <Button x:Name="BotaoLogin" Grid.Row="3" Content="Login" HorizontalAlignment="Center" Height="45" Width="230" Style="{StaticResource EstiloBotaoLogin}" Margin="10,22,10,10" Click="BotaoLogin_Click"/>
-                <Button Grid.Row="4" Content="Novo Funcionário?" HorizontalAlignment="Center" Height="35" Width="180" Style="{StaticResource EstiloInvisível}" Background="Transparent" Margin="10,10,10,15" Click="BotaoCadastrar_Click"/>
+                <!--Button Grid.Row="4" Content="Novo Funcionário?" HorizontalAlignment="Center" Height="35" Width="180" Style="{StaticResource EstiloInvisível}" Background="Transparent" Margin="10,10,10,15" Click="BotaoCadastrar_Click"/-->
             </Grid>
         </Border>
     </Grid>

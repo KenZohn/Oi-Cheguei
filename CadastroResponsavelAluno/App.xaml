@@ -12,7 +12,6 @@
         <Style x:Key="TextBlockLogin" TargetType="TextBlock">
             <Setter Property="VerticalAlignment" Value="Center"/>
             <Setter Property="HorizontalAlignment" Value="Left"/>
-            <Setter Property="Height" Value="20"/>
             <Setter Property="Width" Value="345"/>
             <Setter Property="Margin" Value="27 0 0 0"/>
             <Setter Property="Foreground" Value="#9094B6"/>
@@ -23,8 +22,11 @@
         <Style x:Key="EstiloTextBox" TargetType="TextBox">
             <Setter Property="FontSize" Value="18"/>
             <Setter Property="Foreground" Value="#333333"/>
-            <Setter Property="Padding" Value="14,0,0,0"/>
+            <Setter Property="Padding" Value="5,0,0,0"/>
+            <Setter Property="Height" Value="45"/>
             <Setter Property="VerticalContentAlignment" Value="Center"/>
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
             <Setter Property="Template">
                 <Setter.Value>
                     <ControlTemplate TargetType="TextBox">
@@ -39,7 +41,7 @@
         <Style x:Key="EstiloPasswordBox" TargetType="PasswordBox">
             <Setter Property="FontSize" Value="18"/>
             <Setter Property="Foreground" Value="#333333"/>
-            <Setter Property="Padding" Value="14,0,0,0"/>
+            <Setter Property="Padding" Value="5,0,0,0"/>
             <Setter Property="VerticalContentAlignment" Value="Center"/>
             <Setter Property="Template">
                 <Setter.Value>
@@ -81,11 +83,11 @@
             <Setter Property="HorizontalAlignment" Value="Center"/>
             <Setter Property="Height" Value="30"/>
             <Setter Property="Width" Value="450"/>
-            <Setter Property="Margin" Value="10 10 10 10"/>
-            <Setter Property="Padding" Value="14 0 0 0"/>
+            <Setter Property="Margin" Value="10 35 10 10"/>
+            <Setter Property="Padding" Value="5 0 0 0"/>
             <Setter Property="VerticalContentAlignment" Value="Center"/>
             <Setter Property="Foreground" Value="#333333"/>
-            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="FontSize" Value="16"/>
             <Setter Property="Template">
                 <Setter.Value>
                     <ControlTemplate TargetType="TextBox">
@@ -102,11 +104,11 @@
             <Setter Property="HorizontalAlignment" Value="Center"/>
             <Setter Property="Height" Value="30"/>
             <Setter Property="Width" Value="450"/>
-            <Setter Property="Margin" Value="10 10 10 10"/>
-            <Setter Property="Padding" Value="14 0 0 0"/>
+            <Setter Property="Margin" Value="10 35 10 10"/>
+            <Setter Property="Padding" Value="5 0 0 0"/>
             <Setter Property="VerticalContentAlignment" Value="Center"/>
             <Setter Property="Foreground" Value="#333333"/>
-            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="FontSize" Value="16"/>
             <Setter Property="Template">
                 <Setter.Value>
                     <ControlTemplate TargetType="PasswordBox">
@@ -167,10 +169,10 @@
             <Setter Property="HorizontalAlignment" Value="Center"/>
             <Setter Property="Height" Value="30"/>
             <Setter Property="Width" Value="450"/>
-            <Setter Property="Margin" Value="10 10 10 10"/>
-            <Setter Property="Padding" Value="14 0 0 0"/>
+            <Setter Property="Margin" Value="10 30 10 10"/>
+            <Setter Property="Padding" Value="5 0 0 0"/>
             <Setter Property="Foreground" Value="#333333"/>
-            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="FontSize" Value="16"/>
             <Setter Property="Template">
                 <Setter.Value>
                     <ControlTemplate TargetType="ComboBox">
@@ -193,7 +195,15 @@
                 </Setter.Value>
             </Setter>
         </Style>
-        
+
+        <Style TargetType="Label" x:Key="LabelLogin">
+            <Setter Property="Height" Value="30"/>
+            <Setter Property="Margin" Value="10, 5, 0, 40"/>
+            <Setter Property="HorizontalAlignment" Value="Left"/>
+            <Setter Property="FontSize" Value="16"/>
+            <Setter Property="IsHitTestVisible" Value="False"/>
+        </Style>
+
         <Style x:Key="EstiloInvisível" TargetType="Button">
             <Setter Property="FontSize" Value="16"/>
             <Setter Property="Background" Value="Transparent"/>

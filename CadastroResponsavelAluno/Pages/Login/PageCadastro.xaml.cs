@@ -65,38 +65,38 @@ namespace CadastroResponsavelAluno
 
         private void CampoSenha_PasswordChanged(object sender, RoutedEventArgs e)
         {
-            if (string.IsNullOrEmpty(CampoSenha.Password))
-            {
-                LabelSenha.Visibility = Visibility.Visible;
-            }
-            else
-            {
-                LabelSenha.Visibility = Visibility.Collapsed;
-            }
+            //if (string.IsNullOrEmpty(CampoSenha.Password))
+            //{
+            //    LabelSenha.Visibility = Visibility.Visible;
+            //}
+            //else
+            //{
+            //    LabelSenha.Visibility = Visibility.Collapsed;
+            //}
         }
 
         private void CampoRepetirSenha_PasswordChanged(object sender, RoutedEventArgs e)
         {
-            if (string.IsNullOrEmpty(CampoRepetirSenha.Password))
-            {
-                LabelRepetirSenha.Visibility = Visibility.Visible;
-            }
-            else
-            {
-                LabelRepetirSenha.Visibility = Visibility.Collapsed;
-            }
+            //if (string.IsNullOrEmpty(CampoRepetirSenha.Password))
+            //{
+            //    LabelRepetirSenha.Visibility = Visibility.Visible;
+            //}
+            //else
+            //{
+            //    LabelRepetirSenha.Visibility = Visibility.Collapsed;
+            //}
         }
 
         private void ComboBoxCargo_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            if (ComboBoxCargo.Text != null)
-            {
-                labelCargo.Visibility = Visibility.Collapsed;
-            }
-            else
-            {
-                labelCargo.Visibility = Visibility.Visible;
-            }
+            //if (ComboBoxCargo.Text != null)
+            //{
+            //    labelCargo.Visibility = Visibility.Collapsed;
+            //}
+            //else
+            //{
+            //    labelCargo.Visibility = Visibility.Visible;
+            //}
         }
 
         private void Label_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
