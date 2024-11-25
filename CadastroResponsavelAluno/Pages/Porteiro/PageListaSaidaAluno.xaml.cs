@@ -15,6 +15,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using CadastroResponsavelAluno.Models;
+using LoginCadastroDB;
 
 namespace CadastroResponsavelAluno.Pages.Porteiro
 {
@@ -23,10 +24,12 @@ namespace CadastroResponsavelAluno.Pages.Porteiro
     /// </summary>
     public partial class PageListaSaidaAluno : Page
     {
+        Presenca presente;
+        private ConexaoBD conexao;
         public PageListaSaidaAluno()
         {
             InitializeComponent();
-
+            conexao = new ConexaoBD();
             ObterListaPresenca();
         }
 
@@ -64,8 +67,14 @@ namespace CadastroResponsavelAluno.Pages.Porteiro
 
         private void BotaoChegou_Click(object sender, RoutedEventArgs e)
         {
-
+            Button chamar = (Button)sender; //as Button
+            DataGridRow linha = DataGridRow.GetRowContainingElement(chamar); 
+            var item = linha.Item as Presenca;
+            string responsavel = ObterResponsavel(item.Id_Aluno);
+            WindowCheguei cheguei = new WindowCheguei(item.Nome, responsavel); 
+            cheguei.Show();
         }
+
 
         private void NotificarChegada()
         {
@@ -86,5 +95,26 @@ namespace CadastroResponsavelAluno.Pages.Porteiro
                 conexao.Close();
             }
         }
+
+        private string ObterResponsavel(int idAluno)
+        {
+            string responsavel = null;
+            SQLiteConnection conn = conexao.AbrirConexao();
+            string query = "SELECT Responsavel FROM Alunos WHERE Id = @IdAluno";
+            using (SQLiteCommand cmd = new SQLiteCommand(query, conn))
+            {
+                cmd.Parameters.AddWithValue("@IdAluno", idAluno);
+                using (SQLiteDataReader reader = cmd.ExecuteReader())
+                {
+                    if (reader.Read())
+                    {
+                        responsavel = reader["Responsavel"].ToString();
+                    }
+                }
+            }
+            conexao.FecharConexao();
+            return responsavel;   
+        }
+    
     }
 }

@@ -5,7 +5,11 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:LoginCadastroDB"
         mc:Ignorable="d"
-        Title="WindowCheguei" Height="720" Width="1280" Background="#0A88EE">
+        Title="WindowCheguei" Height="720" Width="1280" Background="#0A88EE"
+         ResizeMode="NoResize"
+         WindowStyle="None"
+         WindowState="Maximized"
+        PreviewKeyDown="Window_PreviewKeyDown">
 
     <Window.Resources>
         <!-- Define o Storyboard para a animação -->
