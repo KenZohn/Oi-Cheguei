@@ -6,6 +6,7 @@ using System.Windows.Shapes;
 using System.Windows.Input;
 using System;
 using System.Windows.Media.Imaging;
+using CadastroResponsavelAluno.Pages.Porteiro;
 
 namespace CadastroResponsavelAluno
 {
@@ -15,14 +16,13 @@ namespace CadastroResponsavelAluno
         {
             InitializeComponent();
 
+            BotaoListarChamada_MouseLeftButtonUp(BotaoListarChamada, null);
         }
-
 
         private void BotaoListarChamada_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
         {
             AlterarCorBotaoListarChamada();
-            //pageListaAlunos.CarregarDados();
-            FrameSecundario.Navigate(new PageListaAlunos());
+            FrameSecundario.Navigate(new PageListaSaidaAluno());
         }
 
         private void FrameSecundario_Navigating(object sender, NavigatingCancelEventArgs e)
@@ -32,6 +32,7 @@ namespace CadastroResponsavelAluno
                 e.Cancel = true;
             }
         }
+
         private void AlterarCorBotaoListarChamada()
         {
             ResetarCorBotoes();
@@ -41,6 +42,7 @@ namespace CadastroResponsavelAluno
             LabelListarChamada.Foreground = (Brush)new BrushConverter().ConvertFromString("#0F0F0F");
             LabelListarChamada.FontWeight = FontWeights.Bold;
         }
+
         private void ResetarCorBotoes()
         {
             BotaoListarChamada.BorderBrush = (Brush)new BrushConverter().ConvertFromString("#606060");
@@ -48,9 +50,8 @@ namespace CadastroResponsavelAluno
             ImageListarChamada.Source = new BitmapImage(new Uri("pack://application:,,,/CadastroResponsavelAluno;component/Icons/ListarApagado.png")); //Alterar caminho da imagem quando mudar para o projeto principal
             LabelListarChamada.Foreground = (Brush)new BrushConverter().ConvertFromString("#606060");
             LabelListarChamada.FontWeight = FontWeights.Regular;
-
-            
         }
+
         private void BotaoListarChamada_MouseEnter(object sender, MouseEventArgs e)
         {
             if (BotaoListarChamada.BorderBrush.ToString() != "#FF0F0F0F")
@@ -66,6 +67,5 @@ namespace CadastroResponsavelAluno
                 BotaoListarChamada.BorderThickness = new Thickness(0, 0, 0, 0);
             }
         }
-
     }
 }
