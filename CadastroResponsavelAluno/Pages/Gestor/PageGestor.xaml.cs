@@ -42,6 +42,12 @@ namespace CadastroResponsavelAluno
             FrameSecundario.Navigate(new PageCadastroAluno());
         }
 
+        private void BotaoListarUsuarios_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
+        {
+            AlterarCorBotaoListarUsuarios();
+            FrameSecundario.Navigate(new PageListaUsuarios());
+        }
+
         private void BotaoCadastrarUsuario_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
         {
             AlterarCorBotaoCadastrarUsuario();
@@ -69,6 +75,16 @@ namespace CadastroResponsavelAluno
             LabelCadastrarAluno.FontWeight = FontWeights.Bold;
         }
 
+        private void AlterarCorBotaoListarUsuarios()
+        {
+            ResetarCorBotoes();
+            BotaoListarUsuarios.BorderBrush = (Brush)new BrushConverter().ConvertFromString("#0F0F0F");
+            BotaoListarUsuarios.BorderThickness = new Thickness(0, 0, 0, 3);
+            ImageListarUsuarios.Source = new BitmapImage(new Uri("pack://application:,,,/CadastroResponsavelAluno;component/Icons/Listar.png")); //Alterar caminho da imagem quando mudar para o projeto principal
+            LabelListarUsuarios.Foreground = (Brush)new BrushConverter().ConvertFromString("#0F0F0F");
+            LabelListarUsuarios.FontWeight = FontWeights.Bold;
+        }
+
         private void AlterarCorBotaoCadastrarUsuario()
         {
             ResetarCorBotoes();
@@ -92,6 +108,12 @@ namespace CadastroResponsavelAluno
             ImageCadastrarAluno.Source = new BitmapImage(new Uri("pack://application:,,,/CadastroResponsavelAluno;component/Icons/AdicionarApagado.png")); //Alterar caminho da imagem quando mudar para o projeto principal
             LabelCadastrarAluno.Foreground = (Brush)new BrushConverter().ConvertFromString("#606060");
             LabelCadastrarAluno.FontWeight = FontWeights.Regular;
+
+            BotaoListarUsuarios.BorderBrush = (Brush)new BrushConverter().ConvertFromString("#606060");
+            BotaoListarUsuarios.BorderThickness = new Thickness(0, 0, 0, 0);
+            ImageListarUsuarios.Source = new BitmapImage(new Uri("pack://application:,,,/CadastroResponsavelAluno;component/Icons/ListarApagado.png")); //Alterar caminho da imagem quando mudar para o projeto principal
+            LabelListarUsuarios.Foreground = (Brush)new BrushConverter().ConvertFromString("#606060");
+            LabelListarUsuarios.FontWeight = FontWeights.Regular;
 
             BotaoCadastrarUsuario.BorderBrush = (Brush)new BrushConverter().ConvertFromString("#606060");
             BotaoCadastrarUsuario.BorderThickness = new Thickness(0, 0, 0, 0);
@@ -145,6 +167,22 @@ namespace CadastroResponsavelAluno
             if (BotaoCadastrarUsuario.BorderBrush.ToString() != "#FF0F0F0F")
             {
                 BotaoCadastrarUsuario.BorderThickness = new Thickness(0, 0, 0, 0);
+            }
+        }
+
+        private void BotaoListarUsuarios_MouseEnter(object sender, MouseEventArgs e)
+        {
+            if (BotaoListarUsuarios.BorderBrush.ToString() != "#FF0F0F0F")
+            {
+                BotaoListarUsuarios.BorderThickness = new Thickness(0, 0, 0, 3);
+            }
+        }
+
+        private void BotaoListarUsuarios_MouseLeave(object sender, MouseEventArgs e)
+        {
+            if (BotaoListarUsuarios.BorderBrush.ToString() != "#FF0F0F0F")
+            {
+                BotaoListarUsuarios.BorderThickness = new Thickness(0, 0, 0, 0);
             }
         }
         #endregion

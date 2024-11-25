@@ -77,6 +77,9 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="Models\Presenca.cs" />
+    <Compile Include="Pages\Gestor\PageListaUsuarios .xaml.cs">
+      <DependentUpon>PageListaUsuarios .xaml</DependentUpon>
+    </Compile>
     <Compile Include="Pages\Gestor\WindowAlterarAluno.xaml.cs">
       <DependentUpon>WindowAlterarAluno.xaml</DependentUpon>
     </Compile>
@@ -84,6 +87,10 @@
     <Page Include="Pages\Gestor\PageCadastroAluno.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\Gestor\PageListaUsuarios .xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
     <Page Include="Pages\Gestor\WindowAlterarAluno.xaml">
       <SubType>Designer</SubType>

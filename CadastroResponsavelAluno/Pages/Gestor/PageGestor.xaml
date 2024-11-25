@@ -14,7 +14,7 @@
                 <RowDefinition Height="Auto"/>
                 <RowDefinition Height="Auto"/>
             </Grid.RowDefinitions>
-            <Border Grid.Row="0" Width="560" Style="{StaticResource BorderMenuSecundario}">
+            <Border Grid.Row="0" Width="700" Style="{StaticResource BorderMenuSecundario}">
                 <WrapPanel HorizontalAlignment="Center">
                     <Border x:Name="BotaoListarAlunos" Style="{StaticResource BorderBotaoMenuSecundario}" MouseLeftButtonUp="BotaoListarAlunos_MouseLeftButtonUp" MouseEnter="BotaoListarAlunos_MouseEnter" MouseLeave="BotaoListarAlunos_MouseLeave">
                         <StackPanel>
@@ -26,6 +26,12 @@
                         <StackPanel>
                             <Image x:Name="ImageCadastrarAluno" Style="{StaticResource ImageBotaoMenuSecundario}" Source="\Icons\AdicionarApagado.png"/>
                             <Label x:Name="LabelCadastrarAluno" Style="{StaticResource LabelBotaoMenuSecundario}" Content="Cadastrar aluno"/>
+                        </StackPanel>
+                    </Border>
+                    <Border x:Name="BotaoListarUsuarios" Style="{StaticResource BorderBotaoMenuSecundario}" MouseLeftButtonUp="BotaoListarUsuarios_MouseLeftButtonUp" MouseEnter="BotaoListarUsuarios_MouseEnter" MouseLeave="BotaoListarUsuarios_MouseLeave">
+                        <StackPanel>
+                            <Image x:Name="ImageListarUsuarios" Style="{StaticResource ImageBotaoMenuSecundario}" Source="\Icons\ListarApagado.png"/>
+                            <Label x:Name="LabelListarUsuarios" Style="{StaticResource LabelBotaoMenuSecundario}" Content="Listar usuários"/>
                         </StackPanel>
                     </Border>
                     <Border x:Name="BotaoCadastrarUsuario" Style="{StaticResource BorderBotaoMenuSecundario}" MouseLeftButtonUp="BotaoCadastrarUsuario_MouseLeftButtonUp" MouseEnter="BotaoCadastrarUsuario_MouseEnter" MouseLeave="BotaoCadastrarUsuario_MouseLeave">

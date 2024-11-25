@@ -12,7 +12,7 @@ namespace CadastroResponsavelAluno.Models
     public class Usuario
     {
         //TODO: Gerar RA, pegar a data do cadatro 
-        private int Id { get; set; }
+        public int Id { get; set; }
         public string Nome { get; set; }
         public string Senha { get; set; }
         public int CPF { get; set; }
@@ -24,6 +24,10 @@ namespace CadastroResponsavelAluno.Models
         public Usuario(ConexaoBD _conexao)
         {
             this.conexao = _conexao;
+        }
+        public Usuario()
+        {
+            
         }
 
         public void MetodoCadastro(string usuario, string senha, string cpf, string cargo)
