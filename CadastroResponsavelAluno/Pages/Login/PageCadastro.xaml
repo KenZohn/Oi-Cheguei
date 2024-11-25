@@ -37,16 +37,16 @@
                 <TextBox Grid.Row="1" x:Name="CampoNome" Style="{StaticResource TextBoxLogin}"/>
 
                 <Label Grid.Row="2" Content="Senha" Style="{StaticResource LabelLogin}"/>
-                <PasswordBox Grid.Row="2" x:Name="CampoSenha" Style="{StaticResource PasswordBoxLogin}" PasswordChanged="CampoSenha_PasswordChanged"/>
+                <PasswordBox Grid.Row="2" x:Name="CampoSenha" Style="{StaticResource PasswordBoxLogin}"/>
 
                 <Label Grid.Row="3" Content="Repetir a Senha" Style="{StaticResource LabelLogin}"/>
-                <PasswordBox Grid.Row="3" x:Name="CampoRepetirSenha" Style="{StaticResource PasswordBoxLogin}" PasswordChanged="CampoRepetirSenha_PasswordChanged"/>
+                <PasswordBox Grid.Row="3" x:Name="CampoRepetirSenha" Style="{StaticResource PasswordBoxLogin}"/>
 
                 <Label Grid.Row="4" Content="CPF" Style="{StaticResource LabelLogin}"/>
-                <TextBox Grid.Row="4" x:Name="CampoCPF" Style="{StaticResource TextBoxLogin}" />
+                <TextBox Grid.Row="4" x:Name="CampoCPF" Style="{StaticResource TextBoxLogin}" TextChanged="CampoCPF_TextChanged" />
 
                 <Label Grid.Row="5" Content="Cargo" Style="{StaticResource LabelLogin}" Height="35" Margin="10,2,0,43"/>
-                <ComboBox x:Name="ComboBoxCargo" Grid.Row="5" Style="{StaticResource ComboBoxLogin}" SelectionChanged="ComboBoxCargo_SelectionChanged">
+                <ComboBox x:Name="ComboBoxCargo" Grid.Row="5" Style="{StaticResource ComboBoxLogin}">
                     <ComboBoxItem Content="Coordenação/Direção"/>
                     <ComboBoxItem Content="Portaria"/>
                     <ComboBoxItem Content="Professor"/>
