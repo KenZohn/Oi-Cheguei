@@ -38,7 +38,7 @@ namespace CadastroResponsavelAluno
                 }
                 else if (CampoSenha.Password != CampoRepetirSenha.Password)
                 {
-                    MessageBox.Show("As senhas não coincidem...");
+                    MessageBox.Show("As senhas não coincidem.");
                 }
                 else if (CampoCPF.Text.Length != 11 || !CampoCPF.Text.All(char.IsDigit))
                 {
