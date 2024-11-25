@@ -15,7 +15,7 @@
                 <RowDefinition Height="Auto"/>
                 <RowDefinition Height="Auto"/>
             </Grid.RowDefinitions>
-            <Border Grid.Row="0" Width="560" Style="{StaticResource BorderMenuSecundario}">
+            <Border Grid.Row="0" BorderBrush="Transparent" Width="560" Style="{StaticResource BorderMenuSecundario}">
                 <WrapPanel HorizontalAlignment="Center">
                     <Border x:Name="BotaoListarChamada" Style="{StaticResource BorderBotaoMenuSecundario}" MouseLeftButtonUp="BotaoListarChamada_MouseLeftButtonUp" MouseEnter="BotaoListarChamada_MouseEnter" MouseLeave="BotaoListarChamada_MouseLeave">
                         <StackPanel>

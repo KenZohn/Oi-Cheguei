@@ -14,7 +14,7 @@
                 <RowDefinition Height="Auto"/>
                 <RowDefinition Height="Auto"/>
             </Grid.RowDefinitions>
-            <Border Grid.Row="0" Width="700" Style="{StaticResource BorderMenuSecundario}">
+            <Border Grid.Row="0" BorderBrush="Transparent" Width="700" Style="{StaticResource BorderMenuSecundario}">
                 <WrapPanel HorizontalAlignment="Center">
                     <Border x:Name="BotaoListarAlunos" Style="{StaticResource BorderBotaoMenuSecundario}" MouseLeftButtonUp="BotaoListarAlunos_MouseLeftButtonUp" MouseEnter="BotaoListarAlunos_MouseEnter" MouseLeave="BotaoListarAlunos_MouseLeave">
                         <StackPanel>
