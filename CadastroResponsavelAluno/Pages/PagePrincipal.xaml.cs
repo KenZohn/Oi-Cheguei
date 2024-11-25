@@ -84,85 +84,29 @@ namespace CadastroResponsavelAluno
         private void AlterarCorBotaoGestor()
         {
             ResetarCorBotoes();
-            BotaoGestor.Background = (Brush)new BrushConverter().ConvertFromString("#E6E6E6");
+            BotaoGestor.Background = (Brush)new BrushConverter().ConvertFromString("#6AADE4");
         }
 
         private void AlterarCorBotaoProfessor()
         {
             ResetarCorBotoes();
-            BotaoProfessor.Background = (Brush)new BrushConverter().ConvertFromString("#E6E6E6");
+            BotaoProfessor.Background = (Brush)new BrushConverter().ConvertFromString("#6AADE4");
         }
 
         private void AlterarCorBotaoPorteiro()
         {
             ResetarCorBotoes();
-            BotaoPorteiro.Background = (Brush)new BrushConverter().ConvertFromString("#E6E6E6");
+            BotaoPorteiro.Background = (Brush)new BrushConverter().ConvertFromString("#6AADE4");
         }
 
         private void ResetarCorBotoes()
         {
-            BotaoGestor.Background = (Brush)new BrushConverter().ConvertFromString("#FFFFFF");
-            BotaoProfessor.Background = (Brush)new BrushConverter().ConvertFromString("#FFFFFF");
-            BotaoPorteiro.Background = (Brush)new BrushConverter().ConvertFromString("#FFFFFF");
+            BotaoGestor.Background = (Brush)new BrushConverter().ConvertFromString("#0A88EE");
+            BotaoProfessor.Background = (Brush)new BrushConverter().ConvertFromString("#0A88EE");
+            BotaoPorteiro.Background = (Brush)new BrushConverter().ConvertFromString("#0A88EE");
         }
 
-        private void BotaoGestor_MouseEnter(object sender, MouseEventArgs e)
-        {
-            if (BotaoGestor.Background.ToString() != "#FFE6E6E6")
-            {
-                BotaoGestor.Background = (Brush)new BrushConverter().ConvertFromString("#F2F2F2");
-            }
-        }
-
-        private void BotaoGestor_MouseLeave(object sender, MouseEventArgs e)
-        {
-            if (BotaoGestor.Background.ToString() != "#FFE6E6E6")
-            {
-                BotaoGestor.Background = (Brush)new BrushConverter().ConvertFromString("#FFFFFF");
-            }
-        }
-
-        private void BotaoProfessor_MouseEnter(object sender, MouseEventArgs e)
-        {
-            if (BotaoProfessor.Background.ToString() != "#FFE6E6E6")
-            {
-                BotaoProfessor.Background = (Brush)new BrushConverter().ConvertFromString("#F2F2F2");
-            }
-        }
-
-        private void BotaoProfessor_MouseLeave(object sender, MouseEventArgs e)
-        {
-            if (BotaoProfessor.Background.ToString() != "#FFE6E6E6")
-            {
-                BotaoProfessor.Background = (Brush)new BrushConverter().ConvertFromString("#FFFFFF");
-            }
-        }
-
-        private void BotaoPorteiro_MouseEnter(object sender, MouseEventArgs e)
-        {
-            if (BotaoPorteiro.Background.ToString() != "#FFE6E6E6")
-            {
-                BotaoPorteiro.Background = (Brush)new BrushConverter().ConvertFromString("#F2F2F2");
-            }
-        }
-
-        private void BotaoPorteiro_MouseLeave(object sender, MouseEventArgs e)
-        {
-            if (BotaoPorteiro.Background.ToString() != "#FFE6E6E6")
-            {
-                BotaoPorteiro.Background = (Brush)new BrushConverter().ConvertFromString("#FFFFFF");
-            }
-        }
-
-        private void BotaoSair_MouseEnter(object sender, MouseEventArgs e)
-        {
-            BotaoSair.Background = (Brush)new BrushConverter().ConvertFromString("#F2F2F2");
-        }
-
-        private void BotaoSair_MouseLeave(object sender, MouseEventArgs e)
-        {
-            BotaoSair.Background = (Brush)new BrushConverter().ConvertFromString("#FFFFFF");
-        }
+       
         #endregion
 
         private void FramePrincipal_Navigating(object sender, NavigatingCancelEventArgs e)

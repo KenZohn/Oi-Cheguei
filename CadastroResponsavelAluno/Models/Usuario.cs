@@ -71,12 +71,14 @@ namespace CadastroResponsavelAluno.Models
         public string BuscarCargo(string usuario, string senha)
         {
             string cargo = "";
+            string senhaHasheada = HashingSenha(senha);
+
             SQLiteConnection conn = conexao.AbrirConexao();
             string strSql = "SELECT [Cargo] FROM [Funcionarios] WHERE [Usuario] = @Usuario AND [Senha] = @Senha";
             using (SQLiteCommand cmd = new SQLiteCommand(strSql, conn))
             {
                 cmd.Parameters.AddWithValue("@Usuario", usuario);
-                cmd.Parameters.AddWithValue("@Senha", senha);
+                cmd.Parameters.AddWithValue("@Senha", senhaHasheada);
                 using (SQLiteDataReader reader = cmd.ExecuteReader())
                 {
                     while (reader.Read())

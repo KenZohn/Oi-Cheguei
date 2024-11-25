@@ -52,7 +52,7 @@
                     <ComboBoxItem Content="Professor"/>
                 </ComboBox>
 
-                <Button Grid.Row="6" Content="Cadastrar" HorizontalAlignment="Center" Height="35" Width="180" Margin="10,10,10,15" Click="Cadastrar_Click" Style="{StaticResource EstiloBotaoLogin}"/>
+                <Button Grid.Row="6" Content="Cadastrar" HorizontalAlignment="Center" Height="35" Width="180" Margin="10,10,10,15" Click="Cadastrar_Click" Style="{StaticResource EstiloBotaoLogin}" FontWeight="Normal"/>
             </Grid>
         </Border>
     </Grid>
