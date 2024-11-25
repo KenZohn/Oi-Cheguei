@@ -5,12 +5,12 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:CadastroResponsavelAluno"
       mc:Ignorable="d" 
-      d:DesignHeight="500" d:DesignWidth="800"
+      d:DesignHeight="550" d:DesignWidth="800"
       Background="#FFFFFF"
       Title="PageListaAlunos">
     <Grid>
         <StackPanel Margin="20">
-            <DataGrid x:Name="DataGridAlunos" Height="350" MaxWidth="800" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0, 0, 0, 30" FontSize="16" AutoGenerateColumns="False" IsReadOnly="True" CanUserResizeColumns="False" HeadersVisibility="Column" CanUserSortColumns="False" CanUserReorderColumns="False" SelectionChanged="DataGridAlunos_SelectionChanged">
+            <DataGrid x:Name="DataGridAlunos" Height="400" MaxWidth="1000" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0, 0, 0, 30" FontSize="16" AutoGenerateColumns="False" IsReadOnly="True" CanUserResizeColumns="False" HeadersVisibility="Column" CanUserSortColumns="False" CanUserReorderColumns="False" SelectionChanged="DataGridAlunos_SelectionChanged">
                 <DataGrid.Columns>
                     <DataGridTextColumn Header="Id" Binding="{Binding Id}" Visibility="Collapsed"/>
                     <DataGridTextColumn Header="Nome" Binding="{Binding Nome}" Width="350"/>
@@ -21,21 +21,21 @@
                             </DataTemplate>
                         </DataGridTemplateColumn.CellTemplate>
                     </DataGridTemplateColumn>
-                    <DataGridTextColumn Header="Responsável" Binding="{Binding Responsavel}" Width="350"/>
-                    <DataGridTextColumn Header="CPF do aluno" Binding="{Binding CPFAluno}" Width="200"/>
-                    <DataGridTextColumn Header="CPF do responsável" Binding="{Binding CPFResponsavel}" Width="200"/>
-                    <DataGridTextColumn Header="Telefone" Binding="{Binding Telefone}" Width="200"/>
-                    <DataGridTextColumn Header="Endereço" Binding="{Binding Endereco}" Width="200"/>
-                    <DataGridTextColumn Header="Telefone do trabalho" Binding="{Binding TelefoneTrabalho}" Width="200"/>
-                    <DataGridTextColumn Header="Endereço do trabalho" Binding="{Binding EnderecoTrabalho}" Width="200"/>
+                    <DataGridTextColumn Header="Responsável" Binding="{Binding Responsavel}" Width="300"/>
+                    <DataGridTextColumn Header="CPF do aluno" Binding="{Binding CPFAluno}" Width="150"/>
+                    <DataGridTextColumn Header="CPF do responsável" Binding="{Binding CPFResponsavel}" Width="150"/>
+                    <DataGridTextColumn Header="Telefone" Binding="{Binding Telefone}" Width="150"/>
+                    <DataGridTextColumn Header="Endereço" Binding="{Binding Endereco}" Width="300"/>
+                    <DataGridTextColumn Header="Tel. do trabalho" Binding="{Binding TelefoneTrabalho}" Width="150"/>
+                    <DataGridTextColumn Header="Endereço do trabalho" Binding="{Binding EnderecoTrabalho}" Width="300"/>
                     <DataGridTextColumn Header="Autorizado 1" Binding="{Binding Autorizado1}" Width="300"/>
                     <DataGridTextColumn Header="Autorizado 2" Binding="{Binding Autorizado2}" Width="300"/>
                     <DataGridTextColumn Header="Autorizado 3" Binding="{Binding Autorizado3}" Width="300"/>
                 </DataGrid.Columns>
             </DataGrid>
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
-                <Button x:Name="BotaoExcluir" Content="Excluir" Style="{StaticResource BotaoListaAluno}" Margin="0, 0, 70, 0" Click="BotaoExcluir_Click"/>
-                <Button x:Name="BotaoAlterar" Content="Alterar" Style="{StaticResource BotaoListaAluno}" Margin="70, 0, 0, 0" Click="BotaoAlterar_Click"/>
+                <Button x:Name="BotaoExcluir" Content="Excluir" Style="{StaticResource BotaoListaAlunoExcluir}" Margin="0, 0, 70, 0" Click="BotaoExcluir_Click"/>
+                <Button x:Name="BotaoAlterar" Content="Alterar" Style="{StaticResource BotaoListaAlunoAlterar}" Margin="70, 0, 0, 0" Click="BotaoAlterar_Click"/>
             </StackPanel>
         </StackPanel>
     </Grid>

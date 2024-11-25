@@ -5,11 +5,13 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:CadastroResponsavelAluno"
       mc:Ignorable="d" 
-      d:DesignHeight="980" d:DesignWidth="470"
+      d:DesignHeight="1000" d:DesignWidth="470"
       Background="#FFFFFF"
       Title="PageCadastroAluno">
     <Grid>
-        <StackPanel Height="960" Width="450" Margin="10">
+        <StackPanel Height="980" Width="450" Margin="10">
+            <Label Content="* Campos obrigatórios" FontSize="14" Foreground="Red" Style="{StaticResource LabelCadastroAluno}"/>
+            
             <Label Content="Nome do aluno *" Style="{StaticResource LabelCadastroAluno}"/>
             <TextBox x:Name="CampoAluno" Style="{StaticResource CampoCadastroAluno}"/>
 
@@ -20,19 +22,19 @@
             <TextBox x:Name="CampoResponsavel" Style="{StaticResource CampoCadastroAluno}"/>
 
             <Label Content="CPF do aluno *" Style="{StaticResource LabelCadastroAluno}"/>
-            <TextBox x:Name="CampoCPFAluno" Style="{StaticResource CampoCadastroAluno}"/>
+            <TextBox x:Name="CampoCPFAluno" Style="{StaticResource CampoCadastroAluno}" TextChanged="CampoCPFAluno_TextChanged" PreviewTextInput="CampoCPFAluno_PreviewTextInput"/>
 
             <Label Content="CPF do responsável *" Style="{StaticResource LabelCadastroAluno}"/>
-            <TextBox x:Name="CampoCPFResponsavel" Style="{StaticResource CampoCadastroAluno}"/>
+            <TextBox x:Name="CampoCPFResponsavel" Style="{StaticResource CampoCadastroAluno}" TextChanged="CampoCPFResponsavel_TextChanged" PreviewTextInput="CampoCPFResponsavel_PreviewTextInput"/>
 
-            <Label Content="Telefone" Style="{StaticResource LabelCadastroAluno}"/>
-            <TextBox x:Name="CampoTelefone" Style="{StaticResource CampoCadastroAluno}"/>
+            <Label Content="Telefone *" Style="{StaticResource LabelCadastroAluno}"/>
+            <TextBox x:Name="CampoTelefone" Style="{StaticResource CampoCadastroAluno}" TextChanged="CampoTelefone_TextChanged" PreviewTextInput="CampoTelefone_PreviewTextInput"/>
 
-            <Label Content="Endereço" Style="{StaticResource LabelCadastroAluno}"/>
+            <Label Content="Endereço *" Style="{StaticResource LabelCadastroAluno}"/>
             <TextBox x:Name="CampoEndereco" Style="{StaticResource CampoCadastroAluno}"/>
 
             <Label Content="Telefone do trabalho" Style="{StaticResource LabelCadastroAluno}"/>
-            <TextBox x:Name="CampoTelefoneTrabalho" Style="{StaticResource CampoCadastroAluno}"/>
+            <TextBox x:Name="CampoTelefoneTrabalho" Style="{StaticResource CampoCadastroAluno}" TextChanged="CampoTelefoneTrabalho_TextChanged" PreviewTextInput="CampoTelefoneTrabalho_PreviewTextInput"/>
 
             <Label Content="Endereço do trabalho" Style="{StaticResource LabelCadastroAluno}"/>
             <TextBox x:Name="CampoEnderecoTrabalho" Style="{StaticResource CampoCadastroAluno}"/>
@@ -47,8 +49,8 @@
             <TextBox x:Name="CampoAutorizado3" Style="{StaticResource CampoCadastroAluno}"/>
 
             <StackPanel Orientation="Horizontal">
-                <Button x:Name="BotaoLimparAluno" Content="Limpar" VerticalAlignment="Bottom" Margin="0, 0, 30, 0" Style="{StaticResource BotaoCadastroAluno}" Click="BotaoLimparAluno_Click"/>
-                <Button x:Name="BotaoCadastrarAluno" Content="Cadastrar" Style="{StaticResource BotaoCadastroAluno}" Click="BotaoCadastrarAluno_Click"/>
+                <Button x:Name="BotaoLimparAluno" Content="Limpar" VerticalAlignment="Bottom" Margin="0, 0, 30, 0" Style="{StaticResource BotaoCadastroAlunoVermelho}" Click="BotaoLimparAluno_Click"/>
+                <Button x:Name="BotaoCadastrarAluno" Content="Cadastrar" Style="{StaticResource BotaoCadastroAlunoAmarelo}" Click="BotaoCadastrarAluno_Click"/>
             </StackPanel>
         </StackPanel>
     </Grid>

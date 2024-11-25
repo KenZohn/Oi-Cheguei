@@ -30,7 +30,7 @@
                     </DataGridTemplateColumn>
                 </DataGrid.Columns>
             </DataGrid>
-            <Button Content="Salvar" Height="30" Width="200" Margin="0 20 0 0" Style="{StaticResource BotaoCadastroAluno}" Click="Button_Click"/>
+            <Button Content="Salvar" Height="30" Width="200" Margin="0 20 0 0" Style="{StaticResource BotaoCadastroAlunoAmarelo}" Click="Button_Click"/>
         </StackPanel>
     </Grid>
 </Page>

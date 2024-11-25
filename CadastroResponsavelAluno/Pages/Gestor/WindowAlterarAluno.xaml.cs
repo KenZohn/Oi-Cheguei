@@ -4,6 +4,7 @@ using System.Data.SQLite;
 using System.IO;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
@@ -38,7 +39,9 @@ namespace CadastroResponsavelAluno.Gestor
                 string.IsNullOrEmpty(ComboBoxTurma.Text) ||
                 string.IsNullOrEmpty(CampoResponsavel.Text) ||
                 string.IsNullOrEmpty(CampoCPFAluno.Text) ||
-                string.IsNullOrEmpty(CampoCPFResponsavel.Text))
+                string.IsNullOrEmpty(CampoCPFResponsavel.Text) ||
+                string.IsNullOrEmpty(CampoTelefone.Text) ||
+                string.IsNullOrEmpty(CampoEndereco.Text))
             {
                 MessageBox.Show("Preencha todos os campos obrigatórios.");
             }
@@ -121,5 +124,121 @@ namespace CadastroResponsavelAluno.Gestor
                 conexao.Close();
             }
         }
+
+        #region TextChanged PreviewTextInput
+        private void CampoCPFAluno_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            TextBox textBox = sender as TextBox;
+            // Remove caracteres inválidos
+            string text = Regex.Replace(textBox.Text, @"[^\d]", "");
+            // Formatando com caracteres especiais
+            if (text.Length > 0)
+            {
+                if (text.Length > 3 && text.Length <= 6)
+                    text = $"{text.Substring(0, 3)}.{text.Substring(3, text.Length - 3)}";
+                else if (text.Length > 6 && text.Length <= 9)
+                    text = $"{text.Substring(0, 3)}.{text.Substring(3, 3)}.{text.Substring(6, text.Length - 6)}";
+                else if (text.Length > 9)
+                    text = $"{text.Substring(0, 3)}.{text.Substring(3, 3)}.{text.Substring(6, 3)}-{text.Substring(9, text.Length - 9)}";
+            }
+            textBox.TextChanged -= CampoCPFAluno_TextChanged;
+            textBox.Text = text;
+            textBox.CaretIndex = textBox.Text.Length;
+            textBox.TextChanged += CampoCPFAluno_TextChanged;
+        }
+
+        private void CampoCPFResponsavel_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            TextBox textBox = sender as TextBox;
+            // Remove caracteres inválidos
+            string text = Regex.Replace(textBox.Text, @"[^\d]", "");
+            // Formatando com caracteres especiais
+            if (text.Length > 0)
+            {
+                if (text.Length > 3 && text.Length <= 6)
+                    text = $"{text.Substring(0, 3)}.{text.Substring(3, text.Length - 3)}";
+                else if (text.Length > 6 && text.Length <= 9)
+                    text = $"{text.Substring(0, 3)}.{text.Substring(3, 3)}.{text.Substring(6, text.Length - 6)}";
+                else if (text.Length > 9)
+                    text = $"{text.Substring(0, 3)}.{text.Substring(3, 3)}.{text.Substring(6, 3)}-{text.Substring(9, text.Length - 9)}";
+            }
+            textBox.TextChanged -= CampoCPFResponsavel_TextChanged;
+            textBox.Text = text;
+            textBox.CaretIndex = textBox.Text.Length;
+            textBox.TextChanged += CampoCPFResponsavel_TextChanged;
+        }
+
+        private void CampoTelefone_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            TextBox textBox = sender as TextBox;
+            // Remove caracteres inválidos
+            string text = Regex.Replace(textBox.Text, @"[^\d]", "");
+            // Formatando com caracteres especiais
+            if (text.Length > 0)
+            {
+                if (text.Length > 2 && text.Length <= 6)
+                    text = $"({text.Substring(0, 2)}) {text.Substring(2, text.Length - 2)}";
+                else if (text.Length > 6)
+                    text = $"({text.Substring(0, 2)}) {text.Substring(2, 4)}-{text.Substring(6, text.Length - 6)}";
+                else text = $"({text}";
+            }
+            textBox.TextChanged -= CampoTelefone_TextChanged;
+            textBox.Text = text;
+            textBox.CaretIndex = textBox.Text.Length;
+            textBox.TextChanged += CampoTelefone_TextChanged;
+        }
+
+        private void CampoTelefoneTrabalho_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            TextBox textBox = sender as TextBox;
+            // Remove caracteres inválidos
+            string text = Regex.Replace(textBox.Text, @"[^\d]", "");
+            // Formatando com caracteres especiais
+            if (text.Length > 0)
+            {
+                if (text.Length > 2 && text.Length <= 6)
+                    text = $"({text.Substring(0, 2)}) {text.Substring(2, text.Length - 2)}";
+                else if (text.Length > 6)
+                    text = $"({text.Substring(0, 2)}) {text.Substring(2, 4)}-{text.Substring(6, text.Length - 6)}";
+                else text = $"({text}";
+            }
+            textBox.TextChanged -= CampoTelefone_TextChanged;
+            textBox.Text = text;
+            textBox.CaretIndex = textBox.Text.Length;
+            textBox.TextChanged += CampoTelefone_TextChanged;
+        }
+
+        private void CampoCPFAluno_PreviewTextInput(object sender, TextCompositionEventArgs e)
+        {
+            TextBox textBox = sender as TextBox; if (textBox.Text.Length >= 14)
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void CampoCPFResponsavel_PreviewTextInput(object sender, TextCompositionEventArgs e)
+        {
+            TextBox textBox = sender as TextBox; if (textBox.Text.Length >= 14)
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void CampoTelefone_PreviewTextInput(object sender, TextCompositionEventArgs e)
+        {
+            TextBox textBox = sender as TextBox; if (textBox.Text.Length >= 15)
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void CampoTelefoneTrabalho_PreviewTextInput(object sender, TextCompositionEventArgs e)
+        {
+            TextBox textBox = sender as TextBox; if (textBox.Text.Length >= 15)
+            {
+                e.Handled = true;
+            }
+        }
+        #endregion
     }
 }

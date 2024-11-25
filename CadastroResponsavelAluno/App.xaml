@@ -284,8 +284,8 @@
         </Style>
 
         <!-- Lista de Alunos -->
-        <Style TargetType="Button" x:Key="BotaoListaAluno">
-            <Setter Property="Background" Value="#E2E5E9"/>
+        <Style TargetType="Button" x:Key="BotaoListaAlunoExcluir">
+            <Setter Property="Background" Value="#FFA79A"/>
             <Setter Property="Height" Value="35"/>
             <Setter Property="Width" Value="250"/>
             <Setter Property="FontSize" Value="18"/>
@@ -297,20 +297,39 @@
                         </Border>
                         <ControlTemplate.Triggers>
                             <Trigger Property="IsMouseOver" Value="True">
-                                <Setter TargetName="BotaoListaAlunoBorda" Property="Background" Value="#D6D9DD"/>
+                                <Setter TargetName="BotaoListaAlunoBorda" Property="Background" Value="#FFBBB2"/>
                             </Trigger>
                             <Trigger Property="IsPressed" Value="True">
-                                <Setter TargetName="BotaoListaAlunoBorda" Property="Background" Value="#DDE0E4 "/>
+                                <Setter TargetName="BotaoListaAlunoBorda" Property="Background" Value="#FFA79A "/>
                             </Trigger>
                         </ControlTemplate.Triggers>
                     </ControlTemplate>
                 </Setter.Value>
             </Setter>
-            <Style.Triggers>
-                <Trigger Property="IsMouseOver" Value="True">
-                    <Setter Property="Background" Value="Yellow"/>
-                </Trigger>
-            </Style.Triggers>
+        </Style>
+
+        <Style TargetType="Button" x:Key="BotaoListaAlunoAlterar">
+            <Setter Property="Background" Value="#F9E247"/>
+            <Setter Property="Height" Value="35"/>
+            <Setter Property="Width" Value="250"/>
+            <Setter Property="FontSize" Value="18"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border x:Name="BotaoListaAlunoBorda" CornerRadius="5" Background="{TemplateBinding Background}">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter TargetName="BotaoListaAlunoBorda" Property="Background" Value="#FFED77"/>
+                            </Trigger>
+                            <Trigger Property="IsPressed" Value="True">
+                                <Setter TargetName="BotaoListaAlunoBorda" Property="Background" Value="#FFE432"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
         </Style>
 
         <!-- region Cadastro de Aluno -->
@@ -338,8 +357,8 @@
             </Setter>
         </Style>
 
-        <Style TargetType="Button" x:Key="BotaoCadastroAluno">
-            <Setter Property="Background" Value="#E2E5E9"/>
+        <Style TargetType="Button" x:Key="BotaoCadastroAlunoVermelho">
+            <Setter Property="Background" Value="#FFA79A"/>
             <Setter Property="Height" Value="35"/>
             <Setter Property="Width" Value="210"/>
             <Setter Property="Margin" Value="0 20 0 0"/>
@@ -352,20 +371,40 @@
                         </Border>
                         <ControlTemplate.Triggers>
                             <Trigger Property="IsMouseOver" Value="True">
-                                <Setter TargetName="BotaoCadastroAlunoBorda" Property="Background" Value="#D6D9DD"/>
+                                <Setter TargetName="BotaoCadastroAlunoBorda" Property="Background" Value="#FFBBB2"/>
                             </Trigger>
                             <Trigger Property="IsPressed" Value="True">
-                                <Setter TargetName="BotaoCadastroAlunoBorda" Property="Background" Value="#DDE0E4 "/>
+                                <Setter TargetName="BotaoCadastroAlunoBorda" Property="Background" Value="#FFA79A "/>
                             </Trigger>
                         </ControlTemplate.Triggers>
                     </ControlTemplate>
                 </Setter.Value>
             </Setter>
-            <Style.Triggers>
-                <Trigger Property="IsMouseOver" Value="True">
-                    <Setter Property="Background" Value="Yellow"/>
-                </Trigger>
-            </Style.Triggers>
+        </Style>
+
+        <Style TargetType="Button" x:Key="BotaoCadastroAlunoAmarelo">
+            <Setter Property="Background" Value="#F9E247"/>
+            <Setter Property="Height" Value="35"/>
+            <Setter Property="Width" Value="210"/>
+            <Setter Property="Margin" Value="0 20 0 0"/>
+            <Setter Property="FontSize" Value="18"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border x:Name="BotaoCadastroAlunoBorda" CornerRadius="5" Background="{TemplateBinding Background}">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter TargetName="BotaoCadastroAlunoBorda" Property="Background" Value="#FFED77"/>
+                            </Trigger>
+                            <Trigger Property="IsPressed" Value="True">
+                                <Setter TargetName="BotaoCadastroAlunoBorda" Property="Background" Value="#FFE432 "/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
         </Style>
 
         <Style x:Key="ComboBoxCadastro" TargetType="ComboBox">

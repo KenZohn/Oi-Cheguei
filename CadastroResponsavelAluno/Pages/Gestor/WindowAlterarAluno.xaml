@@ -7,41 +7,44 @@
         mc:Ignorable="d"
         Title="WindowAlterarAluno"
         Height="600"
-        Width="400"
+        Width="550"
         Background="Transparent"
         WindowStartupLocation="CenterScreen"
         WindowStyle="None"
         AllowsTransparency="True">
-    <Border Background="#FFFFFF" Height="550" Width="350" CornerRadius="5">
+    <Border Background="#FFFFFF" Height="550" Width="500" CornerRadius="5">
         <Border.Effect>
             <DropShadowEffect Color="#000000" ShadowDepth="0" Opacity="0.8" BlurRadius="20"/>
         </Border.Effect>
         <ScrollViewer>
             <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
                 <Label Content="Alterar dados do aluno" Margin="0 10 0 0" FontSize="20" FontWeight="Bold"/>
-                <Label Style="{StaticResource LabelCadastroAluno}" Content="Nome do aluno"/>
+
+                <Label Content="* Campos obrigatórios" FontSize="14" Foreground="Red" Style="{StaticResource LabelCadastroAluno}"/>
+
+                <Label Style="{StaticResource LabelCadastroAluno}" Content="Nome do aluno *"/>
                 <TextBox x:Name="CampoAluno" Style="{StaticResource CampoCadastroAluno}"/>
 
-                <Label Style="{StaticResource LabelCadastroAluno}" Content="Turma"/>
+                <Label Style="{StaticResource LabelCadastroAluno}" Content="Turma *"/>
                 <ComboBox x:Name="ComboBoxTurma" Style="{StaticResource ComboBoxCadastro}"/>
 
-                <Label Style="{StaticResource LabelCadastroAluno}" Content="Nome do responsável"/>
+                <Label Style="{StaticResource LabelCadastroAluno}" Content="Nome do responsável *"/>
                 <TextBox x:Name="CampoResponsavel" Style="{StaticResource CampoCadastroAluno}"/>
 
                 <Label Content="CPF do aluno *" Style="{StaticResource LabelCadastroAluno}"/>
-                <TextBox x:Name="CampoCPFAluno" Style="{StaticResource CampoCadastroAluno}"/>
+                <TextBox x:Name="CampoCPFAluno" Style="{StaticResource CampoCadastroAluno}" TextChanged="CampoCPFAluno_TextChanged" PreviewTextInput="CampoCPFAluno_PreviewTextInput"/>
 
                 <Label Content="CPF do responsável *" Style="{StaticResource LabelCadastroAluno}"/>
-                <TextBox x:Name="CampoCPFResponsavel" Style="{StaticResource CampoCadastroAluno}"/>
+                <TextBox x:Name="CampoCPFResponsavel" Style="{StaticResource CampoCadastroAluno}" TextChanged="CampoCPFResponsavel_TextChanged" PreviewTextInput="CampoCPFResponsavel_PreviewTextInput"/>
 
-                <Label Content="Telefone" Style="{StaticResource LabelCadastroAluno}"/>
-                <TextBox x:Name="CampoTelefone" Style="{StaticResource CampoCadastroAluno}"/>
+                <Label Content="Telefone *" Style="{StaticResource LabelCadastroAluno}"/>
+                <TextBox x:Name="CampoTelefone" Style="{StaticResource CampoCadastroAluno}" TextChanged="CampoTelefone_TextChanged" PreviewTextInput="CampoTelefone_PreviewTextInput"/>
 
-                <Label Content="Endereço" Style="{StaticResource LabelCadastroAluno}"/>
+                <Label Content="Endereço *" Style="{StaticResource LabelCadastroAluno}"/>
                 <TextBox x:Name="CampoEndereco" Style="{StaticResource CampoCadastroAluno}"/>
 
                 <Label Content="Telefone do trabalho" Style="{StaticResource LabelCadastroAluno}"/>
-                <TextBox x:Name="CampoTelefoneTrabalho" Style="{StaticResource CampoCadastroAluno}"/>
+                <TextBox x:Name="CampoTelefoneTrabalho" Style="{StaticResource CampoCadastroAluno}" TextChanged="CampoTelefoneTrabalho_TextChanged" PreviewTextInput="CampoTelefoneTrabalho_PreviewTextInput"/>
 
                 <Label Content="Endereço do trabalho" Style="{StaticResource LabelCadastroAluno}"/>
                 <TextBox x:Name="CampoEnderecoTrabalho" Style="{StaticResource CampoCadastroAluno}"/>
@@ -56,8 +59,8 @@
                 <TextBox x:Name="CampoAutorizado3" Style="{StaticResource CampoCadastroAluno}"/>
 
                 <StackPanel Orientation="Horizontal" Margin="0 0 0 20">
-                    <Button x:Name="BotaoVoltar" Style="{StaticResource BotaoCadastroAluno}" Content="Voltar" VerticalAlignment="Bottom" Margin="0, 0, 20, 0" Click="BotaoVoltar_Click"/>
-                    <Button x:Name="BotaoAlterarAluno" Style="{StaticResource BotaoCadastroAluno}" Content="Alterar" Click="BotaoAlterarAluno_Click"/>
+                    <Button x:Name="BotaoVoltar" Style="{StaticResource BotaoCadastroAlunoVermelho}" Content="Voltar" VerticalAlignment="Bottom" Margin="0, 0, 20, 0" Click="BotaoVoltar_Click"/>
+                    <Button x:Name="BotaoAlterarAluno" Style="{StaticResource BotaoCadastroAlunoAmarelo}" Content="Alterar" Click="BotaoAlterarAluno_Click"/>
                 </StackPanel>
             </StackPanel>
         </ScrollViewer>
