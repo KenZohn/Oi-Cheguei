@@ -39,7 +39,7 @@ namespace CadastroResponsavelAluno
                 mainWindow.Overlay.Visibility = Visibility.Visible;
                 if (usuario != null)
                 {
-                    MessageBoxResult resultado = MessageBox.Show("Deseja realmente excluir os dados no aluno?", "Exclusão", MessageBoxButton.YesNo, MessageBoxImage.Question);
+                    MessageBoxResult resultado = MessageBox.Show("Deseja realmente excluir os dados no usuário?", "Exclusão", MessageBoxButton.YesNo, MessageBoxImage.Question);
 
                     if (resultado == MessageBoxResult.Yes)
                     {
@@ -51,7 +51,7 @@ namespace CadastroResponsavelAluno
                 }
                 else
                 {
-                    MessageBox.Show("Selecione um aluno.");
+                    MessageBox.Show("Selecione um usuário.");
                 }
                 mainWindow.Overlay.Visibility = Visibility.Collapsed;
             }

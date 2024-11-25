@@ -6,8 +6,6 @@
         xmlns:local="clr-namespace:CadastroResponsavelAluno.Professor"
         mc:Ignorable="d"
         Title="WindowNotificacao" Height="450" Width="800"
-        ResizeMode="NoResize"
-        WindowStyle="None"
         WindowState="Maximized"
         PreviewKeyDown="Window_PreviewKeyDown">
     <Grid>

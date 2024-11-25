@@ -40,7 +40,7 @@ namespace CadastroResponsavelAluno
         private void BotaoNotificacao_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
         {
             //WindowNotificacao windowNotificacao = new WindowNotificacao();
-            //windowNotificacao.ShowDialog();
+            //windowNotificacao.Show();
         }
 
         private void AlterarCorBotaoChamada()

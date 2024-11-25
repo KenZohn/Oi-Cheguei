@@ -22,7 +22,6 @@ namespace CadastroResponsavelAluno.Professor
         public WindowNotificacao()
         {
             InitializeComponent();
-            this.Topmost = true;
         }
 
         private void Window_PreviewKeyDown(object sender, KeyEventArgs e)
