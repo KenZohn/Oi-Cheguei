@@ -22,17 +22,9 @@ namespace CadastroResponsavelAluno
     //Função do botão sair para voltar pra tela de login
     public partial class PagePrincipal : Page
     {
-
-        PageGestor pageGestor;
-        PageProfessor pageProfessor;
-        PagePorteiro pagePorteiro;
         public PagePrincipal(string cargo)
         {
             InitializeComponent();
-
-            pageGestor = new PageGestor();
-            pageProfessor = new PageProfessor();
-            pagePorteiro = new PagePorteiro();
 
             AlterarAcesso(cargo);
         }
@@ -40,19 +32,19 @@ namespace CadastroResponsavelAluno
         private void BotaoGestor_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
         {
             AlterarCorBotaoGestor();
-            FramePrincipal.Navigate(pageGestor);
+            FramePrincipal.Navigate(new PageGestor());
         }
 
         private void BotaoProfessor_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
         {
             AlterarCorBotaoProfessor();
-            FramePrincipal.Navigate(pageProfessor);
+            FramePrincipal.Navigate(new PageProfessor());
         }
 
         private void BotaoPorteiro_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
         {
             AlterarCorBotaoPorteiro();
-            FramePrincipal.Navigate(pagePorteiro);
+            FramePrincipal.Navigate(new PagePorteiro());
         }
 
         private void BotaoSair_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)

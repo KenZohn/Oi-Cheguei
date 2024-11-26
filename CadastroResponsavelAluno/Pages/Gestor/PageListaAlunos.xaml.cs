@@ -48,6 +48,8 @@ namespace CadastroResponsavelAluno
                     {
                         ExcluirAluno();
                         CarregarDados();
+                        CollectionView view = (CollectionView)CollectionViewSource.GetDefaultView(DataGridAlunos.ItemsSource);
+                        view.SortDescriptions.Add(new SortDescription("Nome", ListSortDirection.Ascending));
                     }
                     aluno = null;
                     DataGridAlunos.SelectedItem = null;
@@ -70,6 +72,8 @@ namespace CadastroResponsavelAluno
                     WindowAlterarAluno windowAlterarAluno = new WindowAlterarAluno(aluno);
                     windowAlterarAluno.ShowDialog();
                     CarregarDados();
+                    CollectionView view = (CollectionView)CollectionViewSource.GetDefaultView(DataGridAlunos.ItemsSource);
+                    view.SortDescriptions.Add(new SortDescription("Nome", ListSortDirection.Ascending));
                     aluno = null;
                     DataGridAlunos.SelectedItem = null;
                 }
