@@ -5,37 +5,44 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:CadastroResponsavelAluno.Pages.Porteiro"
       mc:Ignorable="d" 
-      d:DesignHeight="450" d:DesignWidth="800"
+      d:DesignHeight="500" d:DesignWidth="800"
+      Background="#FFFFFF"
       Title="PageListaSaidaAluno">
 
     <Grid>
-        <DataGrid x:Name="DataGridPresenca" Height="400" MaxWidth="1000" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0, 0, 0, 30" FontSize="16" AutoGenerateColumns="False" IsReadOnly="True" CanUserResizeColumns="False" HeadersVisibility="Column" CanUserSortColumns="False" CanUserReorderColumns="False">
-            <DataGrid.Columns>
-                <DataGridTextColumn Header="Id" Binding="{Binding Id}" Visibility="Collapsed"/>
-                <DataGridTextColumn Header="Id_Aluno" Binding="{Binding Id}" Visibility="Collapsed"/>
-                <DataGridTextColumn Header="Nome" Binding="{Binding Nome}" Width="350"/>
-                <DataGridTemplateColumn Header="Turma" Width="80" HeaderStyle="{StaticResource CentralizarCabecalho}">
-                    <DataGridTemplateColumn.CellTemplate>
-                        <DataTemplate>
-                            <TextBlock Text="{Binding Turma}" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                        </DataTemplate>
-                    </DataGridTemplateColumn.CellTemplate>
-                </DataGridTemplateColumn>
-                <DataGridTemplateColumn Header="Hora de Saída" Width="150" HeaderStyle="{StaticResource CentralizarCabecalho}">
-                    <DataGridTemplateColumn.CellTemplate>
-                        <DataTemplate>
-                            <TextBlock Text="{Binding Hora_Saida}" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                        </DataTemplate>
-                    </DataGridTemplateColumn.CellTemplate>
-                </DataGridTemplateColumn>
-                <DataGridTemplateColumn Header="Notificação">
-                    <DataGridTemplateColumn.CellTemplate>
-                        <DataTemplate>
-                            <Button x:Name="BotaoChegou" Content="Chegou" Margin="5" Height="25" Width="80" FontSize="14" Style="{StaticResource BotaoListaAlunoAlterar}" Click="BotaoChegou_Click"/>
-                        </DataTemplate>
-                    </DataGridTemplateColumn.CellTemplate>
-                </DataGridTemplateColumn>
-            </DataGrid.Columns>
-        </DataGrid>
+        <StackPanel Margin="20">
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0, 0, 0, 20">
+                <Label Content="Turma" FontSize="16"/>
+                <ComboBox x:Name="ComboBoxTurma" HorizontalContentAlignment="Center" Style="{StaticResource ComboBoxCadastro}" SelectionChanged="ComboBoxTurma_SelectionChanged"/>
+            </StackPanel>
+            <DataGrid x:Name="DataGridPresenca" Height="400" MaxWidth="1000" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0, 0, 0, 30" FontSize="16" AutoGenerateColumns="False" IsReadOnly="True" CanUserResizeColumns="False" HeadersVisibility="Column" CanUserSortColumns="False" CanUserReorderColumns="False">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="Id" Binding="{Binding Id}" Visibility="Collapsed"/>
+                    <DataGridTextColumn Header="Id_Aluno" Binding="{Binding Id}" Visibility="Collapsed"/>
+                    <DataGridTextColumn Header="Nome" Binding="{Binding Nome}" Width="350"/>
+                    <DataGridTemplateColumn Header="Turma" Width="80" HeaderStyle="{StaticResource CentralizarCabecalho}">
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <TextBlock Text="{Binding Turma}" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
+                    <DataGridTemplateColumn Header="Hora de Saída" Width="150" HeaderStyle="{StaticResource CentralizarCabecalho}">
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <TextBlock Text="{Binding Hora_Saida}" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
+                    <DataGridTemplateColumn Header="Notificação">
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <Button x:Name="BotaoChegou" Content="Chegou" Margin="5" Height="25" Width="80" FontSize="14" Style="{StaticResource BotaoListaAlunoAlterar}" Click="BotaoChegou_Click"/>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
+                </DataGrid.Columns>
+            </DataGrid>
+        </StackPanel>
     </Grid>
 </Page>

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Data.SQLite;
 using System.IO;
 using System.Linq;
@@ -29,11 +30,25 @@ namespace CadastroResponsavelAluno.Pages.Porteiro
         public PageListaSaidaAluno()
         {
             InitializeComponent();
+
             conexao = new ConexaoBD();
-            ObterListaPresenca();
+
+            AdicionarTurmas();
+            ComboBoxTurma.SelectedIndex = 0;
+            CarregarDados();
+            CollectionView view = (CollectionView)CollectionViewSource.GetDefaultView(DataGridPresenca.ItemsSource);
+            view.SortDescriptions.Add(new SortDescription("Nome", ListSortDirection.Ascending));
         }
 
-        private void ObterListaPresenca()
+        private void ComboBoxTurma_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            CarregarDados();
+
+            CollectionView view = (CollectionView)CollectionViewSource.GetDefaultView(DataGridPresenca.ItemsSource);
+            view.SortDescriptions.Add(new SortDescription("Nome", ListSortDirection.Ascending));
+        }
+
+        private void CarregarDados()
         {
             List<Presenca> listaPresenca = new List<Presenca>();
             string connectionString = "Data Source=" + System.IO.Path.Combine(Directory.GetParent(AppDomain.CurrentDomain.BaseDirectory).Parent.Parent.Parent.FullName, "ChegouBD.db");
@@ -41,10 +56,12 @@ namespace CadastroResponsavelAluno.Pages.Porteiro
             {
                 conexao.Open();
 
-                string query = "SELECT * FROM Presenca";
+                string query = "SELECT * FROM Presenca WHERE Turma = @turma";
 
                 using (SQLiteCommand cmd = new SQLiteCommand(query, conexao))
                 {
+                    cmd.Parameters.AddWithValue("@turma", ComboBoxTurma.SelectedItem.ToString());
+
                     using (SQLiteDataReader reader = cmd.ExecuteReader())
                     {
                         while (reader.Read())
@@ -78,7 +95,7 @@ namespace CadastroResponsavelAluno.Pages.Porteiro
 
         private void NotificarChegada()
         {
-            using (SQLiteConnection conexao = new SQLiteConnection("Data Source=" + System.IO.Path.Combine(Directory.GetParent(AppDomain.CurrentDomain.BaseDirectory).Parent.Parent.Parent.FullName, "ChegouBD.db")))
+            /*using (SQLiteConnection conexao = new SQLiteConnection("Data Source=" + System.IO.Path.Combine(Directory.GetParent(AppDomain.CurrentDomain.BaseDirectory).Parent.Parent.Parent.FullName, "ChegouBD.db")))
             {
                 conexao.Open();
                 string strSql = "UPDATE Alunos SET " +
@@ -93,7 +110,7 @@ namespace CadastroResponsavelAluno.Pages.Porteiro
                     cmd.ExecuteNonQuery();
                 }
                 conexao.Close();
-            }
+            }*/
         }
 
         private string ObterResponsavel(int idAluno)
@@ -115,6 +132,13 @@ namespace CadastroResponsavelAluno.Pages.Porteiro
             conexao.FecharConexao();
             return responsavel;   
         }
-    
+
+        private void AdicionarTurmas()
+        {
+            ComboBoxTurma.Items.Add("1º A");
+            ComboBoxTurma.Items.Add("1º B");
+            ComboBoxTurma.Items.Add("2º A");
+            ComboBoxTurma.Items.Add("2º B");
+        }
     }
 }

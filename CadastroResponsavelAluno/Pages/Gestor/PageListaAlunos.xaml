@@ -10,10 +10,10 @@
       Title="PageListaAlunos">
     <Grid>
         <StackPanel Margin="20">
-            <DataGrid x:Name="DataGridAlunos" Height="400" MaxWidth="1000" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0, 0, 0, 30" FontSize="16" AutoGenerateColumns="False" IsReadOnly="True" CanUserResizeColumns="False" HeadersVisibility="Column" CanUserSortColumns="False" CanUserReorderColumns="False" SelectionChanged="DataGridAlunos_SelectionChanged">
+            <DataGrid x:Name="DataGridAlunos" Height="400" MaxWidth="1000" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0, 0, 0, 30" FontSize="16" AutoGenerateColumns="False" IsReadOnly="True" CanUserResizeColumns="False" HeadersVisibility="Column" CanUserSortColumns="True" CanUserReorderColumns="False" SelectionChanged="DataGridAlunos_SelectionChanged">
                 <DataGrid.Columns>
                     <DataGridTextColumn Header="Id" Binding="{Binding Id}" Visibility="Collapsed"/>
-                    <DataGridTextColumn Header="Nome" Binding="{Binding Nome}" Width="350"/>
+                    <DataGridTextColumn Header="Nome" Binding="{Binding Nome}" Width="300"/>
                     <DataGridTemplateColumn Header="Turma" Width="80" HeaderStyle="{StaticResource CentralizarCabecalho}">
                         <DataGridTemplateColumn.CellTemplate>
                             <DataTemplate>

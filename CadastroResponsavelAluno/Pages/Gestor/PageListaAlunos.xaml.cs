@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Data.SQLite;
 using System.IO;
 using System.Linq;
@@ -29,6 +30,9 @@ namespace CadastroResponsavelAluno
             InitializeComponent();
 
             CarregarDados();
+
+            CollectionView view = (CollectionView)CollectionViewSource.GetDefaultView(DataGridAlunos.ItemsSource);
+            view.SortDescriptions.Add(new SortDescription("Nome", ListSortDirection.Ascending));
         }
 
         private void BotaoExcluir_Click(object sender, RoutedEventArgs e)

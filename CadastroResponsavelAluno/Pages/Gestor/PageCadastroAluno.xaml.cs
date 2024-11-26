@@ -111,10 +111,8 @@ namespace CadastroResponsavelAluno
         {
             ComboBoxTurma.Items.Add("1º A");
             ComboBoxTurma.Items.Add("1º B");
-            ComboBoxTurma.Items.Add("1º C");
             ComboBoxTurma.Items.Add("2º A");
             ComboBoxTurma.Items.Add("2º B");
-            ComboBoxTurma.Items.Add("2º C");
         }
         #endregion
 

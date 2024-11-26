@@ -1,6 +1,7 @@
 ﻿using CadastroResponsavelAluno.Models;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Data.SQLite;
 using System.IO;
 using System.Linq;
@@ -28,11 +29,18 @@ namespace CadastroResponsavelAluno
             InitializeComponent();
 
             AdicionarTurmas();
+            ComboBoxTurma.SelectedIndex = 0;
+            CarregarDados();
+            CollectionView view = (CollectionView)CollectionViewSource.GetDefaultView(DataGridChamada.ItemsSource);
+            view.SortDescriptions.Add(new SortDescription("Nome", ListSortDirection.Ascending));
         }
 
         private void ComboBoxTurma_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-                CarregarDados();
+            CarregarDados();
+
+            CollectionView view = (CollectionView)CollectionViewSource.GetDefaultView(DataGridChamada.ItemsSource);
+            view.SortDescriptions.Add(new SortDescription("Nome", ListSortDirection.Ascending));
         }
 
         public void CarregarDados()
@@ -68,17 +76,13 @@ namespace CadastroResponsavelAluno
         {
             ComboBoxTurma.Items.Add("1º A");
             ComboBoxTurma.Items.Add("1º B");
-            ComboBoxTurma.Items.Add("1º C");
             ComboBoxTurma.Items.Add("2º A");
             ComboBoxTurma.Items.Add("2º B");
-            ComboBoxTurma.Items.Add("2º C");
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-
             PegarItensDataGrid();
-
         }
 
         private void SalvarPresenca(int Id_Aluno, bool isChecked, string Nome)
@@ -100,6 +104,7 @@ namespace CadastroResponsavelAluno
             }
 
         }
+
         private void PegarItensDataGrid()
         {
             foreach (var item in DataGridChamada.Items)
@@ -116,7 +121,6 @@ namespace CadastroResponsavelAluno
                     }
                 } 
             } 
-        }
-               
+        }  
     }
 }
