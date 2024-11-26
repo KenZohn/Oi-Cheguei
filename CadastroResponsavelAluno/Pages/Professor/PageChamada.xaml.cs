@@ -109,11 +109,10 @@ namespace CadastroResponsavelAluno
         {
             foreach (var item in DataGridChamada.Items)
             {
-                if (item is Aluno aluno )
-                {  int Id_Aluno = aluno.Id ; 
+                if (item is Aluno aluno)
+                {  int Id_Aluno = aluno.Id; 
                     bool isChecked = aluno.Presente;
-                    string Nome = aluno.Nome ;
-                    MessageBox.Show($"Aluno: ID={Id_Aluno}, Nome={Nome}, Presente={isChecked}");
+                    string Nome = aluno.Nome;
 
                     if (isChecked)
                     {
