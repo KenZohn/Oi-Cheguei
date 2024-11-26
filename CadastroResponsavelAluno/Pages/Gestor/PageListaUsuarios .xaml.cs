@@ -119,7 +119,7 @@ namespace CadastroResponsavelAluno
             using (SQLiteConnection conexao = new SQLiteConnection("Data Source=" + System.IO.Path.Combine(Directory.GetParent(AppDomain.CurrentDomain.BaseDirectory).Parent.Parent.Parent.FullName, "ChegouBD.db")))
             {
                 conexao.Open();
-                string strSql = "DELETE FROM Funcionario WHERE Id = @id";
+                string strSql = "DELETE FROM Funcionarios WHERE Id = @id";
                 using (SQLiteCommand cmd = new SQLiteCommand(strSql, conexao))
                 {
                     cmd.Parameters.AddWithValue("@id", usuario.Id);
