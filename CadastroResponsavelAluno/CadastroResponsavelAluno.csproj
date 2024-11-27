@@ -76,6 +76,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Models\HoraTempo.cs" />
     <Compile Include="Models\Presenca.cs" />
     <Compile Include="Pages\Gestor\PageListaUsuarios .xaml.cs">
       <DependentUpon>PageListaUsuarios .xaml</DependentUpon>

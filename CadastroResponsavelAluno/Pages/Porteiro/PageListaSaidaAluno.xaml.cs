@@ -92,6 +92,17 @@ namespace CadastroResponsavelAluno.Pages.Porteiro
             cheguei.Show();
         }
 
+        private void BotaoHoraSaida_Click(object sender, RoutedEventArgs e)
+        {
+            // Cria uma instância da classe HoraTempo
+            HoraTempo horaTempo = new HoraTempo();
+
+            // Obtém a hora formatada atual
+            string horaAtual = horaTempo.ObterDataHoraFormatada();
+
+            // Exibe a hora atual em um MessageBox (você pode ajustar para salvar ou fazer outra ação)
+            MessageBox.Show($"Hora de saída: {horaAtual}", "Hora Atualizada", MessageBoxButton.OK, MessageBoxImage.Information);
+        }
 
         private void NotificarChegada()
         {
